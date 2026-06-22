@@ -28,12 +28,6 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openMenu, setOpenMenu] = useState<string | null>(null);
 
-  // Plain scroll-position refs instead of framer's useMotionValueEvent.
-  // The old version relied on scrollY.getPrevious(), which occasionally
-  // missed fast scroll deltas (trackpad/inertia scrolling) and left the
-  // bar stuck in the "hidden" state with no further change event to
-  // bring it back. A native listener + rAF throttle is simpler and
-  // doesn't drop frames the same way.
   const lastY = useRef(0);
   const ticking = useRef(false);
 
@@ -50,12 +44,11 @@ export default function Navbar() {
         if (openMenu || mobileOpen) {
           setHidden(false);
         } else if (y < 160) {
-          // Always visible near the top, regardless of direction.
           setHidden(false);
         } else if (y > lastY.current + 4) {
-          setHidden(true); // scrolling down
+          setHidden(true);
         } else if (y < lastY.current - 4) {
-          setHidden(false); // scrolling up
+          setHidden(false);
         }
 
         lastY.current = y;
@@ -71,7 +64,6 @@ export default function Navbar() {
     document.body.style.overflow = mobileOpen ? "hidden" : "";
   }, [mobileOpen]);
 
-  // Always show the bar the moment a dropdown opens, even mid-hide.
   useEffect(() => {
     if (openMenu) setHidden(false);
   }, [openMenu]);
@@ -89,18 +81,32 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
-        <Link href="/" className="relative h-10 w-32 shrink-0">
+        <Link href="/" className="relative inline-flex h-20 w-64 shrink-0 items-center">
+          {/* White logo -- visible over the transparent/dark hero */}
           <Image
-            src={scrolled || openMenu ? "/images/brand/logo-green.png" : "/images/brand/logo-white.png"}
+            src="/images/brand/logo-white.png"
             alt="Yutori Designs — creating space for life"
             fill
-            sizes="128px"
-            className="object-contain object-left transition-opacity duration-300"
+            sizes="176px"
+            className={`object-contain object-left transition-opacity duration-300 ${
+              scrolled || openMenu ? "opacity-0" : "opacity-100"
+            }`}
+            priority
+          />
+          {/* Green logo -- visible once the navbar background turns white */}
+          <Image
+            src="/images/brand/logo-green.png"
+            alt="Yutori Designs — creating space for life"
+            fill
+            sizes="176px"
+            className={`object-contain object-left transition-opacity duration-300 ${
+              scrolled || openMenu ? "opacity-100" : "opacity-0"
+            }`}
             priority
           />
         </Link>
 
-        <nav className={`hidden lg:flex items-center gap-9 text-[15px] transition-colors duration-300 ${
+        <nav className={`hidden lg:flex items-center justify-center gap-9 text-[15px] transition-colors duration-300 ${
           scrolled || openMenu ? "text-ink-800" : "text-white"
         }`}>
           <Link href="/" className="hover:text-brand-500 transition-colors">
@@ -206,12 +212,12 @@ export default function Navbar() {
             className="fixed inset-0 bg-ink-900 text-paper z-[60] flex flex-col"
           >
             <div className="flex items-center justify-between px-6 h-20">
-              <div className="relative h-9 w-28">
+              <div className="relative h-11 w-36">
                 <Image
                   src="/images/brand/logo-white.png"
                   alt="Yutori Designs"
                   fill
-                  sizes="112px"
+                  sizes="144px"
                   className="object-contain object-left"
                 />
               </div>
