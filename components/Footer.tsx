@@ -24,9 +24,11 @@ export default function Footer() {
     <footer className="bg-ink-900 text-paper">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-16 grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="md:col-span-2">
-          <span className="font-display text-3xl">
-            Yutori<span className="text-brand-300">.</span>
-          </span>
+          <img
+            src="/images/brand/logo-white.png"
+            alt="Yutori Designs"
+            className="h-25 w-64"
+          />
           <p className="mt-4 text-stone-300 text-[15px] leading-relaxed max-w-sm">
             Interior design and turnkey execution rooted in coastal Karnataka —
             serving Mangalore, Udupi, and beyond.
