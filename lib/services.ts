@@ -154,4 +154,143 @@ export const services: Record<string, ServiceContent> = {
     ],
     relatedCategory: "Hotel / Resort",
   },
+
+  // The three entries below power the Hero section's "View Details"
+  // buttons only -- they are intentionally NOT listed in the navbar's
+  // Services dropdown, which stays limited to the three above.
+  commercial: {
+    slug: "commercial",
+    name: "Commercial Interior Design",
+    shortName: "Commercial",
+    metaTitle: "Commercial Interior Design in Mangalore & Udupi | Yutori Designs",
+    heroImage: "/images/services/commercial-space.jpg",
+    intro:
+      "Commercial spaces carry a brand's first impression. Our commercial interior work covers offices, retail showrooms, and hospitality spaces — designed to look sharp while genuinely working harder for the business inside, from layout efficiency to material durability under daily foot traffic.",
+    whyUs:
+      "We design commercial spaces around how a business actually operates day to day, not just how a render looks. Local vendor relationships across Mangalore and Udupi mean realistic timelines and materials that hold up.",
+    steps: [
+      {
+        title: "Brand & brief",
+        points: [
+          "Understanding the brand identity the space needs to reflect",
+          "Capturing operational needs — staff count, customer flow, storage",
+          "Site assessment: location, area, scope, and budget",
+        ],
+      },
+      {
+        title: "Design development",
+        points: [
+          "Concept layout proposed and signed off by the client",
+          "Cost estimate prepared against the approved concept",
+          "Detailed design continues alongside execution planning",
+        ],
+      },
+      {
+        title: "Execution",
+        points: [
+          "Vendors finalised and materials ordered",
+          "Civil and interior work sequenced to minimise business downtime",
+          "Regular progress updates shared throughout",
+        ],
+      },
+      {
+        title: "Handover",
+        points: [
+          "Internal quality review against the approved design",
+          "Final walkthrough once sign-off is complete",
+        ],
+      },
+    ],
+    relatedCategory: "Office Space",
+  },
+  residential: {
+    slug: "residential",
+    name: "Residential Interior Design",
+    shortName: "Residential",
+    metaTitle: "Residential Interior Design in Mangalore & Udupi | Yutori Designs",
+    heroImage: "/images/services/residential-space.jpg",
+    intro:
+      "A home should hold the people living in it, not just look good in photographs. Our residential projects — villas, flats, and individual homes across Mangalore, Udupi, and beyond — are shaped around natural light, local materials, and the daily rituals of the family who'll actually live there.",
+    whyUs:
+      "We've designed homes set against hillsides, wrapped around existing trees, and finished with locally-sourced materials — each one different because each site and family asked for something different. No template homes.",
+    steps: [
+      {
+        title: "Initial consultation",
+        points: [
+          "Understanding how the family lives — routines, priorities, must-haves",
+          "Capturing style preferences, material tastes, and colour direction",
+          "Site details: plot, built area, scope, and budget",
+        ],
+      },
+      {
+        title: "Design development",
+        points: [
+          "A high-level concept and mood direction shared for sign-off",
+          "Cost estimate prepared against the agreed concept",
+          "Detailed room-by-room design continues alongside execution planning",
+        ],
+      },
+      {
+        title: "Implementation",
+        points: [
+          "Vendors and material orders finalised",
+          "Civil and interior work sequenced — carpentry, electrical, plumbing, decor",
+          "Regular site updates shared with the family throughout",
+        ],
+      },
+      {
+        title: "Final review",
+        points: [
+          "A detailed internal walkthrough against the design brief",
+          "Handover to the family once quality is confirmed",
+        ],
+      },
+    ],
+    relatedCategory: "Villa",
+  },
+  "office-space": {
+    slug: "office-space",
+    name: "Office Space Design",
+    shortName: "Office Space",
+    metaTitle: "Office Space Design in Mangalore & Udupi | Yutori Designs",
+    heroImage: "/images/services/office-space.jpg",
+    intro:
+      "An office shapes how a team works together every single day. We design workspaces that balance focus and collaboration — smart space planning, premium finishes, and a layout that reflects company culture instead of fighting it.",
+    whyUs:
+      "We pair an understanding of how teams actually work with hands-on experience executing offices for IT and services companies across Mangalore and Udupi — from open floor plans to quiet focus zones.",
+    steps: [
+      {
+        title: "Initial consultation",
+        points: [
+          "Understanding company culture, team size, and ways of working",
+          "Capturing must-haves — meeting rooms, breakout zones, storage",
+          "Site details gathered: location, area, scope, and budget",
+        ],
+      },
+      {
+        title: "Design development",
+        points: [
+          "A high-level layout proposed and signed off by the client",
+          "Cost estimate prepared against the approved layout",
+          "Detailed design continues in parallel with execution planning",
+        ],
+      },
+      {
+        title: "Implementation",
+        points: [
+          "Vendors finalised, materials ordered, project plan locked",
+          "Civil and interior work carried out together — partitions, electrical, HVAC, furniture",
+          "Regular progress updates shared with the client",
+        ],
+      },
+      {
+        title: "Final review",
+        points: [
+          "Internal quality review against the approved design",
+          "Final walkthrough and handover once sign-off is complete",
+        ],
+      },
+    ],
+    relatedCategory: "Office Space",
+  },
 };

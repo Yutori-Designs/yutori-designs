@@ -34,7 +34,7 @@ const stats = [
 export default function StatsBar() {
   return (
     <section className="bg-paper-dim border-y border-ink-900/8">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 py-14 grid grid-cols-2 sm:grid-cols-4 gap-8">
+      <div className="max-w-4xl mx-auto px-6 lg:px-10 py-14 grid grid-cols-2 sm:grid-cols-4 gap-10 text-center">
         {stats.map((s, i) => (
           <motion.div
             key={s.label}

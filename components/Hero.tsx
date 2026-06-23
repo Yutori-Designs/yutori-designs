@@ -11,21 +11,21 @@ const slides = [
     title: "Blending tradition\ninto business",
     sub: "End-to-end commercial interiors that elevate your brand and your team.",
     href: "/service/commercial",
-    image: "/images/hero/hero-commercial.jpg",
+    image: "/images/hero/hero-commercial.png",
   },
   {
     eyebrow: "Workplace Design",
     title: "Inviting workspaces\nfor your employees",
     sub: "Spaces engineered around how people actually work, move, and gather.",
-    href: "/service/commercial",
-    image: "/images/hero/hero-workspace.jpg",
+    href: "/service/office-space",
+    image: "/images/hero/hero-workspace.png",
   },
   {
     eyebrow: "Residential",
     title: "Homes that\ntalk to you",
     sub: "Coastal textures, natural light, and craftsmanship rooted in Karnataka.",
     href: "/service/residential",
-    image: "/images/hero/hero-residential.jpg",
+    image: "/images/hero/hero-residential.png",
   },
 ];
 
