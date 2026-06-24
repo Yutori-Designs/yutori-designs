@@ -10,6 +10,7 @@ const services = [
   { label: "Interior Design", href: "/service/interior-design" },
   { label: "Space Planning", href: "/service/space-planning" },
   { label: "Turnkey Project Execution", href: "/service/turn-key-project-execution" },
+
 ];
 
 const about = [

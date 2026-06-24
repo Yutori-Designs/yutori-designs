@@ -16,7 +16,7 @@ export default function AboutSection() {
           className="relative rounded-2xl overflow-hidden aspect-[4/3] lg:aspect-[16/13]"
         >
           <Image
-            src="/images/about/"
+            src="/images/about/team-photo.png"
             alt="The Yutori Designs team at the studio"
             fill
             className="object-cover"
@@ -37,27 +37,28 @@ export default function AboutSection() {
             Your trusted interior contractors in Mangalore
           </h2>
 
-          <div className="space-y-5 text-ink-700 text-[16px] leading-relaxed">
+          <div className="space-y-5 text-ink-700 text-[16px] leading-relaxed text-justify">
             <p>
-              At Yutori Designs, we believe that{" "}
-              <Link
+              
+              {/* <Link
                 href="/overview"
                 className="text-brand-600 font-medium underline decoration-brand-300 hover:decoration-brand-600 transition-colors"
               >
                 interior design
-              </Link>{" "}
-              is more than just arranging furniture — it&apos;s about creating
-              meaningful experiences within the spaces where we live and work.
-              As one of the premier interior design companies in Mangalore,
-              our mission is to bring harmony, functionality, and beauty into
-              every corner of your environment.
+              </Link>{" "} */}
+              At Yutori Designs, we believe that interior design is more than just arranging furniture—it’s 
+              about creating meaningful experiences within the spaces where we live and work.
+              As one of the premier interior design companies in Mangalore, our mission is to bring harmony, 
+              functionality, and beauty into every corner of your environment. 
+              We approach every project with the understanding that well-designed spaces enhance daily life, 
+              and as dedicated interior design firms in Mangalore, we strive to evoke emotion and tell stories unique to each client.
             </p>
             <p>
-              Rooted in the culturally rich region of Coastal Karnataka, we
-              serve as expert interior contractors in Mangalore, ensuring
-              every detail is executed with precision — drawing inspiration
-              from coastal breezes, natural textures, and traditional
-              craftsmanship.
+              Rooted in the culturally rich region of Coastal Karnataka, we serve as expert 
+              interior contractors in Mangalore, ensuring every detail is executed with precision. 
+              Whether you are looking for a bespoke interior design company in Udupi or a turnkey partner in Mangalore, 
+              our work draws inspiration from the local ethos—embracing coastal breezes, natural textures, 
+              traditional craftsmanship, and the laid-back charm of the region.
             </p>
           </div>
 
