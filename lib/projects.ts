@@ -295,6 +295,44 @@ export const projects: Project[] = [
       "/images/projects/tc-palya-apartment/tc-palya-apartment-3.jpg",
     ],
   },
+  {
+    id: "Vruddhi properties-office-udupi",
+    title: "Office Interior Design for Vruddhi Properties",
+    location: "Udupi",
+    category: "Office Space",
+    cover: "/images/projects/Vruddhi Properties/Vruddhi Properties.jpg",
+    gallery: [
+      "/images/projects/Vruddhi Properties/Vruddhi Properties-1.jpg",
+       "/images/projects/Vruddhi Properties/Vruddhi Properties-2.jpg",
+       "/images/projects/Vruddhi Properties/Vruddhi Properties-3.jpg",
+       "/images/projects/Vruddhi Properties/Vruddhi Properties-4.jpg",
+       "/images/projects/Vruddhi Properties/Vruddhi Properties-5.jpg",
+       "/images/projects/Vruddhi Properties/Vruddhi Properties-6.jpg",
+      "/images/projects/Vruddhi Properties/Vruddhi Properties-7.jpg",
+       "/images/projects/Vruddhi Properties/Vruddhi Properties-8.jpg",
+       "/images/projects/Vruddhi Properties/Vruddhi Properties-9.jpg",
+      
+      
+    ],
+  },
+   {
+    id: "Timeless Collections-commercial -udupi",
+    title: "Timeless Collections-commercial -udupi",
+    location: "Udupi",
+    category: "Commercial",
+    cover: "/images/projects/Timeless Collections/Timeless-Collections.jpg",
+    gallery: [
+      "/images/projects/Timeless Collections/Timeless-Collections-1.jpg",
+      "/images/projects/Timeless Collections/Timeless-Collections-2.jpg",
+       "/images/projects/Timeless Collections/Timeless-Collections-4.jpg",
+       "/images/projects/Timeless Collections/Timeless-Collections-5.jpg",
+       "/images/projects/Timeless Collections/Timeless-Collections-6.jpg",
+       "/images/projects/Timeless Collections/Timeless-Collections-7.jpg",
+       "/images/projects/Timeless Collections/Timeless-Collections-8.jpg",
+      
+      
+    ],
+  },
 ];
 
 export const categories: ProjectCategory[] = [
@@ -305,4 +343,5 @@ export const categories: ProjectCategory[] = [
   "Religious",
   "Villa",
   "Flat",
+  
 ];
