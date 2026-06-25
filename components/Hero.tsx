@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react";
 
 const slides = [
   {
-    eyebrow: "Commercial & Office",
+    eyebrow: "Commercial ",
     title: "Blending tradition\ninto business",
     sub: "End-to-end commercial interiors that elevate your brand and your team.",
     href: "/service/commercial",

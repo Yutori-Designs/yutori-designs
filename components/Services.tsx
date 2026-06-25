@@ -7,25 +7,28 @@ import { ArrowUpRight } from "lucide-react";
 
 const services = [
   {
+    tagline: "Yutori Designs: Home Interior",
     title: "Interior Design",
     description:
       "Bespoke interiors for homes, offices, and retail spaces — shaped around how the space will actually be lived in.",
     href: "/service/interior-design",
-    image: "/images/services/interior-designs.png",
+    image: "/images/services/interior-design.jpg",
   },
   {
+    tagline: "Yutori Designs: Smart Layouts",
     title: "Space Planning",
     description:
       "Smart layouts built around real movement, light, and structure — before a single finish is chosen.",
     href: "/service/space-planning",
-    image: "/images/services/Space-Planing.png",
+    image: "/images/services/space-planning.jpg",
   },
   {
+    tagline: "Yutori Designs: End-to-End Delivery",
     title: "Turnkey Project Execution",
     description:
       "Design and execution under one accountable team — concept to handover, with one point of contact throughout.",
     href: "/service/turn-key-project-execution",
-    image: "/images/services/turnkey.png",
+    image: "/images/services/turnkey.jpg",
   },
 ];
 
@@ -60,9 +63,14 @@ function TiltCard({ service }: { service: (typeof services)[number] }) {
 
         <div className="relative h-full flex flex-col justify-end p-7">
           <div className="flex items-start justify-between gap-3">
-            <h3 className="font-display text-2xl text-paper leading-snug">
-              {service.title}
-            </h3>
+            <div>
+              <span className="text-brand-300 text-xs tracking-[0.1em] uppercase">
+                {service.tagline}
+              </span>
+              <h3 className="font-display text-2xl text-paper leading-snug mt-1">
+                {service.title}
+              </h3>
+            </div>
             <span className="shrink-0 w-10 h-10 rounded-full bg-paper/10 backdrop-blur flex items-center justify-center group-hover:bg-brand-500 transition-colors duration-300">
               <ArrowUpRight size={18} className="text-paper" />
             </span>

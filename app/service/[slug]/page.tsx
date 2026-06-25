@@ -60,10 +60,13 @@ export default async function ServicePage({
             />
           </div>
           <div>
-            <h2 className="font-display text-3xl text-ink-900 mb-4">What we do</h2>
+            
+            <h3 className="font-display text-3xl text-ink-900 mb-3">
+              {service.whatWeDoLabel}
+            </h3>
             <p className="text-ink-700 text-[17px] leading-relaxed">{service.intro}</p>
             <h2 className="font-display text-3xl text-ink-900 mt-10 mb-4">
-              Why choose Yutori
+              {service.whyChooseLabel}
             </h2>
             <p className="text-ink-700 text-[17px] leading-relaxed">{service.whyUs}</p>
           </div>

@@ -7,6 +7,9 @@ export interface ServiceContent {
   slug: string;
   name: string;
   shortName: string;
+  headlineWord: string; // used as "Transforming {headlineWord} in Mangalore"
+  whatWeDoLabel: string; // heading above the intro paragraph, e.g. "Commercial interior design"
+  whyChooseLabel: string; // heading above the whyUs paragraph, e.g. "Why Yutori for commercial spaces"
   metaTitle: string;
   heroImage: string;
   intro: string;
@@ -22,6 +25,9 @@ export const services: Record<string, ServiceContent> = {
     slug: "interior-design",
     name: "Interior Design",
     shortName: "Interior Design",
+    headlineWord: "Interior Spaces",
+    whatWeDoLabel: "Interior design, end to end",
+    whyChooseLabel: "Why Yutori for interior design",
     metaTitle: "Interior Designers in Mangalore & Udupi | Yutori Designs",
     heroImage: "/images/services/interior-design.jpg",
     intro:
@@ -68,6 +74,9 @@ export const services: Record<string, ServiceContent> = {
     slug: "space-planning",
     name: "Space Planning",
     shortName: "Space Planning",
+    headlineWord: "Spaces with Smart Planning",
+    whatWeDoLabel: "Space planning before anything else",
+    whyChooseLabel: "Why Yutori for space planning",
     metaTitle: "Space Planning Services in Mangalore & Udupi | Yutori Designs",
     heroImage: "/images/services/space-planning.jpg",
     intro:
@@ -114,6 +123,9 @@ export const services: Record<string, ServiceContent> = {
     slug: "turn-key-project-execution",
     name: "Turnkey Project Execution",
     shortName: "Turnkey Execution",
+    headlineWord: "Spaces, Start to Finish",
+    whatWeDoLabel: "Turnkey execution, one team",
+    whyChooseLabel: "Why Yutori for turnkey execution",
     metaTitle: "Turnkey Interior Project Execution | Yutori Designs",
     heroImage: "/images/services/turnkey.jpg",
     intro:
@@ -162,6 +174,9 @@ export const services: Record<string, ServiceContent> = {
     slug: "commercial",
     name: "Commercial Interior Design",
     shortName: "Commercial",
+    headlineWord: "Commercial Spaces",
+    whatWeDoLabel: "Commercial interior design",
+    whyChooseLabel: "Why Yutori for commercial spaces",
     metaTitle: "Commercial Interior Design in Mangalore & Udupi | Yutori Designs",
     heroImage: "/images/services/commercial-space.jpg",
     intro:
@@ -207,6 +222,9 @@ export const services: Record<string, ServiceContent> = {
     slug: "residential",
     name: "Residential Interior Design",
     shortName: "Residential",
+    headlineWord: "Residential Spaces",
+    whatWeDoLabel: "Residential interior design",
+    whyChooseLabel: "Why Yutori for your home",
     metaTitle: "Residential Interior Design in Mangalore & Udupi | Yutori Designs",
     heroImage: "/images/services/residential-space.jpg",
     intro:
@@ -252,6 +270,9 @@ export const services: Record<string, ServiceContent> = {
     slug: "office-space",
     name: "Office Space Design",
     shortName: "Office Space",
+    headlineWord: "Office Spaces",
+    whatWeDoLabel: "Office space design udupi",
+    whyChooseLabel: "Why Yutori for office spaces",
     metaTitle: "Office Space Design in Mangalore & Udupi | Yutori Designs",
     heroImage: "/images/services/office-space.jpg",
     intro:
