@@ -6,16 +6,23 @@ export interface ServiceStep {
 export interface ServiceContent {
   slug: string;
   name: string;
+  nameSubtitle: string;  
   shortName: string;
   headlineWord: string; // used as "Transforming {headlineWord} in Mangalore"
   whatWeDoLabel: string; // heading above the intro paragraph, e.g. "Commercial interior design"
   whyChooseLabel: string; // heading above the whyUs paragraph, e.g. "Why Yutori for commercial spaces"
+  whyChooseLabel1: string;
+  whatWeDoLabel1: string; // heading above the whyUs paragraph, e.g. "Why Yutori for commercial spaces"
   metaTitle: string;
   heroImage: string;
+  heroImage2: string;
   intro: string;
   whyUs: string;
+  intro1: string;
+  whyUs1: string;
   steps: ServiceStep[];
   relatedCategory: string;
+  
 }
 
 // Slugs and names match the real site's menu structure:
@@ -24,14 +31,16 @@ export const services: Record<string, ServiceContent> = {
   "interior-design": {
     slug: "interior-design",
     name: "Interior Design",
+    nameSubtitle: "Bespoke Interior Design for Modern Living, Work, and Hospitality",
     shortName: "Interior Design",
     headlineWord: "Interior Spaces",
-    whatWeDoLabel: "Interior design, end to end",
-    whyChooseLabel: "Why Yutori for interior design",
+    whatWeDoLabel: "Crafting Homes with Heart & Harmony",
+    whyChooseLabel: "Elegant Designs for Inspiring Workspaces",
     metaTitle: "Interior Designers in Mangalore & Udupi | Yutori Designs",
-    heroImage: "/images/services/interior-design.jpg",
+    heroImage: "/images/services/Interior-designs.png",
+    heroImage2: "/images/services/office-Interior-designs.jpg",
     intro:
-      "From cosy apartments to spacious coastal villas, boutique offices to retail environments, our interior design service shapes every layout, material, and fixture around how a space will actually be used. Each project blends sophistication, efficiency, and the textures of coastal Karnataka into something that feels both grounded and contemporary.",
+      "At Yutori Designs, residential spaces form the cornerstone of our creative portfolio. We specialize in crafting warm, inviting homes that reflect personal tastes, lifestyles, and everyday functionality. From modern apartments to expansive villas, our team seamlessly blends aesthetics and comfort to create timeless interiors. Our emphasis on spatial harmony, natural materials, and thoughtful details ensures every home we design is a true sanctuary.",
     whyUs:
       "We pair an understanding of how people actually live and work with deep familiarity with the Mangalore and Udupi market — local vendors, local material lead times, and a design language drawn from the region itself rather than a generic template.",
     steps: [
@@ -68,21 +77,23 @@ export const services: Record<string, ServiceContent> = {
         ],
       },
     ],
-    relatedCategory: "Office Space",
+    relatedCategory: "Office Space", 
   },
   "space-planning": {
     slug: "space-planning",
     name: "Space Planning",
+    nameSubtitle: "Layout Solutions That Maximize Space & Style",
     shortName: "Space Planning",
     headlineWord: "Spaces with Smart Planning",
-    whatWeDoLabel: "Space planning before anything else",
-    whyChooseLabel: "Why Yutori for space planning",
+    whatWeDoLabel1: "Efficient Use of Space for Elegant Everyday Living",
+    whyChooseLabel1: "Shaping Workspaces That Inspire Innovation",
     metaTitle: "Space Planning Services in Mangalore & Udupi | Yutori Designs",
-    heroImage: "/images/services/space-planning.jpg",
-    intro:
-      "Before any finish or furniture is chosen, the space itself has to work — how people move through it, where light falls, what the structure allows. Our space planning service maps that out first, so every later design decision builds on a layout that's already efficient, compliant, and comfortable.",
-    whyUs:
-      "Years of executing institutional, commercial, and residential builds across coastal Karnataka means we plan around real-world constraints from day one — structural columns, local building norms, monsoon drainage, and how a space actually gets used once people move in.",
+    heroImage: "/images/services/Interior-designs.png",
+    heroImage2: "/images/services/office-Interior-designs.jpg",
+    intro1:
+      "At Yutori Designs, layout optimization for residential spaces is rooted in simplicity, functionality, and harmony. We thoughtfully plan every square foot to ensure seamless movement, natural light flow, and purposeful use of space. Whether it’s a compact apartment or a spacious home, our designs prioritize comfort, aesthetics, and practicality. Guided by minimalism and a deep understanding of how people live, we create layouts that reflect your lifestyle while enhancing efficiency and tranquility. From room zoning to furniture placement, every detail is considered. At Yutori, we believe that a well-optimized home layout is the foundation of peaceful, inspired everyday living.",
+    whyUs1:
+      "At Yutori Design, we specialize in optimizing corporate office layouts to enhance productivity, collaboration, and employee well-being. Our design strategy focuses on intelligently planning space to support workflow efficiency while reflecting the brand’s identity. From open-plan zones and meeting areas to private cabins and breakout spaces, every element is placed with purpose. We ensure that circulation, lighting, and acoustics are carefully balanced to create a dynamic yet comfortable work environment. Whether designing for startups or large enterprises, Yutori Design delivers customized solutions that adapt to evolving business needs, promoting both innovation and functionality in the workplace.",
     steps: [
       {
         title: "Initial consultation",
@@ -117,21 +128,23 @@ export const services: Record<string, ServiceContent> = {
         ],
       },
     ],
-    relatedCategory: "Institution",
+     relatedCategory: "Villa",
   },
   "turn-key-project-execution": {
     slug: "turn-key-project-execution",
     name: "Turnkey Project Execution",
+    nameSubtitle: "Seamless Turnkey Interior Projects in Mangalore",
     shortName: "Turnkey Execution",
     headlineWord: "Spaces, Start to Finish",
-    whatWeDoLabel: "Turnkey execution, one team",
+    whatWeDoLabel: "Full-Scope Turnkey Project Handling",
     whyChooseLabel: "Why Yutori for turnkey execution",
     metaTitle: "Turnkey Interior Project Execution | Yutori Designs",
-    heroImage: "/images/services/turnkey.jpg",
+     heroImage: "/images/services/Interior-designs.png",
+    heroImage2: "/images/services/office-Interior-designs.jpg",
     intro:
-      "Design and execution under one roof, managed by a single accountable team — from concept sign-off through vendor coordination, material procurement, and on-site work, to final handover. No gaps between the people who designed the space and the people who built it.",
+      "Yutori Designs offers end-to-end project management services to ensure that every interior design project is executed seamlessly from concept to completion. We meticulously manage each phase of the process—from initial planning and design development to procurement, construction, and final installation. Our experienced team coordinates closely with contractors, vendors, and consultants, ensuring clear communication and smooth collaboration at every step. We prioritize staying on schedule and within budget, without compromising quality or design integrit",
     whyUs:
-      "Turnkey only works if one team owns the whole timeline. We've run that model across offices, hotels, institutions, and homes throughout Mangalore and Udupi, which means fewer handoffs, fewer surprises, and a single point of contact for the client throughout.",
+      "With a strong focus on transparency and efficiency, Yutori Designs handles resource allocation, timeline tracking, quality control, and on-site supervision, so you can stay informed and confident throughout the journey. Our method combines strategic oversight with creative vision, transforming ideas into beautifully realized spaces that meet both functional and aesthetic goals. Whether it’s a corporate office, residence, or hospitality project, we tailor our management approach to suit your unique needs. Every detail—from material selection to final walkthrough—is managed with precision and care. With Yutori Designs, you don’t just get stunning interiors—you get a reliable partner dedicated to delivering excellence at every stage of your turnkey interior project.",
     steps: [
       {
         title: "Initial consultation",
@@ -164,7 +177,7 @@ export const services: Record<string, ServiceContent> = {
         ],
       },
     ],
-    relatedCategory: "Hotel / Resort",
+    relatedCategory: "Flat",
   },
 
   // The three entries below power the Hero section's "View Details"

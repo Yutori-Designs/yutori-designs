@@ -12,7 +12,7 @@ const services = [
     description:
       "Bespoke interiors for homes, offices, and retail spaces — shaped around how the space will actually be lived in.",
     href: "/service/interior-design",
-    image: "/images/services/interior-design.jpg",
+    image: "/images/services/Interior-designs.png",
   },
   {
     tagline: "Yutori Designs: Smart Layouts",
@@ -20,7 +20,7 @@ const services = [
     description:
       "Smart layouts built around real movement, light, and structure — before a single finish is chosen.",
     href: "/service/space-planning",
-    image: "/images/services/space-planning.jpg",
+    image: "/images/services/Space-Planing.png",
   },
   {
     tagline: "Yutori Designs: End-to-End Delivery",
@@ -28,7 +28,7 @@ const services = [
     description:
       "Design and execution under one accountable team — concept to handover, with one point of contact throughout.",
     href: "/service/turn-key-project-execution",
-    image: "/images/services/turnkey.jpg",
+    image: "/images/services/turnkey.png",
   },
 ];
 

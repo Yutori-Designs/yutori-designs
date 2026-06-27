@@ -32,9 +32,11 @@ export default async function ServicePage({
   const service = services[slug];
   if (!service) notFound();
 
-  const related = projects
-    .filter((p) => p.category === service.relatedCategory)
-    .slice(0, 3);
+  const related = projects.filter((p) => p.category === service.relatedCategory).slice(0, 3);
+  
+
+  // Check if this service uses the two-image paired layout
+  const hasTwoImages = !!service.heroImage2;
 
   return (
     <main>
@@ -48,29 +50,99 @@ export default async function ServicePage({
         ]}
       />
 
-      <section className="py-20 max-w-7xl mx-auto px-6 lg:px-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
-          <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
-            <Image
-              src={service.heroImage}
-              alt={service.name}
-              fill
-              className="object-cover"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
-          </div>
-          <div>
-            
-            <h3 className="font-display text-3xl text-ink-900 mb-3">
-              {service.whatWeDoLabel}
-            </h3>
-            <p className="text-ink-700 text-[17px] leading-relaxed">{service.intro}</p>
-            <h2 className="font-display text-3xl text-ink-900 mt-10 mb-4">
-              {service.whyChooseLabel}
-            </h2>
-            <p className="text-ink-700 text-[17px] leading-relaxed">{service.whyUs}</p>
-          </div>
+      {service.nameSubtitle && (
+        <div>
+          <h3 className="font-display text-4xl text-ink-800 mt-10 ml-30">
+            {service.nameSubtitle}
+          </h3>
         </div>
+      )}
+
+      <section className="py-20 max-w-7xl mx-auto px-6 lg:px-10">
+
+        {hasTwoImages ? (
+          /* ── Two-image layout: images LEFT, paired text RIGHT ── */
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+
+            {/* Image column — LEFT */}
+            <div className="flex flex-col gap-4 max-w-[520px] order-1">
+              <div className="relative rounded-2xl overflow-hidden aspect-[3/2]">
+                <Image
+                  src={service.heroImage}
+                  alt={service.name}
+                  fill
+                  className="object-cover"
+                  sizes="520px"
+                />
+              </div>
+              <div className="relative rounded-2xl overflow-hidden aspect-[3/2]">
+                <Image
+                  src={service.heroImage2!}
+                  alt={service.name}
+                  fill
+                  className="object-cover"
+                  sizes="520px"
+                />
+              </div>
+            </div>
+
+            {/* Text column — RIGHT, each block matches image height */}
+            <div className="flex flex-col gap-4 order-2">
+              <div className="min-h-[347px] flex flex-col justify-star">
+                <h3 className="font-display text-3xl text-ink-900 mb-3">
+                  {service.whatWeDoLabel1 ?? service.whatWeDoLabel}
+                </h3>
+                <p className="text-ink-700 text-[17px] leading-relaxed text-justify">
+                  {service.intro1 ?? service.intro}
+                </p>
+              </div>
+              <div className="min-h-[347px] flex flex-col justify-start">
+                <h2 className="font-display text-3xl text-ink-900 mb-4">
+                  {service.whyChooseLabel1 ?? service.whyChooseLabel}
+                </h2>
+                <p className="text-ink-700 text-[17px] leading-relaxed text-justify">
+                  {service.whyUs1 ?? service.whyUs}
+                </p>
+              </div>
+            </div>
+
+          </div>
+        ) : (
+          /* ── Single-image layout: image LEFT, all text RIGHT ── */
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+
+            {/* Image column — LEFT */}
+            <div className="flex flex-col gap-4 max-w-[520px]">
+              <div className="relative rounded-2xl overflow-hidden aspect-[3/2]">
+                <Image
+                  src={service.heroImage}
+                  alt={service.name}
+                  fill
+                  className="object-cover"
+                  sizes="520px"
+                />
+              </div>
+            </div>
+
+            {/* Text column — RIGHT */}
+            <div>
+              <h3 className="font-display text-3xl text-ink-900 mb-3">
+                {service.whatWeDoLabel}
+              </h3>
+              <p className="text-ink-700 text-[17px] leading-relaxed text-justify">
+                {service.intro}
+              </p>
+              <h2 className="font-display text-3xl text-ink-900 mt-18 mb-4">
+                {service.whyChooseLabel}
+              </h2>
+              <p className="text-ink-700 text-[17px] leading-relaxed text-justify">
+                {service.whyUs}
+              </p>
+            </div>
+
+          </div>
+        )}
+
       </section>
 
       <section className="py-20 bg-paper-dim">

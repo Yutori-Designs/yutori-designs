@@ -248,20 +248,6 @@ export const projects: Project[] = [
     gallery: ["/images/projects/Design of House Around Trees/Design of House Around Trees_1.jpg",],
   },
   {
-    id: "kadri-enclave-flat",
-    title: "Flat Interiors",
-    location: "Kadri Enclave, Mangalore",
-    category: "Flat",
-    cover: "/images/projects/kadri-enclave/kadri-enclave.jpg",
-    gallery: ["/images/projects/kadri-enclave/kadri-enclave-1.jpg",
-      "/images/projects/kadri-enclave/kadri-enclave-2.jpg",
-      "/images/projects/kadri-enclave/kadri-enclave-3.jpg",
-      "/images/projects/kadri-enclave/kadri-enclave-4.jpg",
-      "/images/projects/kadri-enclave/kadri-enclave-5.jpg",
-      "/images/projects/kadri-enclave/kadri-enclave-6.jpg",
-    ],
-  },
-  {
     id: "park-avenue-udupi-flat",
     title: "Interiors for Flat at Park Avenue",
     location: "Ajjarkad, Udupi",
@@ -284,6 +270,21 @@ export const projects: Project[] = [
       
     ],
   },
+  {
+    id: "kadri-enclave-flat",
+    title: "Flat Interiors",
+    location: "Kadri Enclave, Mangalore",
+    category: "Flat",
+    cover: "/images/projects/kadri-enclave/kadri-enclave.jpg",
+    gallery: ["/images/projects/kadri-enclave/kadri-enclave-1.jpg",
+      "/images/projects/kadri-enclave/kadri-enclave-2.jpg",
+      "/images/projects/kadri-enclave/kadri-enclave-3.jpg",
+      "/images/projects/kadri-enclave/kadri-enclave-4.jpg",
+      "/images/projects/kadri-enclave/kadri-enclave-5.jpg",
+      "/images/projects/kadri-enclave/kadri-enclave-6.jpg",
+    ],
+  },
+  
   {
     id: "tc-palya-apartment",
     title: "Apartment Complex",
