@@ -6,13 +6,13 @@ export interface ServiceStep {
 export interface ServiceContent {
   slug: string;
   name: string;
-  nameSubtitle: string;  
+  nameSubtitle: string;
   shortName: string;
   headlineWord: string; // used as "Transforming {headlineWord} in Mangalore"
   whatWeDoLabel: string; // heading above the intro paragraph, e.g. "Commercial interior design"
 
   whyChooseLabel: string;
-  
+
   metaTitle: string;
   heroImage: string;
   heroImage2: string;
@@ -20,7 +20,7 @@ export interface ServiceContent {
   whyUs: string;
   steps: ServiceStep[];
   relatedCategory: string;
-  
+
 }
 
 // Slugs and names match the real site's menu structure:
@@ -41,7 +41,7 @@ export const services: Record<string, ServiceContent> = {
       "At Yutori Designs, residential spaces form the cornerstone of our creative portfolio. We specialize in crafting warm, inviting homes that reflect personal tastes, lifestyles, and everyday functionality. From modern apartments to expansive villas, our team seamlessly blends aesthetics and comfort to create timeless interiors. Our emphasis on spatial harmony, natural materials, and thoughtful details ensures every home we design is a true sanctuary.",
     whyUs:
       "We pair an understanding of how people actually live and work with deep familiarity with the Mangalore and Udupi market — local vendors, local material lead times, and a design language drawn from the region itself rather than a generic template.",
-    
+
     steps: [
       {
         title: "Initial consultation",
@@ -76,7 +76,7 @@ export const services: Record<string, ServiceContent> = {
         ],
       },
     ],
-    relatedCategory: "Office Space", 
+    relatedCategory: "Office Space",
   },
   "space-planning": {
     slug: "space-planning",
@@ -127,7 +127,7 @@ export const services: Record<string, ServiceContent> = {
         ],
       },
     ],
-     relatedCategory: "Villa",
+    relatedCategory: "Villa",
   },
   "turn-key-project-execution": {
     slug: "turn-key-project-execution",
@@ -138,7 +138,7 @@ export const services: Record<string, ServiceContent> = {
     whatWeDoLabel: "Full-Scope Turnkey Project Handling",
     whyChooseLabel: "Why Yutori for turnkey execution",
     metaTitle: "Turnkey Interior Project Execution | Yutori Designs",
-     heroImage: "/images/services/Interior-designs.png",
+    heroImage: "/images/services/Interior-designs.png",
     heroImage2: "/images/services/office-Interior-designs.jpg",
     intro:
       "Yutori Designs offers end-to-end project management services to ensure that every interior design project is executed seamlessly from concept to completion. We meticulously manage each phase of the process—from initial planning and design development to procurement, construction, and final installation. Our experienced team coordinates closely with contractors, vendors, and consultants, ensuring clear communication and smooth collaboration at every step. We prioritize staying on schedule and within budget, without compromising quality or design integrit",
@@ -186,11 +186,13 @@ export const services: Record<string, ServiceContent> = {
     slug: "commercial",
     name: "Commercial Interior Design",
     shortName: "Commercial",
+    nameSubtitle: "",
     headlineWord: "Commercial Spaces",
     whatWeDoLabel: "Commercial interior design",
     whyChooseLabel: "Why Yutori for commercial spaces",
     metaTitle: "Commercial Interior Design in Mangalore & Udupi | Yutori Designs",
     heroImage: "/images/services/commercial-space.jpg",
+    heroImage2: "", 
     intro:
       "Commercial spaces carry a brand's first impression. Our commercial interior work covers offices, retail showrooms, and hospitality spaces — designed to look sharp while genuinely working harder for the business inside, from layout efficiency to material durability under daily foot traffic.",
     whyUs:
@@ -234,11 +236,13 @@ export const services: Record<string, ServiceContent> = {
     slug: "residential",
     name: "Residential Interior Design",
     shortName: "Residential",
+    nameSubtitle: "",
     headlineWord: "Residential Spaces",
     whatWeDoLabel: "Residential interior design",
     whyChooseLabel: "Why Yutori for your home",
     metaTitle: "Residential Interior Design in Mangalore & Udupi | Yutori Designs",
     heroImage: "/images/services/residential-space.jpg",
+    heroImage2: "",
     intro:
       "A home should hold the people living in it, not just look good in photographs. Our residential projects — villas, flats, and individual homes across Mangalore, Udupi, and beyond — are shaped around natural light, local materials, and the daily rituals of the family who'll actually live there.",
     whyUs:
@@ -282,11 +286,13 @@ export const services: Record<string, ServiceContent> = {
     slug: "office-space",
     name: "Office Space Design",
     shortName: "Office Space",
+    nameSubtitle: "",
     headlineWord: "Office Spaces",
     whatWeDoLabel: "Office space design udupi",
     whyChooseLabel: "Why Yutori for office spaces",
     metaTitle: "Office Space Design in Mangalore & Udupi | Yutori Designs",
     heroImage: "/images/services/office-space.jpg",
+    heroImage2: "",
     intro:
       "An office shapes how a team works together every single day. We design workspaces that balance focus and collaboration — smart space planning, premium finishes, and a layout that reflects company culture instead of fighting it.",
     whyUs:
