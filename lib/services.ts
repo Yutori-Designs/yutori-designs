@@ -10,16 +10,14 @@ export interface ServiceContent {
   shortName: string;
   headlineWord: string; // used as "Transforming {headlineWord} in Mangalore"
   whatWeDoLabel: string; // heading above the intro paragraph, e.g. "Commercial interior design"
-  whyChooseLabel: string; // heading above the whyUs paragraph, e.g. "Why Yutori for commercial spaces"
-  whyChooseLabel1: string;
-  whatWeDoLabel1: string; // heading above the whyUs paragraph, e.g. "Why Yutori for commercial spaces"
+
+  whyChooseLabel: string;
+  
   metaTitle: string;
   heroImage: string;
   heroImage2: string;
   intro: string;
   whyUs: string;
-  intro1: string;
-  whyUs1: string;
   steps: ServiceStep[];
   relatedCategory: string;
   
@@ -36,19 +34,14 @@ export const services: Record<string, ServiceContent> = {
     headlineWord: "Interior Spaces",
     whatWeDoLabel: "Crafting Homes with Heart & Harmony",
     whyChooseLabel: "Elegant Designs for Inspiring Workspaces",
-    whatWeDoLabel1: "Crafting Homes with Heart & Harmony",
-    whyChooseLabel1: "Elegant Designs for Inspiring Workspaces",
     metaTitle: "Interior Designers in Mangalore & Udupi | Yutori Designs",
     heroImage: "/images/services/Interior-designs.png",
     heroImage2: "/images/services/office-Interior-designs.jpg",
     intro:
       "At Yutori Designs, residential spaces form the cornerstone of our creative portfolio. We specialize in crafting warm, inviting homes that reflect personal tastes, lifestyles, and everyday functionality. From modern apartments to expansive villas, our team seamlessly blends aesthetics and comfort to create timeless interiors. Our emphasis on spatial harmony, natural materials, and thoughtful details ensures every home we design is a true sanctuary.",
-    intro1:
-      "At Yutori Designs, residential spaces form the cornerstone of our creative portfolio. We specialize in crafting warm, inviting homes that reflect personal tastes, lifestyles, and everyday functionality. From modern apartments to expansive villas, our team seamlessly blends aesthetics and comfort to create timeless interiors. Our emphasis on spatial harmony, natural materials, and thoughtful details ensures every home we design is a true sanctuary.",
     whyUs:
       "We pair an understanding of how people actually live and work with deep familiarity with the Mangalore and Udupi market — local vendors, local material lead times, and a design language drawn from the region itself rather than a generic template.",
-    whyUs1:
-      "We pair an understanding of how people actually live and work with deep familiarity with the Mangalore and Udupi market — local vendors, local material lead times, and a design language drawn from the region itself rather than a generic template.",
+    
     steps: [
       {
         title: "Initial consultation",
@@ -91,14 +84,14 @@ export const services: Record<string, ServiceContent> = {
     nameSubtitle: "Layout Solutions That Maximize Space & Style",
     shortName: "Space Planning",
     headlineWord: "Spaces with Smart Planning",
-    whatWeDoLabel1: "Efficient Use of Space for Elegant Everyday Living",
-    whyChooseLabel1: "Shaping Workspaces That Inspire Innovation",
+    whatWeDoLabel: "Efficient Use of Space for Elegant Everyday Living",
+    whyChooseLabel: "Shaping Workspaces That Inspire Innovation",
     metaTitle: "Space Planning Services in Mangalore & Udupi | Yutori Designs",
     heroImage: "/images/services/Interior-designs.png",
     heroImage2: "/images/services/office-Interior-designs.jpg",
-    intro1:
+    intro:
       "At Yutori Designs, layout optimization for residential spaces is rooted in simplicity, functionality, and harmony. We thoughtfully plan every square foot to ensure seamless movement, natural light flow, and purposeful use of space. Whether it’s a compact apartment or a spacious home, our designs prioritize comfort, aesthetics, and practicality. Guided by minimalism and a deep understanding of how people live, we create layouts that reflect your lifestyle while enhancing efficiency and tranquility. From room zoning to furniture placement, every detail is considered. At Yutori, we believe that a well-optimized home layout is the foundation of peaceful, inspired everyday living.",
-    whyUs1:
+    whyUs:
       "At Yutori Design, we specialize in optimizing corporate office layouts to enhance productivity, collaboration, and employee well-being. Our design strategy focuses on intelligently planning space to support workflow efficiency while reflecting the brand’s identity. From open-plan zones and meeting areas to private cabins and breakout spaces, every element is placed with purpose. We ensure that circulation, lighting, and acoustics are carefully balanced to create a dynamic yet comfortable work environment. Whether designing for startups or large enterprises, Yutori Design delivers customized solutions that adapt to evolving business needs, promoting both innovation and functionality in the workplace.",
     steps: [
       {
