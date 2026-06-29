@@ -36,12 +36,18 @@ export const services: Record<string, ServiceContent> = {
     headlineWord: "Interior Spaces",
     whatWeDoLabel: "Crafting Homes with Heart & Harmony",
     whyChooseLabel: "Elegant Designs for Inspiring Workspaces",
+    whatWeDoLabel1: "Crafting Homes with Heart & Harmony",
+    whyChooseLabel1: "Elegant Designs for Inspiring Workspaces",
     metaTitle: "Interior Designers in Mangalore & Udupi | Yutori Designs",
     heroImage: "/images/services/Interior-designs.png",
     heroImage2: "/images/services/office-Interior-designs.jpg",
     intro:
       "At Yutori Designs, residential spaces form the cornerstone of our creative portfolio. We specialize in crafting warm, inviting homes that reflect personal tastes, lifestyles, and everyday functionality. From modern apartments to expansive villas, our team seamlessly blends aesthetics and comfort to create timeless interiors. Our emphasis on spatial harmony, natural materials, and thoughtful details ensures every home we design is a true sanctuary.",
+    intro1:
+      "At Yutori Designs, residential spaces form the cornerstone of our creative portfolio. We specialize in crafting warm, inviting homes that reflect personal tastes, lifestyles, and everyday functionality. From modern apartments to expansive villas, our team seamlessly blends aesthetics and comfort to create timeless interiors. Our emphasis on spatial harmony, natural materials, and thoughtful details ensures every home we design is a true sanctuary.",
     whyUs:
+      "We pair an understanding of how people actually live and work with deep familiarity with the Mangalore and Udupi market — local vendors, local material lead times, and a design language drawn from the region itself rather than a generic template.",
+    whyUs1:
       "We pair an understanding of how people actually live and work with deep familiarity with the Mangalore and Udupi market — local vendors, local material lead times, and a design language drawn from the region itself rather than a generic template.",
     steps: [
       {

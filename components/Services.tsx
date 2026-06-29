@@ -12,7 +12,7 @@ const services = [
     description:
       "Bespoke interiors for homes, offices, and retail spaces — shaped around how the space will actually be lived in.",
     href: "/service/interior-design",
-    image: "/images/services/Interior-designs.png",
+    image: "/images/services/Interior-designs.jpg",
   },
   {
     tagline: "Yutori Designs: Smart Layouts",
