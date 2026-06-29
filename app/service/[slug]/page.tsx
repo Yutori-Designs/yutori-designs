@@ -90,18 +90,18 @@ export default async function ServicePage({
             <div className="flex flex-col gap-4 order-2">
               <div className="min-h-[347px] flex flex-col justify-star">
                 <h3 className="font-display text-3xl text-ink-900 mb-3">
-                  {service.whatWeDoLabel1 ?? service.whatWeDoLabel}
+                  {service.whatWeDoLabel}
                 </h3>
                 <p className="text-ink-700 text-[17px] leading-relaxed text-justify">
-                  {service.intro1 ?? service.intro}
+                  {service.intro}
                 </p>
               </div>
               <div className="min-h-[347px] flex flex-col justify-start">
                 <h2 className="font-display text-3xl text-ink-900 mb-4">
-                  {service.whyChooseLabel1 ?? service.whyChooseLabel}
+                  {service.whyChooseLabel}
                 </h2>
                 <p className="text-ink-700 text-[17px] leading-relaxed text-justify">
-                  {service.whyUs1 ?? service.whyUs}
+                  {service.whyUs}
                 </p>
               </div>
             </div>
