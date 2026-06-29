@@ -33,7 +33,7 @@ export default async function ServicePage({
   if (!service) notFound();
 
   const related = projects.filter((p) => p.category === service.relatedCategory).slice(0, 3);
-  
+
 
   // Check if this service uses the two-image paired layout
   const hasTwoImages = !!service.heroImage2;
@@ -92,7 +92,7 @@ export default async function ServicePage({
                 <h3 className="font-display text-3xl text-ink-900 mb-3">
                   {service.whatWeDoLabel}
                 </h3>
-                <p className="text-ink-700 text-[17px] leading-relaxed text-justify">
+                <p className="text-ink-700 text-[17px] leading-relaxed text-justify whitespace-pre-line">
                   {service.intro}
                 </p>
               </div>
@@ -151,7 +151,7 @@ export default async function ServicePage({
             Our process
           </span>
           <h2 className="font-display text-4xl mt-3 text-ink-900 text-balance">
-            Yutori&apos;s approach to {service.name.toLowerCase()}
+            Yutori&apos;s approach to {service.nameSubtitle.toLowerCase()}
           </h2>
           <ServiceTimeline steps={service.steps} />
         </div>
