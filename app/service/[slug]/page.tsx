@@ -52,7 +52,7 @@ export default async function ServicePage({
 
       {service.nameSubtitle && (
         <div>
-          <h3 className="font-display text-4xl text-ink-800 mt-10 ml-53">
+          <h3 className="font-display text-4xl text-ink-800 mt-10 ml-40">
             {service.nameSubtitle}
           </h3>
         </div>
