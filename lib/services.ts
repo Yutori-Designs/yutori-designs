@@ -91,7 +91,7 @@ export const services: Record<string, ServiceContent> = {
     whyChooseLabel: "Shaping Workspaces That Inspire Innovation",
     whyChooseLabel1:"",
     metaTitle: "Space Planning Services in Mangalore & Udupi | Yutori Designs",
-    heroImage: "/images/services/Space Planing.jpg",
+    heroImage: "/images/services/Space Planing-new.jpg",
     heroImage2: "/images/services/Space Planing-yutori.jpg",
     intro:
       "At Yutori Designs, layout optimization for residential spaces is rooted in simplicity, functionality, and harmony. We thoughtfully plan every square foot to ensure seamless movement, natural light flow, and purposeful use of space. Whether it’s a compact apartment or a spacious home, our designs prioritize comfort, aesthetics, and practicality. Guided by minimalism and a deep understanding of how people live, we create layouts that reflect your lifestyle while enhancing efficiency and tranquility. From room zoning to furniture placement, every detail is considered. At Yutori, we believe that a well-optimized home layout is the foundation of peaceful, inspired everyday living.",
