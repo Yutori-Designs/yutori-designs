@@ -20,13 +20,19 @@ function PortraitFrame({
   member: TeamMember;
   size: "card" | "modal";
 }) {
-  const initials = member.name.split(" ").map((n) => n[0]).join("");
+  const initials = member.name
+    .split(" ")
+    .map((n) => n[0])
+    .join("");
+
   const isCard = size === "card";
 
   return (
     <div
       className={`relative overflow-hidden bg-ink-800 ${
-        isCard ? "aspect-[6/5] rounded-t-2xl" : "aspect-[6/5] rounded-2xl"
+        isCard
+          ? "aspect-[6/5] rounded-t-2xl w-full"
+          : "w-56 h-64 rounded-2xl mx-auto"
       }`}
     >
       {member.image ? (
@@ -34,17 +40,23 @@ function PortraitFrame({
           src={member.image}
           alt={member.name}
           fill
-          sizes={isCard ? "(max-width: 640px) 100vw, 33vw" : "400px"}
           className="object-cover"
+          sizes={isCard ? "(max-width:640px)100vw,33vw" : "224px"}
         />
       ) : (
         <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-brand-700 via-ink-800 to-ink-900">
-          <span className="font-display text-5xl text-paper/90">{initials}</span>
+          <span className="font-display text-5xl text-paper/90">
+            {initials}
+          </span>
         </div>
       )}
-      <div className="absolute top-0 left-0 w-10 h-10 bg-brand-600" style={{
-        clipPath: "polygon(0 0, 100% 0, 0 100%)",
-      }} />
+
+      <div
+        className="absolute top-0 left-0 w-10 h-10 bg-brand-600"
+        style={{
+          clipPath: "polygon(0 0,100% 0,0 100%)",
+        }}
+      />
     </div>
   );
 }
@@ -76,58 +88,71 @@ function MemberCard({ member, onOpen }: { member: TeamMember; onOpen: () => void
 function MemberModal({ member, onClose }: { member: TeamMember | null; onClose: () => void }) {
   return (
     <AnimatePresence>
-      {member && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
+  {member && (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      onClick={onClose}
+      className="fixed inset-0 z-[100] bg-ink-900/70 backdrop-blur-sm flex items-center justify-center p-5 sm:p-8"
+    >
+      <motion.div
+        initial={{ opacity: 0, y: 24, scale: 0.97 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
+        exit={{ opacity: 0, y: 24, scale: 0.97 }}
+        transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+        onClick={(e) => e.stopPropagation()}
+        className="relative bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-hidden shadow-2xl"
+      >
+        {/* Close Button */}
+        <button
           onClick={onClose}
-          className="fixed inset-0 z-[100] bg-ink-900/70 backdrop-blur-sm flex items-center justify-center p-5 sm:p-8"
+          aria-label="Close"
+          className="absolute top-6 right-6 z-10 w-10 h-10 rounded-full bg-white hover:bg-brand-300 flex items-center justify-center transition-colors shadow-md"
         >
-          <motion.div
-            initial={{ opacity: 0, y: 24, scale: 0.97 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 24, scale: 0.97 }}
-            transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            onClick={(e) => e.stopPropagation()}
-            className="relative bg-white rounded-3xl max-w-3xl w-full max-h-[85vh] overflow-hidden shadow-2xl"
-          >
-            <button
-              onClick={onClose}
-              aria-label="Close"
-              className="absolute top-6 right-6 z-10 w-10 h-10 rounded-full bg-white hover:bg-brand-100 flex items-center justify-center transition-colors shadow-md"
-            >
-              <X size={18} />
-            </button>
+          <X size={18} />
+        </button>
 
-            <div className="max-h-[85vh] overflow-y-auto grid sm:grid-cols-[240px_1fr] gap-0 p-6 sm:p-8">
-              <div className="sm:h-full">
-                <PortraitFrame member={member} size="modal" />
-              </div>
+        <div className="max-h-[90vh] overflow-y-auto p-8">
+          {/* Image */}
+          <div className="flex justify-center">
+            <PortraitFrame member={member} size="modal" />
+          </div>
 
-              <div className="pt-6 sm:pt-2 sm:pl-8">
-                <h3 className="font-display text-3xl text-ink-900">{member.name}</h3>
-                <p className="text-brand-600 text-base mt-1.5">{member.role}</p>
+          {/* Name */}
+          <h3 className="mt-6 text-center font-display text-3xl font-bold text-ink-900">
+            {member.name}
+          </h3>
 
-                {member.joinedDate && (
-                  <p className="flex items-center gap-1.5 text-stone-500 text-xs mt-4">
-                    <Calendar size={13} /> {member.joinedDate}
-                  </p>
-                )}
+          {/* Designation */}
+          <p className="mt-2 text-center text-lg font-medium text-brand-600">
+            {member.role}
+          </p>
 
-                <div className="mt-6 pt-6 border-t border-ink-900/8">
-                  {member.bio.split("\n\n").map((paragraph, i) => (
-                    <p key={i} className="text-ink-700 text-[15px] leading-relaxed mb-4 last:mb-0">
-                      {paragraph}
-                    </p>
-                  ))}
-                </div>
-              </div>
+          {/* Joined Date */}
+          {member.joinedDate && (
+            <div className="mt-4 flex items-center justify-center gap-2 text-sm text-stone-500">
+              <Calendar size={15} />
+              <span>{member.joinedDate}</span>
             </div>
-          </motion.div>
-        </motion.div>
-      )}
-    </AnimatePresence>
+          )}
+
+          {/* Bio */}
+          <div className="mt-8 border-t border-ink-900/10 pt-8">
+            {member.bio.split("\n\n").map((paragraph, i) => (
+              <p
+                key={i}
+                className="mb-5 text-center text-[16px] leading-8 text-ink-700 last:mb-0 text-justify"
+              >
+                {paragraph}
+              </p>
+            ))}
+          </div>
+        </div>
+      </motion.div>
+    </motion.div>
+  )}
+</AnimatePresence>
   );
 }
 
