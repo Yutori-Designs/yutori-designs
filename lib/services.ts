@@ -201,8 +201,8 @@ export const services: Record<string, ServiceContent> = {
     whyChooseLabel: "Why Choose Us for Your Commercial Interior Project in Mangalore?",
     whyChooseLabel1:"",
     metaTitle: "Commercial Interior Design in Mangalore & Udupi | Yutori Designs",
-    heroImage: "/images/services/commercial & office interior design-1.jpg",
-    heroImage2: "/images/services/commercial & office interior design.jpg",
+    heroImage: "/images/services/Commercial interior.jpg",
+    heroImage2: "/images/services/Commercial interior-1.jpg",
     intro:
       "Our commercial interior designers specialize in designing spaces that are both visually striking and strategically designed to enhance functionality and brand identity. From upscale offices and retail showrooms to hospitality venues, our commercial interiors reflect a seamless blend of sophistication, efficiency, and modern aesthetics. Each project is tailored to support our clients’ business goals while offering an inviting and professional environment. With a focus on smart spatial planning and premium finishes, we ensure every detail speaks to quality and innovation. Whether full execution or design-only services, Yutori transforms commercial spaces into experiences that inspire, engage, and elevate your brand presence.",
     whyUs:
@@ -328,8 +328,8 @@ export const services: Record<string, ServiceContent> = {
     whyChooseLabel: "Why Choose Us for Your Commercial Interior Project in Mangalore?",
     whyChooseLabel1:"",
     metaTitle: "Commercial Interior Design in Mangalore & Udupi | Yutori Designs",
-    heroImage: "/images/services/commercial & office interior design.jpg",
-    heroImage2: "/images/services/commercial & office interior design-1.jpg",
+    heroImage: "/images/services/Commercial interior-1.jpg",
+    heroImage2: "/images/services/Commercial interior.jpg",
 
 
     intro:
