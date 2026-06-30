@@ -52,10 +52,12 @@ export default function Testimonials() {
                 className="absolute inset-0 w-full h-full group"
                 aria-label="Play testimonial video"
               >
-                <div
-                  className="absolute inset-0 bg-cover bg-center"
-                  style={{ backgroundImage: "url(/images/testimonials/niveus-poster.jpg)" }}
-                />
+                <div className="relative aspect-[16/9] overflow-hidden rounded-xl justify-center items-center flex">
+                  <div
+                    className="absolute inset-0 bg-center bg-cover"
+                    style={{ backgroundImage: "url('/images/testimonials/niveus-poster.jpg')" }}
+                  />
+                </div>
                 <div className="absolute inset-0 bg-ink-900/40 group-hover:bg-ink-900/30 transition-colors" />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <span className="w-16 h-16 rounded-full bg-brand-600 flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -68,13 +70,19 @@ export default function Testimonials() {
                 </div>
               </button>
             ) : (
-              <iframe
-                className="absolute inset-0 w-full h-full"
-                src="https://www.youtube.com/embed/REPLACE_WITH_VIDEO_ID?autoplay=1"
-                title="Niveus Solutions testimonial"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
+              <div className="relative w-full aspect-video overflow-hidden rounded-xl">
+                <video
+                  className="absolute inset-0 w-full h-full object-cover"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  controls
+                >
+                  <source src="/images/testimonials/NTT_Testimonial.mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
             )}
           </motion.div>
 

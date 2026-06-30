@@ -9,33 +9,44 @@ export const metadata: Metadata = {
 
 const steps = [
   {
-    title: "Enquiry & consultation",
+    title: "Initial Consultation: Understand client needs and vision",
     points: [
-      "A detailed conversation to understand the brief, the site, and the budget",
-      "Preferences captured early — style, materials, colour direction",
+      "Architect to have a detailed discussion with the customer and understand the expectations",
+      "Understand the customer preferences - e.g. type of designs, material, colors etc.",
+      "Get initial details from the customer - e.g. site location, type, area, scope, budget etc.",
     ],
   },
   {
-    title: "Design & sign-off",
+    title: "Design Development: Create design concepts and plans",
     points: [
-      "A high-level concept is created and shared for approval",
-      "Cost estimate prepared once the concept is signed off",
-      "Detailed design continues in parallel with execution planning",
+      "Get the customer sign off on the high level design",
+      "First create a high level design",
+      "Engineering team to estimate the project cost based on the design",
+      "Sales team to communicate the project cost to the customer based on the pricing model and project cost",
+      "Once the customer signs off on the estimate, team to start with the execution",
+      "Parallely, the architects to continue working with the customer on the detailed design",
     ],
   },
   {
-    title: "Execution",
+    title: "Implementation: Manage the project and bring the design to life",
     points: [
-      "Vendors finalised, materials ordered, project plan locked",
-      "Civil and interior work carried out together — tiling, electrical, plumbing, carpentry, decor",
-      "Regular progress updates shared with the client throughout",
+      "Prepare the project plan based on the design and estimates",
+      "Prepare the site for start of work",
+      "Finalize the vendors needed for the work",
+      "Finalize the material required and place orders",
+      "Begin the execution as per the project plan",
+      "Implementation could include both Civil and Interiors work",
+      "Implementation to include various aspects like tiling, painting, electrical & plumbing work, air conditioning, carpentry & furniture, decor items etc.",
+      "Project management of the entire project also to be part of Implementation",
+      "Provide regular updates to the customer on the progress of the project",
     ],
   },
   {
-    title: "Handover",
+    title: "Final Review: Ensure client satisfaction with the completed project",
     points: [
-      "Internal quality review against the original design brief",
-      "Final walkthrough and handover once sign-off is complete",
+      "Once the implementation is completed, the design team to review the work in detail and provide feedback",
+      "Once the design team signs off on the work quality, the customer to be informed to review the work",
+      "Once customer is satisfied with the work completion, the project to be considered as completed",
     ],
   },
 ];
@@ -49,9 +60,8 @@ export default function OperatingModelPage() {
         breadcrumb={[{ label: "Home", href: "/" }, { label: "Our Operating Model" }]}
       />
       <section className="py-20 max-w-5xl mx-auto px-6 lg:px-10">
-        <p className="max-w-2xl text-ink-700 text-[17px] leading-relaxed mb-4">
-          The same four-stage process runs across every project — commercial,
-          industrial, or residential — so clients always know what comes next.
+        <p className="max-w-2xl text-ink-700 font-bold text-ink-700 md:text-4xl   text-4xl text-[17px] leading-relaxed mb-4">
+          How Yutori Designs Operates
         </p>
         <ServiceTimeline steps={steps} />
       </section>

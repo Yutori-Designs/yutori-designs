@@ -26,7 +26,7 @@ export default function ValueCard({ value, index }: { value: Value; index: numbe
         <Icon size={22} className="text-brand-600" />
       </span>
       <h3 className="font-display text-xl text-ink-900 mb-2">{value.title}</h3>
-      <p className="text-ink-700 text-[15px] leading-relaxed">{value.description}</p>
+      <p className="text-ink-700 text-[15px] leading-relaxed text-justify ">{value.description}</p>
     </motion.div>
   );
 }
