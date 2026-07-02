@@ -169,10 +169,16 @@ export default function ContactForm() {
               <span className="text-stone-300">
                 1st Floor, Silver Bell, Kinnimulki, Udupi, Karnataka - 576101
                 <br />
-                <span className="text-stone-600 text-sm">
-                  Vruddhi Enclave, Konchady, Derebail, Mangalore - 575008
-                </span>
               </span>
+
+            </li>
+            <li className="flex gap-3">
+              <MapPin size={19} className="text-brand-300 shrink-0 mt-0.5" />
+              <span className="text-stone-300">
+                Vruddhi Enclave, Konchady, Derebail, Mangalore - 575008
+                <br />
+              </span>
+
             </li>
             <li className="flex gap-3">
               <Mail size={19} className="text-brand-300 shrink-0" />
@@ -187,8 +193,16 @@ export default function ContactForm() {
               </a>
             </li>
           </ul>
-          <div className="mt-8 rounded-xl overflow-hidden h-44 bg-ink-800 flex items-center justify-center text-stone-600 text-sm">
-            Map embed goes here
+          <div className="mt-8 rounded-xl overflow-hidden h-44">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.5753097557258!2d74.73995316955535!3d13.325431399188984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4f156e4a31656923%3A0xcffd01bddca37003!2sYutori%20Designs!5e1!3m2!1sen!2sin!4v1782993859361!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
           </div>
         </div>
       </div>

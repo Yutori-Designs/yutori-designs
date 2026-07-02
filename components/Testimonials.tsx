@@ -132,7 +132,7 @@ export default function Testimonials() {
               <Quote size={16} className="text-brand-500 mb-3" />
               <p className="text-stone-400 text-[13px] leading-relaxed mb-3 text-justify">
                 {/* <p className="text-paper text-sm leading-relaxed  mb-3 te"></p> */}
-                {t.quote};
+                {t.quote}
               </p>
               <p className="text-stone-400 text-[13px] leading-relaxed mb-3 text-justify">
                 {t.paragraph}
@@ -144,11 +144,11 @@ export default function Testimonials() {
                 {t.paragraph2}
               </p>
               <div className="mt-5 pt-4 border-t border-paper/10 flex items-center gap-3">
-                <div className="w-8 h-8 rounded-full bg-brand-600 flex items-center justify-center text-paper text-xs font-display shrink-0">
+                {/* <div className="w-8 h-8 rounded-full bg-brand-600 flex items-center justify-center text-paper text-xs font-display shrink-0">
                   {t.name.split(" ").map((n: string) => n[0]).join("").slice(0, 2)}
-                </div>
+                </div> */}
                 <div>
-                  <p className="font-display text-paper text-sm">{t.name}</p>
+                  <p className="font-display text-6xl text-paper text-sm">{t.name}</p>
                   <p className="text-stone-500 text-xs">{t.role}</p>
                 </div>
               </div>

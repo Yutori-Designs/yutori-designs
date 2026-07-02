@@ -73,6 +73,10 @@ export default function Footer() {
               <span>1st Floor, Silver Bell, Kinnimulki, Udupi, Karnataka - 576101</span>
             </li>
             <li className="flex gap-2.5">
+              <MapPin size={18} className="text-brand-300 shrink-0 mt-0.5" />
+              <span>Yutori Designs, Vruddhi Enclave, Konchady, Derebail, Mangalore - 575008</span>
+            </li>
+            <li className="flex gap-2.5">
               <Mail size={18} className="text-brand-300 shrink-0" />
               <a href="mailto:info@yutoridesigns.in" className="hover:text-brand-300 transition-colors">
                 info@yutoridesigns.in

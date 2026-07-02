@@ -68,7 +68,7 @@ export default function EventModal({
             </div>
 
             <div className="max-w-5xl mx-auto px-6 py-10">
-              <p className="text-mist-300 text-[16px] leading-relaxed max-w-2xl mb-10">
+              <p className="text-mist-300 text-[16px] leading-relaxed max-w-2xl mb-10 text-justify">
                 {event.description}
               </p>
 

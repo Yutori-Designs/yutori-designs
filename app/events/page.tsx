@@ -15,14 +15,13 @@ export default function EventsPage() {
     <main>
       <PageHero
         eyebrow="Moments"
-        title="Milestones from the studio"
+        title="Our Events & Highlights"
         breadcrumb={[{ label: "Home", href: "/" }, { label: "Events" }]}
       />
 
       <section className="py-20 max-w-7xl mx-auto px-6 lg:px-10">
-        <p className="max-w-xl text-ink-700 text-[17px] leading-relaxed mb-14">
-          Tap any cover photo to scroll through the full set of pictures from
-          that day.
+        <p className="max-w-xl text-ink-700 text-[17px] leading-relaxed mb-7">
+      
         </p>
 
         <div className="grid sm:grid-cols-2 gap-6">
