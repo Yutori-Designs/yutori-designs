@@ -88,73 +88,86 @@ function MemberCard({ member, onOpen }: { member: TeamMember; onOpen: () => void
 function MemberModal({ member, onClose }: { member: TeamMember | null; onClose: () => void }) {
   return (
     <AnimatePresence>
-  {member && (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      onClick={onClose}
-      className="fixed inset-0 z-[100] bg-ink-900/70 backdrop-blur-sm flex items-center justify-center p-5 sm:p-8"
-    >
-      <motion.div
-        initial={{ opacity: 0, y: 24, scale: 0.97 }}
-        animate={{ opacity: 1, y: 0, scale: 1 }}
-        exit={{ opacity: 0, y: 24, scale: 0.97 }}
-        transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-        onClick={(e) => e.stopPropagation()}
-        className="relative bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-hidden shadow-2xl"
-      >
-        {/* Close Button */}
-        <button
+      {member && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
           onClick={onClose}
-          aria-label="Close"
-          className="absolute top-6 right-6 z-10 w-10 h-10 rounded-full bg-white hover:bg-brand-300 flex items-center justify-center transition-colors shadow-md"
+          className="fixed inset-0 z-[100] bg-ink-900/70 backdrop-blur-sm flex items-center justify-center p-5 sm:p-8"
         >
-          <X size={18} />
-        </button>
+          <motion.div
+            initial={{ opacity: 0, y: 24, scale: 0.97 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 24, scale: 0.97 }}
+            transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+            onClick={(e) => e.stopPropagation()}
+            className="relative bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-hidden shadow-2xl"
+          >
+            <button
+              onClick={onClose}
+              aria-label="Close"
+              className="absolute top-5 right-5 z-10 w-10 h-10 rounded-full bg-stone-100 hover:bg-brand-100 flex items-center justify-center transition-colors shadow-sm"
+            >
+              <X size={18} />
+            </button>
 
-        <div className="max-h-[90vh] overflow-y-auto p-8">
-          {/* Image */}
-          <div className="flex justify-center">
-            <PortraitFrame member={member} size="modal" />
-          </div>
+            <div className="max-h-[90vh] overflow-y-auto">
+              {/* Top section: photo left, name/role right */}
+              <div className="flex gap-7 p-8 pb-6 items-start">
+                <div className="relative shrink-0 w-44 h-52 rounded-2xl overflow-hidden bg-ink-800">
+                  {member.image ? (
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      fill
+                      sizes="176px"
+                      className="object-cover object-top"
+                    />
+                  ) : (
+                    <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-brand-700 via-ink-800 to-ink-900">
+                      <span className="font-display text-4xl text-paper/90">
+                        {member.name.split(" ").map((n) => n[0]).join("")}
+                      </span>
+                    </div>
+                  )}
+                </div>
 
-          {/* Name */}
-          <h3 className="mt-6 text-center font-display text-3xl font-bold text-ink-900">
-            {member.name}
-          </h3>
+                <div className="flex-1 pt-3">
+                  <h3 className="font-display text-3xl text-ink-900 leading-tight mt-14">
+                    {member.name}
+                  </h3>
+                 <p className="mt-2 text-brand-600 text-[15px] leading-snug ">
+                    {member.role}
+                  </p>
 
-          {/* Designation */}
-          <p className="mt-2 text-center text-lg font-medium text-brand-600">
-            {member.role}
-          </p>
+                  {member.joinedDate && (
+                    <p className="flex items-center gap-1.5 text-stone-400 text-xs mt-3">
+                      <Calendar size={13} /> {member.joinedDate}
+                    </p>
+                  )}
+                </div>
+              </div>
 
-          {/* Joined Date */}
-          {member.joinedDate && (
-            <div className="mt-4 flex items-center justify-center gap-2 text-sm text-stone-500">
-              <Calendar size={15} />
-              <span>{member.joinedDate}</span>
+              {/* Bio text below, full width */}
+              <div className="px-8 pb-8 border-t border-ink-900/8 pt-6">
+                {member.bio.split("\n\n").map((paragraph, i) => (
+                  <p
+                    key={i}
+                    className="text-ink-700 text-[15px] leading-relaxed mb-5 last:mb-0 text-justify"
+                  >
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
             </div>
-          )}
-
-          {/* Bio */}
-          <div className="mt-8 border-t border-ink-900/10 pt-8">
-            {member.bio.split("\n\n").map((paragraph, i) => (
-              <p
-                key={i}
-                className="mb-5 text-center text-[16px] leading-8 text-ink-700 last:mb-0 text-justify"
-              >
-                {paragraph}
-              </p>
-            ))}
-          </div>
-        </div>
-      </motion.div>
-    </motion.div>
-  )}
-</AnimatePresence>
+          </motion.div>
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 }
+
 
 export default function TeamGrid({ team }: { team: TeamMember[] }) {
   const [active, setActive] = useState<TeamMember | null>(null);

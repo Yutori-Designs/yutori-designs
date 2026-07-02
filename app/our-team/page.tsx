@@ -17,7 +17,7 @@ export const team = [
   {
     name: "Sundeep Leo Almeida",
     role: "Engineering Head",
-    image: "/images/team/sundeep.jpg",
+    image: "/images/team/Sundeep-A.jpg",
     bio: "Sundeep Leo Almeida is a seasoned civil engineer and project management consultant with over two decades of experience in the construction and infrastructure sector. He earned his Bachelor's degree in Civil Engineering from M.S. Ramaiah Institute of Technology, Bangalore (2001–2005), followed by a postgraduate specialization from the prestigious NICMAR, Hyderabad.\n\nSundeep began his career with DLF, one of India’s leading real estate developers, where he gained valuable experience over six years managing large-scale urban projects. Driven by a passion for design and rooted community development, he later relocated to Kundapura, Udupi, where he established his independent consulting practice.\n\nOver the past 15 years, Sundeep has made a significant mark in the coastal Karnataka region, successfully executing a wide array of projects including private residences, churches, hotels, and community infrastructure. His work is known for blending functionality with aesthetics, while ensuring efficient project delivery. With a deep understanding of both technical execution and client needs, he continues to contribute meaningfully to the built environment in the region.",
   },
   
