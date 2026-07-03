@@ -33,6 +33,8 @@ export default async function BlogPostPage({
   const currentIndex = blogPosts.findIndex((p) => p.slug === slug);
   const next = blogPosts[(currentIndex + 1) % blogPosts.length];
 
+  const sourceText = post.sourceLabel ? post.sourceLabel : post.source;
+
   return (
     <main>
       <PageHero
@@ -66,13 +68,58 @@ export default async function BlogPostPage({
           />
         </div>
 
-        <div className="flex flex-col gap-6">
-          {post.content.map((paragraph, i) => (
-            <p key={i} className="text-ink-700 text-[17px] leading-[1.8]">
-              {paragraph}
-            </p>
-          ))}
+        <div className="flex flex-col gap-5">
+          {post.content.map((block, i) => {
+            if (block.type === "heading") {
+              return (
+                <h2 key={i} className="font-display text-2xl text-ink-900 mt-4">
+                  {block.text}
+                </h2>
+              );
+            }
+            if (block.type === "bullets") {
+              return (
+                <ul key={i} className="flex flex-col gap-2 pl-2">
+                  {block.items.map((item, j) => (
+                    <li key={j} className="flex gap-2.5 text-ink-700 text-[16px] leading-relaxed">
+                      <span className="text-brand-600 mt-1.5 shrink-0">•</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              );
+            }
+            if (block.type === "image") {
+              return (
+                <div key={i} className="relative w-full rounded-2xl overflow-hidden my-4">
+                  <Image
+                    src={block.src}
+                    alt={block.alt}
+                    width={768}
+                    height={500}
+                    className="w-full h-auto object-contain"
+                    sizes="(max-width: 768px) 100vw, 768px"
+                  />
+                </div>
+              );
+            }
+            return (
+              <p key={i} className="text-ink-700 text-[17px] leading-[1.8] text-justify">
+                {block.text}
+              </p>
+            );
+          })}
         </div>
+
+        {post.source && (
+          <div className="mt-10 pt-6 border-t border-ink-900/10">
+            <p className="text-stone-400 text-xs">
+              Source:{" "}
+
+              <a href={post.source} target="_blank" rel="noopener noreferrer" className="text-brand-600 hover:underline break-all">{sourceText}</a>
+            </p>
+          </div>
+        )}
 
         <div className="mt-16 pt-8 border-t border-ink-900/10 flex flex-col sm:flex-row gap-4 justify-between items-start sm:items-center">
           <Link

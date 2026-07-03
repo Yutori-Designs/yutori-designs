@@ -50,13 +50,13 @@ export default function BlogsPage() {
                     <Clock size={13} /> {post.readTime}
                   </span>
                 </div>
-                <h3 className="font-display text-xl text-ink-900 leading-snug mb-2.5">
+                <h3 className="font-display text-xl text-ink-900 leading-snug mb-2.5 text-justify">
                   {post.title}
                 </h3>
-                <p className="text-ink-700 text-[14px] leading-relaxed flex-1 line-clamp-3">
+                <p className="text-ink-700 text-[14px] leading-relaxed flex-1 line-clamp-3 text-justify">
                   {post.excerpt}
                 </p>
-                <span className="mt-5 inline-flex items-center gap-1.5 text-brand-600 font-medium text-sm group-hover:gap-2.5 transition-[gap]">
+                <span className="mt-5 inline-flex items-center gap-1.5 text-brand-600 font-medium text-sm group-hover:gap-2.5 transition-[gap] text-justify">
                   Read more
                   <ArrowRight size={15} className="group-hover:translate-x-1 transition-transform" />
                 </span>
