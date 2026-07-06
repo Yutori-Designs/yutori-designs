@@ -1,7 +1,9 @@
 export type ContentBlock =
   | { type: "paragraph"; text: string }
   | { type: "heading"; text: string }
+  | { type: "subheading"; text: string }
   | { type: "bullets"; items: string[] }
+  | { type: "detailbullets"; items: { label: string; text: string }[] }  // ← add this
   | { type: "image"; src: string; alt: string };
 
 export interface BlogPost {
@@ -229,7 +231,7 @@ export const blogPosts: BlogPost[] = [
     slug: "top-interior-designers-mangalore-services",
     title: "7 Services Offered by Top Interior Designers in Mangalore [Infographic]",
     excerpt:
-      "It's one of the most-used phrases in interior design — and one of the most loosely defined. Here's what we mean by it, in practice.",
+      "Interior design plays a significant role in shaping how spaces function and feel. Whether it is a home, office, retail outlet, or hospitality space, thoughtful design enhances usability, aesthetics, and overall experience. Professional designers bring expertise in planning, materials, and execution to create spaces that align with client needs and preferences.",
     date: "November 2025",
     readTime: "3 min read",
     category: "Interior Design Services",
@@ -262,7 +264,7 @@ export const blogPosts: BlogPost[] = [
     slug: "how-commercial-interior-designers-work",
     title: "How a Commercial Interior Designer Thinks About Your Space that needs to be designed",
     excerpt:
-      "It's one of the most-used phrases in interior design — and one of the most loosely defined. Here's what we mean by it, in practice.",
+      "Most people assume that designers begin with addressing the colours or furniture. Or a mood board from a design site. That is not the process. If your designer starts here, pause before going further. The first thing a good designer looks at is how people move. Not how the space looks — how it functions when full of people trying to work, meet, or serve customers. Every corridor, every door placement, every desk cluster has a logic behind it. Or it should. A commercial interior designer thinks about this before touching a single swatch.",
     date: "November 2025",
     readTime: "3 min read",
     category: "Design Process",
@@ -286,7 +288,7 @@ export const blogPosts: BlogPost[] = [
       },
 
 
-       {
+      {
         type: "heading",
         text: "What a bad outcome actually looks like",
       },
@@ -326,4 +328,592 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+
+
+  ///5 blog
+  {
+    slug: "best-home-interior-designers-in-mangalore",
+    title: "How the Best Home Interior Designers in Mangalore Create Personalised Homes",
+    excerpt:
+      "Every home reflects the people who live in it. How it flows and how it feels on any morning come down to choices made early in the design process. Homeowners today are moving past generic interiors that look polished but never feel personal. The best home interior designers in Mangalore begin every project with that understanding firmly in place.",
+    date: "November 2025",
+    readTime: "3 min read",
+    category: "Interior Design Services",
+    cover: "/images/blog/best-home-interior-designers.jpg",
+    content: [
+      {
+        type: "paragraph",
+        text: "Every home reflects the people who live in it. How it flows and how it feels on any morning come down to choices made early in the design process. Homeowners today are moving past generic interiors that look polished but never feel personal. The best home interior designers in Mangalore begin every project with that understanding firmly in place.",
+      },
+      {
+        type: "paragraph",
+        text: "The shift toward personalised interiors has changed what homeowners expect from a design consultation. A skilled designer does not arrive with a preset style but with questions. What routines define the day? What does comfort mean to this family? The best home interior designers in Mangalore treat each home as an original brief, shaped by the life lived inside it.",
+      },
+
+      {
+        type: "heading",
+        text: "Listening Before Drawing a Single Line",
+      },
+      {
+        type: "detailbullets",
+        items: [
+          {
+            label: "Lifestyle Questions That Shape Every Layout Decision",
+            text: " Before a floor plan is touched, a designer worth working with spends time asking about movement patterns, storage habits, and how natural light behaves across the home at different hours. This stage is not a formality. It is where the real design work begins, turning observations about daily life into a structured brief that drives every room configuration that follows.",
+          },
+          {
+            label: "Floor Plans Cannot Capture How a Family Lives",
+            text: " A floor plan records dimensions but not habits. Where does the family gather in the evenings? Does cooking happen with company or alone? These questions determine where walls go, where storage sits, and how much space each zone needs to support daily life. Getting this right is the foundation of ergonomic design in any residential project.",
+          }
+        ],
+      },
+
+      {
+        type: "heading",
+        text: "Colour, Material, and the Language of Personal Identity",
+      },
+      {
+        type: "detailbullets",
+
+        items: [
+          {
+            label: "Why the Emotional Weight of Colour Matters More Than Trends",
+            text: " A room at seven in the morning feels different from how it registers at nine in the evening, and this gap is not accidental. Colour psychology shapes how each space feels at different points in the day. Warm tones encourage ease in social areas, and cooler palettes support rest in sleeping zones. Skilled designers calibrate these relationships with intention.",
+          },
+          {
+            label: "Materials That Carry Personality Beyond Their Surface",
+            text: " Teak wood carries warmth. Matte concrete suggests stillness. Handwoven cotton conveys craft. Materials are not neutral. They register emotionally and age in ways that shape how a space is experienced over years. Personalised design means selecting materials that resonate with the homeowner’s character, not simply what looked impressive in a showroom before a project deadline arrived.",
+          }
+        ],
+      },
+
+      {
+        type: "heading",
+        text: "The Details That Define a Personalised Home",
+      },
+      {
+        type: "detailbullets",
+        items: [
+          {
+            label: "Going Deeper Than Furniture and Paint Colours",
+            text: "Most people think personalisation means picking a sofa colour and choosing between warm and cool lighting. In reality, it runs through every layer of the home, from how the front door opens to where the medicine cabinet sits. These decisions are not cosmetic. They are structural, and their effects are felt every day over the life of the home.",
+          },
+          {
+            label: "Areas Where Personalisation Leaves the Biggest Mark",
+            text: "",
+          },
+        ],
+      },
+
+      {
+        type: "detailbullets",
+        items: [
+          {
+            label: "Layout configuration:",
+            text: " Rooms are arranged around actual movement patterns and daily family habits to ensure every area serves a clear purpose.",
+          },
+          {
+
+            label: "Material choices",
+            text: "Textures and finishes are selected based on maintenance preferences, climate conditions, and personal character.",
+
+          },
+          {
+            label: "Lighting plan",
+            text: "Both natural and artificial light are mapped across different times of day and different activities.",
+          },
+          {
+            label: "Storage design",
+            text: "Built-in systems are planned around how a family actually stores and retrieves things day to day.",
+          },
+          {
+            label: "Furniture scale:",
+            text: " Proportions are chosen to keep rooms feeling open and functional without appearing sparse.",
+          },
+
+        ],
+      },
+
+
+      {
+        type: "heading",
+        text: "When Spaces Work Without You Noticing",
+      },
+      {
+        type: "bullets",
+        items: [
+          "The Hidden Cost of Interiors That Do Not Quite Work: Poorly planned interiors reveal their flaws in daily accumulation, not always dramatically. A kitchen bench at the wrong height. A bedroom without enough acoustic separation from a busy hallway. A storage wall that looks right but holds nothing correctly. These build into a kind of residential frustration that only a proper redesign can fully address.",
+          "Why Personalised Homes Improve With Time: A home designed around the life inside it improves with use rather than ageing against it. Layouts planned around genuine movement and storage built around real habits hold up well over the years. A new work routine or a growing family fits naturally into a space that was designed for a person, not a property brochure.",
+
+        ],
+      },
+
+      {
+        type: "heading",
+        text: "When a Home Feels Like It Was Made for You",
+      },
+      {
+        type: "paragraph",
+        text: "Personalised design starts with listening before the drawing process commences. When a designer understands the life to be lived in a space, every layout, material, and lighting decision follows from that knowledge. A home built around the people inside it, not a trend catalogue, is one that pays for itself over time. Reach out to begin a design process built around your lifestyle.",
+      },
+
+    ],
+  },
+
+  ///4 blog
+  {
+    slug: "mangalore-architects",
+    title: "Mangalore Architects: How Yutori is Redefining Architecture & Interior Design",
+    excerpt:
+      "When people look for Mangalore architects, they are often seeking a firm that brings together creativity, technical precision, durability, and an understanding of Mangalore’s unique coastal identity. Architecture in this region is shaped not just by design trends but by climate, culture, material behaviour, and the lifestyle of the people who inhabit these spaces.",
+    date: "November 2025",
+    readTime: "3 min read",
+    category: "Architecture",
+    cover: "/images/blog/yutori-redefining-architecture-interiors-mangalore.png",
+    content: [
+      {
+        type: "paragraph",
+        text: "When people look for Mangalore architects, they are often seeking a firm that brings together creativity, technical precision, durability, and an understanding of Mangalore’s unique coastal identity. Architecture in this region is shaped not just by design trends but by climate, culture, material behaviour, and the lifestyle of the people who inhabit these spaces.",
+      },
+
+      {
+        type: "paragraph",
+        text: "Yutori Designs, a full-fledged architecture and interior design firm based in Coastal Karnataka, has emerged as one of the most distinctive architectural voices in the region. With an approach rooted in clarity, craft, minimalism, and context-driven design, Yutori Designs works end-to-end — from concept to completion — crafting environments that feel purposeful, serene, and deeply connected to the land they stand on",
+      },
+
+      {
+        type: "paragraph",
+        text: "This article explores why Mangalore requires a unique architectural approach, how Yutori Designs has become one of the leading architects in the city, and what sets our design philosophy apart.",
+      },
+
+      {
+        type: "heading",
+        text: "Why Mangalore Requires Architecture That Is Contextually Intelligent",
+      },
+      {
+        type: "paragraph",
+        text: "Designing in Mangalore is unlike designing in inland cities. The coastal environment directly shapes how architecture must perform and age over time.",
+      },
+
+      {
+        type: "heading",
+        text: "1. Coastal Climate Challenges",
+      },
+
+      {
+        type: "paragraph",
+        text: "Mangalore’s climate demands architectural solutions that are both resilient and functional:",
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "High humidity levels  ",
+          "Months of intense monsoons  ",
+          "Salt-laden breeze affecting finishes ",
+          "Dealing with light:Overhangs and louvred openings do the work here. Glare comes down, brightness stays.",
+          "High UV exposure.",
+        ],
+      },
+
+      {
+        type: "paragraph",
+        text: "Our leading Mangalore architects focus on structures that:",
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "Breathe naturally     ",
+          "Use moisture-resistant materials",
+          "Integrate slope roofs where needed   ",
+          "Ensure long-term durability in coastal air",
+        ],
+      },
+
+      {
+        type: "paragraph",
+        text: "Yutori Designs architectural team deeply studies climate behaviour before drawing the first line of any project.",
+      },
+
+      {
+        type: "heading",
+        text: "Yutori Designs Architectural Philosophy: Thoughtful, Contextual & Human- entred",
+      },
+
+      {
+        type: "paragraph",
+        text: "As an architecture and interior design firm, Yutori Designs offers a unified vision. This means the structure, interior, material palette, and spatial flow all come from a single design mind, creating a seamless experience for clients.",
+      },
+
+
+
+      {
+        type: "heading",
+        text: "1. Architecture Rooted in Minimalism & Clarity",
+      },
+
+      {
+        type: "paragraph",
+        text: "Yutori Designs believes that buildings should feel calm yet expressive. Our design language blends:",
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "Clean geometry    ",
+          "Natural materials   ",
+          "Organic forms       ",
+          "Intuitive circulation  ",
+          "Harmonious proportions ",
+          "A quiet but powerful aesthetic presence",
+        ],
+      },
+
+      {
+        type: "paragraph",
+        text: "This minimalism isn’t emptiness — it’s intentionality. Every wall, void, line, and opening carries purpose.",
+      },
+
+
+
+      {
+        type: "heading",
+        text: "2.Integration of Architecture + Interiors from Day One",
+      },
+
+      {
+        type: "paragraph",
+        text: "Unlike many firms where architecture and interiors are separate services, Yutori Designs treats them as one continuum.",
+      },
+      {
+        type: "paragraph",
+        text: "This results in:",
+      },
+      {
+        type: "bullets",
+        items: [
+          "Better space planning  ",
+          "Efficient structural decisions  ",
+          "Maximum use of natural light    ",
+          "Interiors that feel “born” from the building, not added later ",
+        ],
+      },
+
+      {
+        type: "paragraph",
+        text: "Clients often mention how the finished spaces feel cohesive and naturally flowing — a result of unified design thinking.",
+      },
+
+
+      {
+        type: "heading",
+        text: "3. Design for Mangalore’s Climate",
+      },
+
+      {
+        type: "paragraph",
+        text: "Yutori Designs architects incorporate:",
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "Ventilation strategies  ",
+          "Climate-adaptive façades   ",
+          "Overhangs and shading   ",
+          "Easy-maintenance materials  ",
+          "Waterproofing & protection layers engineered for coastal rain",
+        ],
+      },
+
+      {
+        type: "paragraph",
+        text: "This ensures that buildings remain beautiful and functional for decades.",
+      },
+
+
+      {
+        type: "heading",
+        text: "Residential Architecture: Homes That Hold Emotion & Function",
+      },
+
+      {
+        type: "paragraph",
+        text: "Mangalore is witnessing a shift — more individual homes, villas, modern farmhouses, and premium apartments. Yutori Designs approaches residential architecture with the belief that a home should feel like an extension of the people living within it.",
+      },
+
+
+      {
+        type: "heading",
+        text: "1. Personalized Architectural Planning",
+      },
+
+      {
+        type: "paragraph",
+        text: "Every home begins with:",
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "Understanding the family’s rhythm",
+          "Mapping emotional zones",
+          "Studying sunlight and wind directions",
+          "Space usage patterns",
+          "Privacy & community balance",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "This translates into layouts that feel effortless and intuitive in daily life.",
+      },
+
+
+      {
+        type: "heading",
+        text: "2. Material Choices That Suit Coastal Living",
+      },
+
+      {
+        type: "paragraph",
+        text: "Yutori Designs carefully selects:",
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "Coastal-resilient woods",
+          "Breathable walls",
+          "Natural stone flooring",
+          "High-quality anti-rust metals",
+          "Long-lasting finishes",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Homes age gracefully rather than deteriorating in the salty air.",
+      },
+
+      {
+        type: "heading",
+        text: "3. Beautiful, Functional Ventilation & Light",
+      },
+
+      {
+        type: "paragraph",
+        text: "Rather than relying heavily on artificial cooling, Yutori Designs architects design spaces that:",
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "Use strategic openings",
+          "Create cross-breezes",
+          "Filter sunlight softly",
+          "Reduce heat gain",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "This makes everyday living healthier and more comfortable.",
+      },
+
+      {
+        type: "heading",
+        text: "Commercial Architecture: Branding Through Built Space",
+      },
+
+      {
+        type: "paragraph",
+        text: "For offices, retail stores, cafés, studios, and boutique hospitality projects, Yutori brings a strong conceptual voice. Customers entering a commercial space should instantly sense the brand’s personality — and architecture plays a major role in that.",
+      },
+      {
+        type: "heading",
+        text: "1. Architecture as Identity",
+      },
+
+      {
+        type: "paragraph",
+        text: "Yutori Designs commercial projects stand out because:",
+      },
+      {
+        type: "bullets",
+        items: [
+          "Structures reflect the brand story",
+          "Spatial experience is designed deliberately",
+          "Visual language matches brand values",
+          "Interiors extend the architectural expression",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "This cohesiveness creates memorable spaces that visitors remember.",
+      },
+
+      {
+        type: "heading",
+        text: "2. Functional Planning for High-Performance Spaces",
+      },
+
+      {
+        type: "paragraph",
+        text: "Commercial layouts are optimized for:",
+      },
+      {
+        type: "bullets",
+        items: [
+          "Workflow",
+          "Customer movement",
+          "Operational efficiency",
+          "Lighting balance",
+          "Ergonomic comfort",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Whether it’s a boutique, café, learning centre, or corporate office, the architecture supports seamless functioning.",
+      },
+
+      {
+        type: "heading",
+        text: "Why Yutori Designs Stands Out Among Mangalore Architects",
+      },
+
+    
+      {
+        type: "heading",
+        text: "1. Architecture + Interiors Under One Roof",
+      },
+
+      {
+        type: "paragraph",
+        text: "Most firms specialise in one domain. Yutori Designs manages both with equal mastery, creating cohesive projects from idea to execution.",
+      },
+
+      {
+        type: "heading",
+        text: "2. Deep Cultural Sensitivity",
+      },
+
+       {
+        type: "paragraph",
+        text: "",
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "Structures reflect the brand story",
+          "Spatial experience is designed deliberately",
+          "Visual language matches brand values",
+          "Interiors extend the architectural expression",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Yutori Designs blends tradition and modernity with nuance, never forcing an aesthetic for the sake of trend.",
+      },
+
+      {
+        type: "heading",
+        text: "3. Minimalistic Aesthetic with Coastal Influence",
+      },
+
+      {
+        type: "paragraph",
+        text: "Yutori Designs signature style is:",
+      },
+      {
+        type: "bullets",
+        items: [
+          "Calm",
+          "Clean",
+          "Natural",
+          "Timeless",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "This is rare in a market often dominated by overly ornamental designs.",
+      },
+
+
+      {
+        type: "heading",
+        text: "4. Strong Technical & Structural Knowledge",
+      },
+
+      {
+        type: "paragraph",
+        text: "Yutori Designs architects focus on:",
+      },
+      {
+        type: "bullets",
+        items: [
+          "Material compatibility",
+          "Structural efficiency",
+          "Climate resilience",
+          "Long-term performance",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "This technical grounding ensures that the visual beauty is supported by engineering strength.",
+      },
+      
+
+       {
+        type: "heading",
+        text: "5. Transparent, Client-Centric Process",
+      },
+
+      {
+        type: "paragraph",
+        text: "Clients appreciate:",
+      },
+      {
+        type: "bullets",
+        items: [
+          "Honest discussions ",
+          "Clarity around budgets ",
+          "Realistic timelines   ",
+          "Detailed architectural drawings",
+          "Regular updates   ",
+          "Seamless communication",
+        ],
+      },
+     
+
+        {
+        type: "heading",
+        text: "Searching for Mangalore Architects? Yutori Designs Offers End-to-End Design Expertise",
+      },
+
+      {
+        type: "paragraph",
+        text: "Whether you’re building a family home, a coastal villa, a commercial space, or renovating an existing structure, Yutori Designs brings:",
+      },
+      {
+        type: "bullets",
+        items: [
+          "Architectural vision  ",
+          "Interior design mastery    ",
+          "Material intelligence      ",
+          "Climate-appropriate solutions   ",
+          "Minimalistic elegance  ",
+          "Deep cultural understanding   ",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "With each project, Yutori Designs demonstrates why it stands among the most forward-thinking architecture firms and interior designers in Mangalore.",
+      },
+      
+    ],
+    
+  },
+
 ];
+
+

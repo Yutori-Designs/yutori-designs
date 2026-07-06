@@ -89,6 +89,25 @@ export default async function BlogPostPage({
                 </ul>
               );
             }
+            if (block.type === "detailbullets") {
+              return (
+                <ul key={i} className="flex flex-col gap-5 pl-2">
+                  {block.items.map((item, j) => (
+                    <li key={j} className="flex gap-2.5">
+                      <span className="text-brand-600 mt-1.5 shrink-0">•</span>
+                      <div>
+                        <span className="font-semibold text-ink-900 text-[16px]">
+                          {item.label}:{" "}
+                        </span>
+                        <span className="text-ink-700 text-[16px] leading-relaxed">
+                          {item.text}
+                        </span>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              );
+            }
             if (block.type === "image") {
               return (
                 <div key={i} className="relative w-full rounded-2xl overflow-hidden my-4">
