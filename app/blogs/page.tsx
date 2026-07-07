@@ -16,7 +16,7 @@ export default function BlogsPage() {
     <main>
       <PageHero
         eyebrow="Journal"
-        title="Notes from the studio"
+        title="The Yutori Journal"
         breadcrumb={[{ label: "Home", href: "/" }, { label: "Blogs" }]}
       />
 

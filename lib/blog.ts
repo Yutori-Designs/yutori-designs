@@ -1,11 +1,20 @@
+import { head } from "framer-motion/client";
+
 export type ContentBlock =
   | { type: "paragraph"; text: string }
   | { type: "heading"; text: string }
   | { type: "subheading"; text: string }
   | { type: "bullets"; items: string[] }
-  | { type: "detailbullets"; items: { label: string; text: string }[] }  // ← add this
-  | { type: "image"; src: string; alt: string };
-
+  | { type: "detailbullets"; items: { label: string; text: string }[] }
+  | { type: "image"; src: string; alt: string }
+  | {
+    type: "richparagraph";
+    parts: (
+      | { kind: "text"; content: string }
+      | { kind: "bold"; content: string }
+      | { kind: "link"; content: string; href: string }
+    )[];
+  };
 export interface BlogPost {
   slug: string;
   title: string;
@@ -780,7 +789,7 @@ export const blogPosts: BlogPost[] = [
         text: "Why Yutori Designs Stands Out Among Mangalore Architects",
       },
 
-    
+
       {
         type: "heading",
         text: "1. Architecture + Interiors Under One Roof",
@@ -796,7 +805,7 @@ export const blogPosts: BlogPost[] = [
         text: "2. Deep Cultural Sensitivity",
       },
 
-       {
+      {
         type: "paragraph",
         text: "",
       },
@@ -861,9 +870,9 @@ export const blogPosts: BlogPost[] = [
         type: "paragraph",
         text: "This technical grounding ensures that the visual beauty is supported by engineering strength.",
       },
-      
 
-       {
+
+      {
         type: "heading",
         text: "5. Transparent, Client-Centric Process",
       },
@@ -883,9 +892,9 @@ export const blogPosts: BlogPost[] = [
           "Seamless communication",
         ],
       },
-     
 
-        {
+
+      {
         type: "heading",
         text: "Searching for Mangalore Architects? Yutori Designs Offers End-to-End Design Expertise",
       },
@@ -909,9 +918,1210 @@ export const blogPosts: BlogPost[] = [
         type: "paragraph",
         text: "With each project, Yutori Designs demonstrates why it stands among the most forward-thinking architecture firms and interior designers in Mangalore.",
       },
-      
+
     ],
-    
+
+  },
+
+
+  // 7- blog 
+  {
+    slug: "interior-designers-mangalore",
+    title: "Top Mangalore Interior Designers: Yutori Designs For Coastal Spaces",
+    excerpt:
+      "Get The Best Interior Designers in Mangalore For your Project: Search for the best Interior Designer in Mangalore often leads homeowners, architects, and business owners to a long list of firms promising beautiful spaces. But designing in a coastal city requires far more than surface-level aesthetics. The region’s humidity, monsoons, cultural legacy, and evolving urban lifestyle demand a distinct design approach — one that brings together climate intelligence, material sensitivity, and a deep understanding of how people live.",
+    date: "January 2026",
+    readTime: "5 min read",
+    category: "Interior Design Services",
+    cover: "/images/blog/Interior-Designers-in-Mangalore_-Yutori-Transforming-Coastal-Spaces.jpg",
+    content: [
+
+      {
+        type: "heading",
+        text: "Get The Best Interior Designers in Mangalore For your Project",
+      },
+
+      {
+        type: "paragraph",
+        text: "Search for the best Interior Designer in Mangalore often leads homeowners, architects, and business owners to a long list of firms promising beautiful spaces. But designing in a coastal city requires far more than surface-level aesthetics. The region’s humidity, monsoons, cultural legacy, and evolving urban lifestyle demand a distinct design approach — one that brings together climate intelligence, material sensitivity, and a deep understanding of how people live.",
+      },
+      {
+        type: "paragraph",
+        text: "This is where Yutori Designs, an interior design studio based in Coastal Karnataka, has carved a unique niche. With a philosophy rooted in minimalism, Japanese-inspired clarity, and a profound respect for natural materials, Yutori Designs stands out among interior designers in Mangalore for its thoughtful, serene, and human-centred creations.",
+      },
+      {
+        type: "paragraph",
+        text: "Let’s find out what makes Mangalore’s design landscape special, how the right interior designer can elevate your  residential or commercial space, and how Yutori Designs has redefined the design conversation in Coastal Karnataka.",
+      },
+      {
+        type: "heading",
+        text: "Why Mangalore Demands a Unique Interior Design Approach",
+      },
+      {
+        type: "paragraph",
+        text: "Mangalore is not like the metro cities where trends often drive design choices. Here, design is shaped organically — by climate, tradition, sensory experience, and the rhythm of coastal life.",
+      },
+
+      {
+        type: "heading",
+        text: "1. Climate Sensitivity",
+      },
+
+      {
+        type: "paragraph",
+        text: "Weather plays a silent but powerful role in shaping interiors:",
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "Constant humidity ",
+          "Monsoon-heavy months ",
+          "Constant coastal winds",
+          "Salt-laden air affecting metals and finishes",
+        ],
+      },
+
+      {
+        type: "paragraph",
+        text: "This means materials must be chosen with care. The best interior designer in Mangalore focus on:",
+      },
+      {
+        type: "bullets",
+        items: [
+          "Wood and coatings that withstand saline atmosphere",
+          "Moisture-resistant finishes",
+          "Breathable wall and textures",
+          "Anti-rust fittings and hardware",
+        ],
+      },
+
+      {
+        type: "paragraph",
+        text: "Yutori Designs excels in this climate-conscious design approach, making their spaces long-lasting and naturally comfortable.",
+      },
+
+
+
+      {
+        type: "heading",
+        text: "2. Cultural & Architectural Roots",
+      },
+
+      {
+        type: "paragraph",
+        text: "From traditional Mangalorean houses to temple architecture and Portuguese influences, the region has a layered cultural aesthetic. Interior designers must understand how to:",
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "Integrate heritage elements subtly",
+          "Maintain functionality while respecting tradition",
+
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Yutori Designs philosophy harmonises this balance — keeping spaces modern yet rooted.",
+      },
+
+
+      {
+        type: "heading",
+        text: "3. A Growing Urban Lifestyle",
+      },
+
+      {
+        type: "paragraph",
+        text: "With rapid urban development, new apartments, villas, cafés, boutiques, wellness studios, and offices are shaping the city. People now look for:",
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "Minimal layouts",
+          "Calm colour palettes",
+          "Flexible furniture",
+          "Smart storage solutions",
+          "A blend of beauty and practicality",
+
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Interior designers like Yutori Designs respond to these changing demands with designs that elevate everyday life.",
+      },
+
+      {
+        type: "heading",
+        text: "What Makes Yutori Designs Stand Out Among Interior Designers in Mangalore",
+      },
+      {
+        type: "paragraph",
+        text: "Yutori Designs is more than a design studio — it’s a philosophy. The name itself, “Yutori,” means spaciousness, ease, and presence. This essence is reflected in every detail they create.",
+      },
+      {
+        type: "heading",
+        text: "1. A Live Portfolio Studio Experience",
+      },
+
+      {
+        type: "paragraph",
+        text: "Unlike traditional studios that rely heavily on catalogs and sample boards, Yutori Designs office space is designed as a live portfolio. Clients can:",
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "Feel materials ",
+          "Experience lighting ",
+          "Observe spatial flow ",
+          "Understand textures ",
+          "See the harmony of design elements",
+
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "This experiential environment helps clients visualize their own space more clearly.",
+      },
+
+      {
+        type: "heading",
+        text: "2. Minimalism Meets Coastal Warmth",
+      },
+
+      {
+        type: "paragraph",
+        text: "Yutori Designs design language stands apart in the Mangalore market. While many interior designers focus on elaborate patterns or heavy décor, Yutori Designs embraces:",
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "Clean lines",
+          "Natural materials",
+          "Subtle textures",
+          "Soft lighting",
+          "Calm, earthy colours",
+
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "The result? Spaces that feel restful, intentional, and timeless.",
+      },
+
+      {
+        type: "heading",
+        text: "2. Minimalism Meets Coastal Warmth",
+      },
+
+      {
+        type: "paragraph",
+        text: "Yutori Designs design language stands apart in the Mangalore market. While many interior designers focus on elaborate patterns or heavy décor, Yutori Designs embraces:",
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "Clean lines",
+          "Natural materials",
+          "Subtle textures",
+          "Soft lighting",
+          "Calm, earthy colours",
+
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "The result? Spaces that feel restful, intentional, and timeless.",
+      },
+
+
+      {
+        type: "heading",
+        text: "3. Human-Centred Spatial Planning",
+      },
+
+      {
+        type: "paragraph",
+        text: "Every Yutori Designs project begins with deep listening:",
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "How do you live?",
+          "What do you value?",
+          "What emotions must this space evoke?",
+          "How do you move through your home or office?",
+
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "The interactions influence:",
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "Room zoning",
+          "Furniture placement",
+          "Storage design",
+          "Lighting mood",
+          "Material selection",
+
+        ],
+      },
+      {
+
+        type: "paragraph",
+        text: "It’s this emotional intelligence that puts Yutori Designs among the most trusted interior designers in Mangalore.",
+      },
+
+      {
+        type: "heading",
+        text: "How Yutori Designs Approaches Residential Interior Design in Mangalore",
+      },
+      {
+        type: "paragraph",
+        text: "Mangalorean homes come in many forms — from spacious independent houses to compact apartments. Yutori Designs adapts to each with clarity and craft.",
+      },
+
+      {
+        type: "heading",
+        text: "1. Tailored Layouts for Real Life",
+      },
+
+      {
+        type: "paragraph",
+        text: "Not every house needs showpiece décor. Yutori Designs prioritizes:",
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "Practical movement",
+          "Comfort",
+          "Breathing spaces",
+          "Their layouts encourage ease and connection, whether in a family home or a bachelor pad.",
+
+        ],
+      },
+
+      {
+        type: "heading",
+        text: "2. Materials That Last in Coastal Weather",
+      },
+
+      {
+        type: "paragraph",
+        text: "The studio carefully chooses:",
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "Marine-grade plywood",
+          "Solid wood that ages beautifully",
+          "Ceramic and clay stone",
+          "Rust-free metals",
+          "Weather-resistant fabrics",
+
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "This ensures interiors remain beautiful even after years of coastal climate exposure.",
+      },
+
+
+      {
+        type: "heading",
+        text: "3. Soft, Thoughtful Lighting",
+      },
+
+      {
+        type: "paragraph",
+        text: "Lighting can transform mood instantly. Yutori Designs avoids harsh overhead lights and instead uses:",
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "Layered lighting",
+          "Warm tones",
+          "Diffused glows",
+          "Task lighting where needed",
+
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "This enhances the architecture and the emotional feel of the space.",
+      },
+
+      {
+        type: "heading",
+        text: "4. Storage That Blends into the Home",
+      },
+
+      {
+        type: "paragraph",
+        text: "The storage solutions by Yutori Designs are:",
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "Seamless",
+          "Space-efficient",
+          "Concealed yet accessible",
+          "Aesthetically integrated",
+
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Perfect for apartments where every inch matters.",
+      },
+
+
+      {
+        type: "heading",
+        text: "Commercial Interior Design by Yutori",
+      },
+
+      {
+        type: "paragraph",
+        text: "Mangalore’s commercial landscape is changing rapidly. Cafés, boutiques, offices, co-working spaces, and wellness centres are looking for interiors that:",
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "Reflect their brand identity",
+          "Improve customer experience",
+          "Enhance workflow",
+          "Create a memorable visual language",
+
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Yutori Designs excels here by combining creative direction with interior design.",
+      },
+      {
+        type: "heading",
+        text: "1. Branding Through Design",
+      },
+
+      {
+        type: "paragraph",
+        text: "For commercial clients, Yutori Designs translates brand personality into:",
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "Colour palettes ",
+          "Textures ",
+          "Layouts ",
+          "Lighting ",
+          "Furniture ",
+          "Signage integration",
+
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "This creates spaces that feel emotionally aligned with the brand.",
+      },
+
+
+      {
+        type: "heading",
+        text: "2. Experience-driven Design",
+      },
+
+      {
+        type: "paragraph",
+        text: "Customers should feel something when they walk in. Yutori ensures:",
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "Flow-oriented layouts ",
+          "Comfort-first seating ",
+          "Signature visual moments ",
+          "Balanced lighting ",
+          "Unique material choices",
+
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "This approach makes their commercial interiors stand out in a competitive landscape.",
+      },
+
+      {
+        type: "heading",
+        text: "Why Yutori Designs is Among the Best Interior Designers in Mangalore",
+      },
+
+      {
+        type: "heading",
+        text: "1. A Clear Aesthetic Philosophy",
+      },
+
+      {
+        type: "paragraph",
+        text: "Yutori Designs stands for calm, clarity, and intention. Their work speaks to people who prefer:",
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "SimplicityF ",
+          "Warmth ",
+          "Spaciousness",
+          "Modern naturalism",
+
+        ],
+      },
+
+      {
+        type: "heading",
+        text: "2. Craftsmanship & Detail Orientation",
+      },
+
+      {
+        type: "paragraph",
+        text: "From joinery to flooring to lighting, Yutori Designs attention to detail elevates every corner.",
+      },
+
+
+
+
+      {
+        type: "heading",
+        text: "3.Transparent Communication",
+      },
+
+      {
+        type: "paragraph",
+        text: "Clients appreciate:",
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "Material clarity  ",
+          "Cost Efficiency ",
+          "Realistic timelines ",
+          "Honest recommendations",
+
+        ],
+      },
+
+      {
+        type: "heading",
+        text: "4. Genuine Care for the Client Journey",
+      },
+
+      {
+        type: "paragraph",
+        text: "The process is as important as the result for Yutori Designs. Projects unfold with:",
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "Trust   ",
+          "Clarity ",
+          "Collaboration ",
+          "Respect",
+
+        ],
+      },
+
+      {
+        type: "heading",
+        text: "Ready to Transform Your Space? Connect with Yutori Designs in Mangalore",
+      },
+      {
+        type: "paragraph",
+        text: "If you’re looking for interior designers in Mangalore who combine global minimalism with coastal sensitivity, Yutori Designs offers a design experience that feels personal, refined, and deeply intentional.",
+      },
+      {
+        type: "paragraph",
+        text: "Whether you’re building a home, designing a commercial space, or renovating an existing property, Yutori Designs ensures:",
+      },
+
+
+      {
+        type: "bullets",
+        items: [
+          "Thoughtful design ",
+          "Strong climate adaptation ",
+          "Emotional connection  ",
+          "Long-term durability ",
+          "Clean aesthetics",
+
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "With a philosophy rooted in simplicity and presence, Yutori Designs brings a refreshing perspective to the design landscape of Coastal Karnataka.",
+      },
+
+    ],
+  },
+  //8 blog
+  {
+    slug: "luxury-interior-designers-mangalore",
+    title: "Luxury Interior Designers in Mangalore",
+    excerpt:
+      "Redefining Luxury Home Interiors in Mangalore : When people search for premium interior designers in Mangalore, they are not really searching for gold finishes or imported furniture. They are searching for a home or workspace that feels calm, expansive, deeply comfortable, and quietly premium. A place that supports their lifestyle, not just their status.",
+    date: "January 2026",
+    readTime: "5 min read",
+    category: "Luxury Residential Design",
+    cover: "/images/blog/Luxury-Interior-Designers-in-Mangalore.png",
+    content: [
+      {
+        type: "heading",
+        text: "Redefining Luxury Home Interiors in Mangalore",
+      },
+      {
+        type: "richparagraph",
+        parts: [
+          { kind: "text", content: "When people search for " },
+          { kind: "bold", content: "premium interior designers in Mangalore" },
+          { kind: "text", content: ", they are not really searching for gold finishes or imported furniture. They are searching for a " },
+          { kind: "link", content: "home", href: "/service/residential" },
+          { kind: "text", content: " or " },
+          { kind: "link", content: "workspace", href: "/service/interior-design" },
+          { kind: "text", content: " that feels calm, expansive, deeply comfortable, and quietly premium. A place that supports their lifestyle, not just their status." },
+        ],
+      },
+
+
+
+      {
+        type: "richparagraph",
+        parts: [
+          { kind: "text", content: "That is the kind of premium luxury " },
+          { kind: "link", content: "Yutori Designs", href: "/" },
+          { kind: "text", content: " or " },
+
+          { kind: "text", content: "  was created for." },
+        ],
+      },
+
+      {
+        type: "paragraph",
+        text: "Mangalore is a city shaped by the sea, by monsoons, by heat, by large families, by hospitality, and by a way of living that blends modern ambition with rooted traditions. Here, luxury is not loud. It is not defined by how expensive something looks on day one. It is defined by how beautifully and effortlessly a space continues to serve you years later.",
+      },
+
+      {
+        type: "heading",
+        text: "What luxury really means in Mangalore homes",
+      },
+      {
+        type: "paragraph",
+        text: "In coastal Karnataka, a space must fight many invisible battles:",
+      },
+      {
+        type: "bullets",
+        items: [
+          "Humidity that warps low density wood ",
+          "Salt air that corrodes hardware  ",
+          "Strong sunlight that fades finishes ",
+          "Heavy daily use by families and guests",
+          "Monsoon moisture that tests surfaces and joints",
+
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "A glossy-looking interior that ignores these realities may look impressive for a few months and then begin to decay. True luxury here is design that connects all generations — technically, visually, and emotionally."
+      },
+      {
+        type: "paragraph",
+        text: "As one the of leading luxury interior designers in Mangalore, Yutori Designs builds luxury around five core pillars:",
+      },
+      {
+        type: "heading",
+        text: "1.Spaces that allow you to breathe"
+      },
+      {
+        type: "paragraph",
+        text: "Premium interior design creates airflow, openness, and ease of movement. A home should never feel cramped, cluttered, or over-designed. It should feel like it is holding you gently."
+      },
+
+      {
+        type: "heading",
+        text: "2.Materials chosen for coastal living"
+      },
+      {
+        type: "paragraph",
+        text: "Not everything that works in Delhi or Bangalore survives in Mangalore. Veneers, laminates, hardware, stones, and fabrics must be chosen for moisture, heat, and longevity — not just for appearance."
+      },
+
+      {
+        type: "heading",
+        text: "3.Function hidden inside beauty"
+      },
+      {
+        type: "paragraph",
+        text: "Great kitchens, wardrobes, storage, lighting, and layouts disappear into the background. They work so well that you stop noticing them.",
+      },
+
+      {
+        type: "heading",
+        text: "4.Calm over chaos"
+      },
+      {
+        type: "paragraph",
+        text: "Luxury is not visual noise. It is clarity. Fewer materials, better details, and a sense that everything belongs."
+      },
+      {
+        type: "heading",
+        text: "5.Execution discipline "
+      },
+      {
+        type: "paragraph",
+        text: "A premium design is only as good as how it is built. Measurements, joints, finishes, timelines, supervision — this is where most projects succeed or fail."
+      },
+
+      {
+        type: "heading",
+        text: "The difference between premium styling and luxury design"
+      },
+      {
+        type: "paragraph",
+        text: "Many firms in Mangalore can make something look “nice.” Very few can make something live beautifully."
+      },
+
+      {
+        type: "paragraph",
+        text: "There is a huge difference between:"
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "Selecting finishes from a catalogue",
+
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "and"
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "Designing a home around how a family cooks, relaxes, hosts, works, and rests",
+
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "True luxury interior design is not about filling rooms. It is about shaping experience."
+      },
+
+      {
+        type: "paragraph",
+        text: "At Yutori Designs, every project begins with how you live:"
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "Who wakes up first",
+          "Where people naturally gather",
+          "How often guests come",
+          "How much storage you really need ",
+          "How you want to feel at night, in the morning, and during quiet moments",
+
+        ],
+      },
+
+      {
+        type: "paragraph",
+        text: "From that, everything else is built — layouts, lighting, materials, furniture, and even where the eye is drawn when you enter a room.This is why Yutori Designs spaces feel effortless rather than decorative."
+      },
+
+      {
+        type: "heading",
+        text: "Why Yutori is the Preferred Luxury Interior Studio in Mangalore"
+      },
+      {
+        type: "paragraph",
+        text: "Luxury interior design in coastal cities demands a different mindset.",
+      },
+      {
+        type: "paragraph",
+        text: "A good studio here must understand:"
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "Vastu without superstition   ",
+          "Ventilation without compromising aesthetics  ",
+          "Monsoon-proof detailing  ",
+          "Local vendor ecosystems ",
+          "Site conditions and labour realities",
+          "How families here actually live",
+
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Yutori Designs operates as a live portfolio studio — not a glossy showroom. The space itself reflects the way Yutori Designs  thinks: calm, detailed, functional, and quietly premium. Clients don’t just see designs; they experience how those designs feel to inhabit."
+      },
+
+      {
+        type: "paragraph",
+        text: "That is why many clients say Yutori  Designs doesn’t just give them interiors — it gives them a better way of living inside their own spaces."
+      },
+
+
+      {
+        type: "heading",
+        text: "Addressing the Unique Needs of Luxury Clients"
+      },
+
+      {
+        type: "paragraph",
+        text: "1. Design-first, not product-first"
+      },
+      {
+        type: "paragraph",
+        text: "Yutori Designs is not here to sell you modular boxes or pre-set packages. Every project begins with design — spatial planning, light, movement, storage, and mood — before any materials are chosen."
+      },
+
+      {
+        type: "paragraph",
+        text: "2. Coastal intelligence"
+      },
+      {
+        type: "paragraph",
+        text: "Materials, hardware, finishes, and construction details are chosen for long-term performance in Mangalore’s climate, not just for Instagram appeal.",
+      },
+
+      {
+        type: "paragraph",
+        text: "3. Calm luxury aesthetic"
+      },
+      {
+        type: "paragraph",
+        text: "Yutori Designs avoids visual clutter, unnecessary ornamentation, and trend-chasing. The result is a timeless, premium feel that stays relevant year after year.",
+      },
+
+
+      {
+        type: "paragraph",
+        text: "4. Full-spectrum interiors"
+      },
+      {
+        type: "paragraph",
+        text: "Homes, offices, studios, workspaces — Yutori Designs environments, not just rooms. The same design intelligence flows through every square foot.",
+      },
+
+
+      {
+        type: "paragraph",
+        text: "5. Execution with accountability"
+      },
+      {
+        type: "paragraph",
+        text: "Design is carried through to execution with discipline: drawings, measurements, supervision, and quality control are integral to every project.",
+      },
+
+      {
+        type: "heading",
+        text: "What luxury clients in Mangalore actually want (and don’t always say)"
+      },
+
+      {
+        type: "paragraph",
+        text: "Most premium clients here want:"
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "A home that feels “done”",
+          "A place that is easy to maintain",
+          "A sense of spaciousness even in smaller footprints",
+          "Rooms that feel good in different moods and times of day",
+          "Storage that disappears",
+          "Lighting that transforms how a space feels",
+
+        ],
+      },
+
+      {
+        type: "paragraph",
+        text: "What they don’t want:",
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "Over-designed showpiece",
+          "High-maintenance finishes     ",
+          "Trend-heavy interiors that age fast",
+          "Poor execution disguised by styling",
+        ],
+      },
+
+      {
+        type: "paragraph",
+        text: "Yutori Designs for the first list — not the second."
+      },
+
+      {
+        type: "heading",
+        text: "The Yutori Designs process"
+      },
+      {
+        type: "paragraph",
+        text: "Luxury is not rushed. It is considered."
+      },
+
+      {
+        type: "paragraph",
+        text: "Yutori Designs process moves through:"
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "Understanding your lifestyle and priorities  ",
+          "Creating thoughtful layouts and zoning",
+          "Developing a material and lighting story",
+          "Translating that into clear drawings and budgets  ",
+          "Executing with site control and quality checks",
+        ],
+      },
+
+      {
+        type: "paragraph",
+        text: "This is how spaces move from imagination to something you can live inside every day."
+      },
+
+      {
+        type: "heading",
+        text: "Why Yutori Designs has become a reference for luxury interiors in Mangalore",
+      },
+
+      {
+        type: "paragraph",
+        text: "Homes in Mangalore come in many forms — from spacious independent houses to compact apartments. Yutori Designs adapts to each with clarity and craft."
+      },
+
+      {
+        type: "heading",
+        text: "1. Tailored Layouts for Real Life"
+      },
+      {
+        type: "paragraph",
+        text: "In a market crowded with modular sellers, package-driven firms, and Instagram-first studios, Yutori Designs stands out by doing something quietly radical:"
+      },
+
+      {
+        type: "paragraph",
+        text: "It designs for real life.",
+      },
+      {
+        type: "paragraph",
+        text: "The homes and workspaces that come out of Yutori Designs don’t shout. They invite you in. They hold you. They make daily life smoother, lighter, and more beautiful."
+      },
+
+      {
+        type: "paragraph",
+        text: "That is what true luxury looks like in Mangalore."
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "Not excess ",
+          "Not noise",
+          "Not trend.",
+        ],
+      },
+
+      {
+        type: "paragraph",
+        text: "But calm, clarity, and a space that finally feels like it belongs to you.",
+      },
+
+      {
+        type: "paragraph",
+        text: "If you are looking for luxury interior designers in Mangalore, you are really looking for a studio that understands how you want to live.",
+      },
+
+      {
+        type: "paragraph",
+        text: "That is where Yutori Designs begins.",
+      },
+
+      {
+        type: "heading",
+        text: "2. Materials That Last in Coastal Weather"
+      },
+
+      {
+        type: "paragraph",
+        text: "The studio carefully chooses:"
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "Marine-grade plywood ",
+          "Solid wood that ages beautifully",
+          "Ceramic and clay stone",
+          "Rust-free metals",
+          "Weather-resistant fabrics",
+        ],
+      },
+
+      {
+        type: "paragraph",
+        text: "This ensures interiors remain beautiful even after years of coastal climate exposure."
+      },
+
+      {
+        type: "heading",
+        text: "3. Soft, Thoughtful Lighting"
+      },
+
+      {
+        type: "paragraph",
+        text: "Lighting can transform mood instantly. Yutori Designs avoids harsh overhead lights and instead uses:"
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "Layered lighting",
+          "Warm tones",
+          "Diffused glows",
+          "Task lighting where needed",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "This enhances the architecture and the emotional feel of the space."
+      },
+
+      {
+        type: "heading",
+        text: "4. Storage That Blends into the Home"
+      },
+      {
+        type: "paragraph",
+        text: "The storage solutions by Yutori Designs are:"
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "Seamless",
+          "Space-efficient",
+          "Concealed yet accessible",
+          "Aesthetically integrated",
+        ],
+      },
+
+      {
+        type: "paragraph",
+        text: "Perfect for apartments where every inch matters."
+      },
+
+      {
+        type: "heading",
+        text: "Luxury Commercial Interior Design by Yutori"
+      },
+      {
+        type: "paragraph",
+        text: "Mangalore’s commercial landscape is changing rapidly. Cafés, boutiques, offices, co-working spaces, and wellness centres are looking for interiors that:"
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "Reflect their brand identity",
+          "Improve customer experience",
+          "Enhance workflow",
+          "Create a memorable visual language",
+        ],
+      },
+
+      {
+        type: "paragraph",
+        text: "Yutori Designs excels here by combining creative direction with interior design.",
+      },
+
+      {
+        type: "heading",
+        text: "1. Branding Through Design"
+      },
+
+      {
+        type: "paragraph",
+        text: "For commercial clients, Yutori Designs translates brand personality into:"
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "Colour palettes ",
+          "Textures ",
+          "Layouts ",
+          "Lighting ",
+          "Furniture ",
+          "Signage integration",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "This creates spaces that feel emotionally aligned with the brand."
+      },
+
+      {
+        type: "heading",
+        text: "2. Experience-driven Design"
+      },
+      {
+        type: "paragraph",
+        text: "Customers should feel something when they walk in. Yutori ensures:"
+      },
+      {
+        type: "bullets",
+        items: [
+          "Flow-oriented layouts",
+          "Comfort-first seating ",
+          "Signature visual moments ",
+          "Balanced lighting ",
+          "Unique material choices",
+        ],
+      },
+
+      {
+        type: "paragraph",
+        text: "This approach makes their commercial interiors stand out in a competitive landscape."
+      },
+
+      {
+        type: "heading",
+        text: "What Makes Yutori Designs the Best Interior Designer in Mangalore"
+      },
+      {
+        type: "heading",
+        text: "1. A Clear Aesthetic Philosophy"
+      },
+      {
+        type: "paragraph",
+        text: "Yutori Designs stands for calm, clarity, and intention. Their work speaks to people who prefer:"
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "Simplicity",
+          "Warmth",
+          "Spaciousness",
+          "Modern naturalism",
+        ],
+      },
+      {
+        type: "heading",
+        text: "2. Craftsmanship & Detail Orientation"
+      },
+      {
+        type: "paragraph",
+        text: "From joinery to flooring to lighting, Yutori Designs attention to detail elevates every corner."
+      },
+
+      {
+        type:"heading",
+        text:"3.Transparent Communication"
+      },
+      {
+        type:"paragraph",
+        text:"Clients appreciate:"
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "Material clarity  ",
+          "Cost Efficiency ",
+          "Realistic timelines ",
+          "Honest recommendations",
+        ],
+      },
+
+      {
+        type:"heading",
+        text:"4. Genuine Care for the Client Journey"
+      },
+      {
+        type:"paragraph",
+        text:"The process is as important as the result for Yutori Designs. Projects unfold with:"
+      },
+
+       {
+        type: "bullets",
+        items: [
+          "Trust  ",
+          "Clarity ",
+          "Collaboration ",
+          "Respect",
+        ],
+      },
+
+      {
+        type:"heading",
+        text:"Choosing Luxury Interior Designers in Mangalore? Start with Yutori Designs' Approach"
+      },
+
+      {
+        type:"paragraph",
+        text:"If you’re looking for interior designers in Mangalore who combine global minimalism with coastal sensitivity, Yutori Designs offers a design experience that feels personal, refined, and deeply intentional.",
+      },
+      {
+        type:"paragraph",
+        text:"Whether you’re looking for a premium residential designer in Mangalore, designing a luxury commercial space, or renovating an existing property, Yutori Designs ensures:"
+      },
+
+      {
+        type: "bullets",
+        items: [
+          "Thoughtful design   ",
+          "Strong climate adaptation  ",
+          "Emotional connection  ",
+          "Long-term durability ",
+          "Clean aesthetics",
+        ],
+      },
+      {
+        type:"paragraph",
+        text:"With a philosophy rooted in simplicity and presence, Yutori Designs brings a refreshing perspective to the design landscape of Coastal Karnataka."
+      },
+    ],
   },
 
 ];

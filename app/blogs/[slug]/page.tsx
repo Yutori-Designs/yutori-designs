@@ -122,6 +122,34 @@ export default async function BlogPostPage({
                 </div>
               );
             }
+            if (block.type === "subheading") {
+              return (
+                <p key={i} className="font-semibold text-ink-900 text-[17px] leading-relaxed mt-2">
+                  {block.text}
+                </p>
+              );
+            }
+            if (block.type === "richparagraph") {
+              return (
+                <p key={i} className="text-ink-700 text-[17px] leading-[1.8] text-justify">
+                  {block.parts.map((part, j) => {
+                    if (part.kind === "bold") {
+                      return (
+                        <strong key={j} className="font-semibold text-ink-900">
+                          {part.content}
+                        </strong>
+                      );
+                    }
+                    if (part.kind === "link") {
+                      return (
+                        <a key={j} href={part.href} className="text-brand-600 underline hover:text-brand-700 transition-colors">{part.content}</a>
+                      );
+                    }
+                    return <span key={j}>{part.content}</span>;
+                  })}
+                </p>
+              );
+            }
             return (
               <p key={i} className="text-ink-700 text-[17px] leading-[1.8] text-justify">
                 {block.text}
