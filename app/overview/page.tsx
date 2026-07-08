@@ -51,7 +51,7 @@ export default function OverviewPage() {
 
       <section className="relative h-[420px]">
         <Image
-          src="/images/services/"
+          src="/images/brand/Yutori-Tumbnail.png"
           alt="A Yutori Designs interior"
           fill
           className="object-cover"
