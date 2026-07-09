@@ -35,7 +35,7 @@ export default function WhyUs() {
           <h2 className="font-display text-4xl sm:text-5xl mt-3 text-ink-900 text-balance">
             Interior design is more than arranging furniture
           </h2>
-          <p className="mt-6 text-ink-700 text-[17px] leading-relaxed max-w-md">
+          <p className="mt-6 text-ink-700 text-[17px] leading-relaxed max-w-md text-justify">
             It&apos;s about creating meaningful experiences within the spaces
             where we live and work — bringing harmony, functionality, and
             beauty into every corner, inspired by the coastal breezes and
