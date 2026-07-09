@@ -354,9 +354,18 @@ export const blogPosts: BlogPost[] = [
         type: "paragraph",
         text: "Every home reflects the people who live in it. How it flows and how it feels on any morning come down to choices made early in the design process. Homeowners today are moving past generic interiors that look polished but never feel personal. The best home interior designers in Mangalore begin every project with that understanding firmly in place.",
       },
+    
+
       {
-        type: "paragraph",
-        text: "The shift toward personalised interiors has changed what homeowners expect from a design consultation. A skilled designer does not arrive with a preset style but with questions. What routines define the day? What does comfort mean to this family? The best home interior designers in Mangalore treat each home as an original brief, shaped by the life lived inside it.",
+        type: "richparagraph",
+        parts: [
+          { kind: "text", content: "The shift toward personalised interiors has changed what homeowners expect from a design consultation. A skilled designer does not arrive with a preset style but with questions. What routines define the day? What does comfort mean to this family? " },
+
+          { kind: "text", content: ", they are not really searching for gold finishes or imported furniture. They are searching for a " },
+          { kind: "link", content: "The best home interior designers in Mangalore", href: "/service/residential" },
+         
+          { kind: "text", content: " treat each home as an original brief, shaped by the life lived inside it." },
+        ],
       },
 
       {
