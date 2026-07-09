@@ -8,7 +8,6 @@ const services = [
   "Commercial & Office Interior",
   "Industrial",
   "Residential",
-  "Not sure yet",
 ];
 
 export default function ContactForm() {
