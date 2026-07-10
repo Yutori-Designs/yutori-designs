@@ -274,7 +274,7 @@ export const blogPosts: BlogPost[] = [
     title: "How a Commercial Interior Designer Thinks About Your Space that needs to be designed",
     excerpt:
       "Most people assume that designers begin with addressing the colours or furniture. Or a mood board from a design site. That is not the process. If your designer starts here, pause before going further. The first thing a good designer looks at is how people move. Not how the space looks — how it functions when full of people trying to work, meet, or serve customers. Every corridor, every door placement, every desk cluster has a logic behind it. Or it should. A commercial interior designer thinks about this before touching a single swatch.",
-    date: "November 2025",
+    date: "December 2025",
     readTime: "3 min read",
     category: "Design Process",
     cover: "/images/blog/commercial-interior-designer.jpg",
@@ -345,7 +345,7 @@ export const blogPosts: BlogPost[] = [
     title: "How the Best Home Interior Designers in Mangalore Create Personalised Homes",
     excerpt:
       "Every home reflects the people who live in it. How it flows and how it feels on any morning come down to choices made early in the design process. Homeowners today are moving past generic interiors that look polished but never feel personal. The best home interior designers in Mangalore begin every project with that understanding firmly in place.",
-    date: "November 2025",
+    date: "March 2026",
     readTime: "3 min read",
     category: "Interior Design Services",
     cover: "/images/blog/best-home-interior-designers.jpg",
@@ -484,7 +484,7 @@ export const blogPosts: BlogPost[] = [
     title: "Mangalore Architects: How Yutori is Redefining Architecture & Interior Design",
     excerpt:
       "When people look for Mangalore architects, they are often seeking a firm that brings together creativity, technical precision, durability, and an understanding of Mangalore’s unique coastal identity. Architecture in this region is shaped not just by design trends but by climate, culture, material behaviour, and the lifestyle of the people who inhabit these spaces.",
-    date: "November 2025",
+    date: "April 2025",
     readTime: "3 min read",
     category: "Architecture",
     cover: "/images/blog/yutori-redefining-architecture-interiors-mangalore.png",
