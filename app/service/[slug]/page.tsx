@@ -52,7 +52,7 @@ export default async function ServicePage({
 
       {service.nameSubtitle && (
         <div>
-          <h3 className="font-display text-4xl text-ink-800 mt-10 ml-35">
+          <h3 className="font-display text-4xl text-ink-800 mt-10 ml-30">
             {service.nameSubtitle}
           </h3>
         </div>
@@ -104,7 +104,7 @@ export default async function ServicePage({
                   {service.whyUs}
                 </p>
               </div>
-              <div className="min-h-[70px] flex flex-col justify-start">
+              <div className="min-h-[0px] flex flex-col justify-start">
                 <h2 className="font-display text-3xl text-ink-900 mb-4">
                   {service.whyChooseLabel1}
                 </h2>
