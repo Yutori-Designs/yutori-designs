@@ -51,11 +51,11 @@ export default async function ServicePage({
       />
 
       {service.nameSubtitle && (
-        <div>
-          <h3 className="font-display text-4xl text-ink-800 mt-10 ml-30">
+        <section className="max-w-7xl mx-auto px-6 lg:px-10 mt-10">
+          <h3 className="font-display text-2xl sm:text-2xl lg:text-3xl text-ink-800 leading-tight max-w-full lg:max-w-3xl">
             {service.nameSubtitle}
           </h3>
-        </div>
+        </section>
       )}
 
       <section className="py-10 max-w-7xl mx-auto px-6 lg:px-10">
