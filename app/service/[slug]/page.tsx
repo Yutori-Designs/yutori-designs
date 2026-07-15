@@ -58,7 +58,7 @@ export default async function ServicePage({
         </div>
       )}
 
-      <section className="py-20 max-w-7xl mx-auto px-6 lg:px-10">
+      <section className="py-10 max-w-7xl mx-auto px-6 lg:px-10">
 
         {hasTwoImages ? (
           /* ── Two-image layout: images LEFT, paired text RIGHT ── */
@@ -104,7 +104,7 @@ export default async function ServicePage({
                   {service.whyUs}
                 </p>
               </div>
-              <div className="min-h-[347px] flex flex-col justify-start">
+              <div className="min-h-[70px] flex flex-col justify-start">
                 <h2 className="font-display text-3xl text-ink-900 mb-4">
                   {service.whyChooseLabel1}
                 </h2>
@@ -153,7 +153,7 @@ export default async function ServicePage({
 
       </section>
 
-      <section className="py-20 bg-paper-dim">
+      <section className="py-10 bg-paper-dim">
         <div className="max-w-5xl mx-auto px-6 lg:px-10">
           <span className="text-brand-600 text-sm tracking-[0.18em] uppercase">
             Our process
@@ -166,7 +166,7 @@ export default async function ServicePage({
       </section>
 
       {related.length > 0 && (
-        <section className="py-20 max-w-7xl mx-auto px-6 lg:px-10">
+        <section className="py-10 max-w-7xl mx-auto px-6 lg:px-10">
           <h2 className="font-display text-3xl text-ink-900 mb-8">Related projects</h2>
           <div className="grid sm:grid-cols-3 gap-5">
             {related.map((project) => (
