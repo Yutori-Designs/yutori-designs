@@ -49,12 +49,12 @@ export default function OverviewPage() {
         </div>
       </section>
 
-      <section className="relative h-[420px]">
+      <section className="relative h-[280px] sm:h-[360px] lg:h-[420px] overflow-hidden">
         <Image
           src="/images/brand/Yutori-Tumbnail.png"
           alt="A Yutori Designs interior"
           fill
-          className="object-cover"
+          className="object-cover object-center"
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-ink-900/30" />
