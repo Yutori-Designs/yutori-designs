@@ -51,7 +51,7 @@ export default function OverviewPage() {
 
       <section className="relative h-[280px] sm:h-[360px] lg:h-[420px] overflow-hidden">
         <Image
-          src="/images/brand/Yutori-Tumbnail.png"
+          src="/images/brand/tumbnail.jpg"
           alt="A Yutori Designs interior"
           fill
           className="object-cover object-center"
