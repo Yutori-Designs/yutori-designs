@@ -236,7 +236,6 @@ export const projects: Project[] = [
       "/images/projects/House facing Nandi Hills/House facing Nandi Hills-8.jpg",
       "/images/projects/House facing Nandi Hills/House facing Nandi Hills-9.jpg",
       "/images/projects/House facing Nandi Hills/House facing Nandi Hills-10.jpg",
-      "/images/projects/House facing Nandi Hills/House facing Nandi Hills-11.jpg",
     ],
   },
   {
