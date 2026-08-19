@@ -337,7 +337,7 @@ export const projects: Project[] = [
   },
   {
     id: "Hotel Jewel Park",
-    title: "Project Execution Work-Hotel Jewel Park, Hemmady",
+    title: "Project Execution-Hotel Jewel Park, Hemmady",
     location: "Hemmady, Udupi",
     category: "Hotel / Resort",
     cover: "/images/projects/Jewel-Park/jewel-park-1.jpg",
