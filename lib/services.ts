@@ -146,7 +146,7 @@ export const services: Record<string, ServiceContent> = {
     
     metaTitle: "Turnkey Interior Project Execution | Yutori Designs",
     heroImage: "/images/services/Trurn-key.jpg",
-    heroImage2: "/images/services/Trurn-key-1.jpg",
+    heroImage2: "/images/services/Trurn-key-new image.jpg",
     intro:
       "Yutori Designs offers end-to-end project management services to ensure that every interior design project is executed seamlessly from concept to completion. We meticulously manage each phase of the process—from initial planning and design development to procurement, construction, and final installation. Our experienced team coordinates closely with contractors, vendors, and consultants, ensuring clear communication and smooth collaboration at every step. We prioritize staying on schedule and within budget, without compromising quality or design integrity.",
     whyUs:

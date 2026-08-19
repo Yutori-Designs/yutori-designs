@@ -34,7 +34,7 @@ export default function AboutSection() {
             About Yutori Designs
           </span>
           <h2 className="font-display text-4xl sm:text-5xl mt-3 mb-6 text-ink-900 text-balance leading-[1.1]">
-            Your trusted interior contractors in Mangalore
+            Your trusted interior designers in Mangalore
           </h2>
 
           <div className="space-y-5 text-ink-700 text-[16px] leading-relaxed text-justify">
@@ -48,10 +48,10 @@ export default function AboutSection() {
               </Link>{" "} */}
               At Yutori Designs, we believe that interior design is more than just arranging furniture—it’s 
               about creating meaningful experiences within the spaces where we live and work.
-              As one of the premier interior design companies in Mangalore, our mission is to bring harmony, 
+              As one of the premium interior design companies in Mangalore, our mission is to bring harmony, 
               functionality, and beauty into every corner of your environment. 
               We approach every project with the understanding that well-designed spaces enhance daily life, 
-              and as dedicated interior design firms in Mangalore, we strive to evoke emotion and tell stories unique to each client.
+              and as dedicated interior design firm in Mangalore, we strive to evoke emotion and tell stories unique to each client.
             </p>
             <p>
               Rooted in the culturally rich region of Coastal Karnataka, we serve as expert 

@@ -11,12 +11,8 @@ export const metadata: Metadata = {
 export default function TestimonialPage() {
   return (
     <main>
-      <PageHero
-        eyebrow="Client voices"
-        title="What it's like to build with us"
-        breadcrumb={[{ label: "Home", href: "/" }, { label: "Testimonials" }]}
-      />
-      <StatsBar />
+      
+      
       <Testimonials />
     </main>
   );

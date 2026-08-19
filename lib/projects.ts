@@ -24,7 +24,7 @@ export const projects: Project[] = [
   {
     id: "niveus-mangalore",
     title: "Office Design & Interiors for Niveus Solutions",
-    location: "Mangaluru, ",
+    location: "Mangaluru ",
     category: "Office Space",
     cover: "/images/projects/Niveus-Mangalore/niveus-mangalore-1.jpg",
     gallery: [
@@ -63,36 +63,7 @@ export const projects: Project[] = [
       
     ],
   },
-  {
-    id: "niveus-udupi",
-    title: "Office Design & Interiors for Niveus Solutions",
-    location: "Udupi",
-    category: "Office Space",
-    cover: "/images/projects/Niveus-Udupi/niveus-udupi-1.jpg",
-    gallery: [
-      "/images/projects/Niveus-Udupi/niveus-udupi-2.jpg",
-      "/images/projects/Niveus-Udupi/niveus-udupi-3.jpg",
-      "/images/projects/Niveus-Udupi/niveus-udupi-4.jpg",
-      "/images/projects/Niveus-Udupi/niveus-udupi-5.jpg",
-      "/images/projects/Niveus-Udupi/niveus-udupi-6.jpg",
-      "/images/projects/Niveus-Udupi/niveus-udupi-7.jpg",
-      "/images/projects/Niveus-Udupi/niveus-udupi-8.jpg",
-      "/images/projects/Niveus-Udupi/niveus-udupi-9.jpg",
-      
-    ],
-  },
-  {
-    id: "panaji-office",
-    title: "Design of Real Estate Office",
-    location: "Goa",
-    category: "Office Space",
-    cover:  "/images/projects/Real-Estate-Goa/Real-Estate-Goa-1.jpg",
-    gallery: [
-      "/images/projects/Real-Estate-Goa/Real-Estate-Goa-2.jpg",
-      "/images/projects/Real-Estate-Goa/Real-Estate-Goa-3.jpg",
-    ],
-  },
-  {
+   {
     id: "xpheno-manipal",
     title: "Office Design & Interiors for Xpheno",
     location: "Manipal, Udupi",
@@ -107,6 +78,19 @@ export const projects: Project[] = [
       "/images/projects/Xpheno-Udupi/xpheno-7.jpg",
     ],
   },
+  
+  {
+    id: "panaji-office",
+    title: "Design of Real Estate Office",
+    location: "Goa",
+    category: "Office Space",
+    cover:  "/images/projects/Real-Estate-Goa/Real-Estate-Goa-1.jpg",
+    gallery: [
+      "/images/projects/Real-Estate-Goa/Real-Estate-Goa-2.jpg",
+      "/images/projects/Real-Estate-Goa/Real-Estate-Goa-3.jpg",
+    ],
+  },
+ 
   {
     id: "yutori-office-udupi",
     title: "Office Interior Design for Yutori Designs",
@@ -127,6 +111,24 @@ export const projects: Project[] = [
       "/images/projects/Yutori-Designs/Yutori-Designs-12.jpg",
       "/images/projects/Yutori-Designs/Yutori-Designs-13.jpg",
       "/images/projects/Yutori-Designs/Yutori-Designs-14.jpg",
+    ],
+  },
+  {
+    id: "niveus-udupi",
+    title: "Office Design & Interiors for Niveus Solutions",
+    location: "Udupi",
+    category: "Office Space",
+    cover: "/images/projects/Niveus-Udupi/niveus-udupi-1.jpg",
+    gallery: [
+      "/images/projects/Niveus-Udupi/niveus-udupi-2.jpg",
+      "/images/projects/Niveus-Udupi/niveus-udupi-3.jpg",
+      "/images/projects/Niveus-Udupi/niveus-udupi-4.jpg",
+      "/images/projects/Niveus-Udupi/niveus-udupi-5.jpg",
+      "/images/projects/Niveus-Udupi/niveus-udupi-6.jpg",
+      "/images/projects/Niveus-Udupi/niveus-udupi-7.jpg",
+      "/images/projects/Niveus-Udupi/niveus-udupi-8.jpg",
+      "/images/projects/Niveus-Udupi/niveus-udupi-9.jpg",
+      
     ],
   },
   {
@@ -332,6 +334,19 @@ export const projects: Project[] = [
       
       
     ],
+  },
+  {
+    id: "Hotel Jewel Park",
+    title: "Project Execution Work-Hotel Jewel Park, Hemmady",
+    location: "Hemmady, Udupi",
+    category: "Hotel / Resort",
+    cover: "/images/projects/Jewel-Park/jewel-park-1.jpg",
+    gallery: ["/images/projects/Jewel-Park/jewel-park-1.jpg",
+      "/images/projects/Jewel-Park/jewel-park-2.jpg",
+      "/images/projects/Jewel-Park/jewel-park-3.jpg",
+      "/images/projects/Jewel-Park/jewel-park-4.jpg",
+      "/images/projects/Jewel-Park/jewel-park-5.jpg",
+      ],
   },
 ];
 
