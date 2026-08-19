@@ -27,7 +27,7 @@ const about = [
   { label: "Our Values", href: "/our-values" },
   { label: "Our Operating Model", href: "/our-operating-model" },
   { label: "Testimonial", href: "/testimonial" },
-  { label: "Events", href: "/events" },
+  // { label: "Events", href: "/events" },
   { label: "Blogs", href: "/blogs" },
 ];
 
