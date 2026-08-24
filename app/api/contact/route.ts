@@ -55,12 +55,18 @@ export async function POST(request: Request) {
         <table width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background:#ffffff;border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);">
           
           <!-- Header -->
-          <tr>
-            <td style="background-color:#1a1a15;padding:32px 40px;text-align:center;">
-              <p style="margin:0;font-size:24px;font-weight:700;color:#ffffff;letter-spacing:-0.5px;">Yutori Designs</p>
-              <p style="margin:6px 0 0;font-size:13px;color:#87A766;letter-spacing:2px;text-transform:uppercase;">New Website Enquiry</p>
-            </td>
-          </tr>
+           <tr>
+  <td style="background-color:#1a1a15;padding:32px 40px;text-align:center;">
+    
+    <img
+      src="https://yutoridesigns.in/images/brand/logo-white.png""
+      alt="Yutori Designs"
+      width="180"
+      style="display:block;margin:0 auto;border:0;max-width:180px;height:auto;"
+    />
+
+  </td>
+</tr>
 
           <!-- Body -->
           <tr>
