@@ -176,14 +176,17 @@ export async function POST(request: Request) {
           
           <!-- Header -->
           <tr>
-            <td style="background-color:#1a1a15;padding:32px 40px;text-align:center;">
-              <p style="margin:0;font-size:24px;font-weight:700;color:#ffffff;letter-spacing:-0.5px;">Yutori Designs</p>
-              <p style="margin:6px 0 0;font-size:13px;color:#87A766;letter-spacing:2px;text-transform:uppercase;">Creating Space for Life</p>
-            </td>
-          </tr>
+  <td style="background-color:#1a1a15;padding:32px 40px;text-align:center;">
+    
+    <img
+      src="https://yutoridesigns.in/images/brand/logo-white.png""
+      alt="Yutori Designs"
+      width="180"
+      style="display:block;margin:0 auto;border:0;max-width:180px;height:auto;"
+    />
 
-          <!-- Body -->
-          <tr>
+  </td>
+</tr>
             <td style="padding:40px;">
               <h2 style="margin:0 0 16px;font-size:22px;color:#1a1a15;font-weight:700;">
                 Thank you, ${name.split(" ")[0]}!
