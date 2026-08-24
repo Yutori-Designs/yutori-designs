@@ -2,11 +2,17 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Play, Quote } from "lucide-react";
-import { useState } from "react";
-
+import { Quote } from "lucide-react";
 
 const textTestimonials = [
+  {
+    quote:
+      "I think anyone who's come to our office will be amazed by the kind of architecture and the simplicity we have. I think it's all kudos to Yutori and the team. We've been working with them for the last couple of years to put together all our offices, both in Mangalore and Udupi.Thank you again for all your contribution and for being part of our journey in the last couple of years. Thank you.",
+    name: "Suyog Shetty",
+    role: "  CEO and Co-founder Niveus Solutions(Part of NTT Data)",
+  },
+
+
   {
     quote:
       "As our organization prepared to move from our 150-seater office to a new 400-seater space, we wanted to create more than just a workplace. We envisioned a vibrant environment where our employees could truly enjoy coming to work every day. Drawing inspiration from some of the best global workspaces we've visited, we aspired to bring together functionality, creativity, and comfort in one place - our new office at Falnir.",
@@ -22,134 +28,57 @@ const textTestimonials = [
 ];
 
 export default function Testimonials() {
-  const [playing, setPlaying] = useState(false);
-
   return (
     <section className="py-24 lg:py-32 bg-ink-900 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
-
         {/* Section Heading */}
         <div>
           <span className="text-brand-300 text-sm tracking-[0.18em] uppercase">
-            Client voices
+            Client Voices
           </span>
 
-          <h2 className="font-display text-4xl sm:text-5xl mt-3 text-paper text-balance max-w-xl">
+          <h2 className="font-display text-4xl sm:text-5xl mt-3 text-paper max-w-2xl">
             Delivering excellence for top firms in coastal Karnataka
           </h2>
         </div>
 
-        {/* Main Testimonials Layout */}
-        <div className="mt-14 grid lg:grid-cols-5 gap-8 items-stretch">
+        {/* Two Testimonials - Horizontal */}
+        <div className="mt-14 grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {textTestimonials.map((t, i) => (
+            <motion.div
+              key={t.name}
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-60px" }}
+              transition={{
+                duration: 0.5,
+                delay: i * 0.1,
+              }}
+              className="bg-ink-800 rounded-2xl p-7 lg:p-8 flex flex-col border border-paper/5"
+            >
+              {/* Quote Icon */}
+              <Quote
+                size={24}
+                className="text-brand-500 mb-5"
+              />
 
-          {/* Video Testimonial */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.5 }}
-            className="lg:col-span-3 relative rounded-2xl overflow-hidden bg-ink-800 min-h-[400px]"
-          >
-            {!playing ? (
-              <button
-                onClick={() => setPlaying(true)}
-                className="absolute inset-0 w-full h-full group"
-                aria-label="Play testimonial video"
-              >
-                {/* Poster Image */}
-                <div
-                  className="absolute inset-0 bg-center bg-cover"
-                  style={{
-                    backgroundImage:
-                      "url('/images/testimonials/niveus-poster.jpg')",
-                  }}
-                />
+              {/* Testimonial */}
+              <p className="text-stone-300 text-[15px] leading-relaxed flex-1 text-justify">
+                &ldquo;{t.quote}&rdquo;
+              </p>
 
-                {/* Dark Overlay */}
-                <div className="absolute inset-0 bg-ink-900/40 group-hover:bg-ink-900/30 transition-colors" />
-
-                {/* Play Button */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="w-16 h-16 rounded-full bg-brand-600 flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <Play
-                      size={22}
-                      className="text-paper fill-paper ml-0.5"
-                    />
-                  </span>
-                </div>
-
-                {/* Video Information */}
-                <div className="absolute bottom-5 left-5 text-left">
-                  <p className="font-display text-paper text-lg">
-                    Suyog Shetty
-                  </p>
-
-                  <p className="text-stone-300 text-sm">
-                    CEO &amp; Co-founder, Niveus Solutions
-                  </p>
-                </div>
-              </button>
-            ) : (
-              <div className="absolute inset-0">
-                <video
-                  className="w-full h-full object-cover"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  controls
-                >
-                  <source
-                    src="/images/testimonials/Nivesus_Testimonial.mp4"
-                    type="video/mp4"
-                  />
-
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-            )}
-          </motion.div>
-
-          {/* Two Text Testimonials */}
-          <div className="lg:col-span-2 flex flex-col gap-5">
-
-            {textTestimonials.map((t, i) => (
-              <motion.div
-                key={t.name}
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-60px" }}
-                transition={{
-                  duration: 0.5,
-                  delay: i * 0.1,
-                }}
-                className="bg-ink-800 rounded-xl p-6 flex-1"
-              >
-                {/* Quote Icon */}
-                <Quote
-                  size={18}
-                  className="text-brand-500 mb-3"
-                />
-
-                {/* Testimonial */}
-                <p className="text-stone-300 text-[15px] leading-relaxed">
-                  {t.quote}
+              {/* Client Details */}
+              <div className="mt-8 pt-5 border-t border-paper/10">
+                <p className="font-display text-paper text-lg">
+                  {t.name}
                 </p>
 
-                {/* Client Details */}
-                <div className="mt-5">
-                  <p className="font-display text-paper">
-                    {t.name}
-                  </p>
-
-                  <p className="text-stone-500 text-sm">
-                    {t.role}
-                  </p>
-                </div>
-              </motion.div>
-            ))}
-
-          </div>
+                <p className="text-stone-500 text-sm mt-1">
+                  {t.role}
+                </p>
+              </div>
+            </motion.div>
+          ))}
         </div>
 
         {/* View All Testimonials Button */}
@@ -161,7 +90,6 @@ export default function Testimonials() {
             View All Testimonials
           </Link>
         </div>
-
       </div>
     </section>
   );

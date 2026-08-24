@@ -5,9 +5,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Send, CheckCircle2, AlertCircle, Mail, Phone, MapPin } from "lucide-react";
 
 const services = [
-  "Commercial & Office Interior",
-  "Industrial",
-  "Residential",
+  "Commerical & Office Interiors",
+  "Home Interiors",
+  "Design & Space Planning",
+  "Turn Key Project Implementation",
+
+  
+
 ];
 
 export default function ContactForm() {

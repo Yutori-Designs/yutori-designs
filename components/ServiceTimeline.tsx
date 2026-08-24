@@ -24,9 +24,12 @@ export default function ServiceTimeline({ steps }: { steps: ServiceStep[] }) {
               <h3 className="font-display text-xl text-ink-900 mb-3">{step.title}</h3>
               <ul className="space-y-2">
                 {step.points.map((point) => (
-                  <li key={point} className="flex gap-2.5 text-ink-700 text-[15px] leading-relaxed">
-                    <span className="text-brand-500 mt-1.5 shrink-0">—</span>
-                    {point}
+                  <li
+                    key={point}
+                    className="flex items-center gap-2.5 text-ink-700 text-[15px] leading-relaxed"
+                  >
+                    <span className="text-brand-500 shrink-0">•</span>
+                    <span>{point}</span>
                   </li>
                 ))}
               </ul>

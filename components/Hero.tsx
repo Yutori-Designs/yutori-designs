@@ -14,7 +14,7 @@ const slides = [
     image: "/images/hero/hero-commercial.png",
   },
   {
-    eyebrow: "Workplace Design",
+    eyebrow: "Work space",
     title: "Inviting workspaces\nfor your employees",
     sub: "Spaces engineered around how people actually work, move, and gather.",
     href: "/service/office-space",

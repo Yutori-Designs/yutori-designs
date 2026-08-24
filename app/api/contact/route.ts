@@ -49,7 +49,7 @@ export async function POST(request: Request) {
       },
       body: JSON.stringify({
         from: "Yutori Designs Website <onboarding@resend.dev>",
-        to: ["info@yutoridesigns.in"],
+        to: ["pavanachar0123@gmail.com"],
         reply_to: email,
         subject: `New enquiry from ${name}`,
         html: `

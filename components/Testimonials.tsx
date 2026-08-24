@@ -1,8 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Play, Quote } from "lucide-react";
-import { useState } from "react";
+import { Quote } from "lucide-react";
 
 const textTestimonials = [
   {
@@ -23,8 +22,8 @@ const textTestimonials = [
     paragraph1:
       "What truly distinguishes Yutori Designs is its welcoming attitude and genuine passion for design. The firm skillfully blends a keen understanding of clients' needs with a steadfast, old-school dedication, making it exceptionally reliable. Its honesty stands out, earning the admiration and confidence of everyone who works with them.",
     paragraph2:
-    "In my opinion, any developer who shares these values should carefully consider their work and not turn the page on them.",
-      name: "Devendranath B",
+      "In my opinion, any developer who shares these values should carefully consider their work and not turn the page on them.",
+    name: "Devendranath B",
     role: "Managing Partner, Jade Invent",
   },
   {
@@ -32,136 +31,98 @@ const textTestimonials = [
       "Working with Yutori Designs has been a genuinely refreshing experience. Unlike many architectural firms that prioritize maximizing FSI at the cost of essential design elements, Yutori Designs brings a creative approach that stays firmly rooted in balance and practicality. They thoughtfully integrate fundamentals like natural light, ventilation, wind direction, and Vastu into every design, while giving equal attention to day-to-day comforts such as staircase planning, kitchen layouts, and utility spaces.",
     paragraph:
       "For both my home and the residential building I developed, Yutori Designs has been the ideal partner. They focused on my vision and priorities without ever compromising on the basics that truly matter.",
-      paragraph1:
+    paragraph1:
       "The team is patient, understands client needs deeply, and has been extremely supportive during the execution and implementation stages of the project. I sincerely wish Yutori Designs continued success in all future endeavours.",
     name: "Bhisham Saini",
     role: "Absolute Leisure Private Limited",
   },
+
+  {
+    quote:
+      "I think anyone who's come to our office will be amazed by the kind of architecture and the simplicity we have. I think it's all kudos to Yutori and the team. We've been working with them for the last couple of years to put together all our offices, both in Mangalore and Udupi.",
+    paragraph:
+      "Thank you again for all your contribution and for being part of our journey in the last couple of years. Thank you.",
+
+    name: "Suyog Shetty",
+    role: "CEO and Co-founder-Niveus Solutions(Part of NTT Data)",
+  },
 ];
 
 export default function Testimonials() {
-  const [playing, setPlaying] = useState(false);
-
   return (
-    <section className="py-24 lg:py-32 bg-ink-900 overflow-hidden">
+    <section className="py-24 lg:py-32 bg-ink-900 overflow-hidden text-justify">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        <span className="text-brand-300 text-sm tracking-[0.18em] uppercase">
-          Client voices
-        </span>
-        <h2 className="font-display text-4xl sm:text-5xl mt-3 text-paper text-balance max-w-xl">
-          Delivering excellence for top firms in coastal Karnataka
-        </h2>
+        {/* Section Heading */}
+        <div className="max-w-2xl">
+          <span className="text-brand-300 text-sm tracking-[0.18em] uppercase">
+            Client Voices
+          </span>
 
-        <div className="mt-14 grid lg:grid-cols-5 gap-8 items-start">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.5 }}
-            className="lg:col-span-3 relative rounded-2xl overflow-hidden bg-ink-800 h-full min-h-[400px]"
-          >
-            {!playing ? (
-              <button
-                onClick={() => setPlaying(true)}
-                className="absolute inset-0 w-full h-full group"
-                aria-label="Play testimonial video"
-              >
-                <div className="absolute inset-0 overflow-hidden rounded-xl justify-center items-center flex">
-                  <div
-                    className="absolute inset-0 bg-center bg-cover"
-                    style={{ backgroundImage: "url('/images/testimonials/niveus-poster.jpg')" }}
-                  />
-                </div>
-                <div className="absolute inset-0 bg-ink-900/40 group-hover:bg-ink-900/30 transition-colors" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="w-16 h-16 rounded-full bg-brand-600 flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <Play size={22} className="text-paper fill-paper ml-0.5" />
-                  </span>
-                </div>
-                <div className="absolute bottom-5 left-5 text-left">
-                  <p className="font-display text-paper text-lg">Suyog Shetty</p>
-                  <p className="text-stone-300 text-sm">CEO &amp; Co-founder, Niveus Solutions</p>
-                </div>
-              </button>
-            ) : (
-              <div className="absolute inset-0 overflow-hidden rounded-2xl">
-                <video
-                  className="absolute inset-0 w-full h-full object-cover"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  controls
-                >
-                  <source src="/images/testimonials/Nivesus_Testimonial.mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-            )}
-          </motion.div>
+          <h2 className="font-display text-4xl sm:text-5xl mt-3 text-paper leading-tight max-w-3xl">
+            Delivering excellence through thoughtful design
+          </h2>
 
-          <div className="lg:col-span-2 flex flex-col gap-5">
-            {textTestimonials.slice(0, 2).map((t, i) => (
-              <motion.div
-                key={t.name}
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-60px" }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="bg-ink-800 rounded-xl p-6"
-              >
-                <Quote size={18} className="text-brand-500 mb-3" />
-                <p className="text-stone-300 text-[15px] leading-relaxed">{t.quote}</p>
-                <p className="mt-4 font-display text-paper">{t.name}</p>
-                <p className="text-stone-600 text-sm">{t.role}</p>
-              </motion.div>
-            ))}
-          </div>
+          <p className="mt-5 text-stone-400 leading-relaxed">
+            Every project is built on collaboration, trust, and a shared vision.
+            Hear directly from the people and organisations we have had the
+            privilege to work with.
+          </p>
         </div>
-      </div>
 
-      <div className="mt-16 relative">
-        <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-ink-900 to-transparent z-10" />
-        <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-ink-900 to-transparent z-10" />
-        <div className="flex gap-6 w-max animate-[scroll_32s_linear_infinite] hover:[animation-play-state:paused]">
-          {[...textTestimonials, ...textTestimonials].map((t, i) => (
-            <div
-              key={i}
-              className="w-[620px] shrink-0 bg-ink-800 rounded-xl p-7 border border-paper/5"
+        {/* All Testimonials */}
+        <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {textTestimonials.map((testimonial, index) => (
+            <motion.article
+              key={testimonial.name}
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-60px" }}
+              transition={{
+                duration: 0.5,
+                delay: index * 0.1,
+              }}
+              className="flex flex-col rounded-2xl border border-paper/10 bg-ink-800 p-7 lg:p-8 transition-all duration-300 hover:-translate-y-1 hover:border-brand-500/40"
             >
-              <Quote size={16} className="text-brand-500 mb-3" />
-              <p className="text-stone-400 text-[13px] leading-relaxed mb-3 text-justify">
-                {/* <p className="text-paper text-sm leading-relaxed  mb-3 te"></p> */}
-                {t.quote}
-              </p>
-              <p className="text-stone-400 text-[13px] leading-relaxed mb-3 text-justify">
-                {t.paragraph}
-              </p>
-              <p className="text-stone-400 text-[13px] leading-relaxed text-justify mb-3">
-                {t.paragraph1}
-              </p>
-               <p className="text-stone-400 text-[13px] leading-relaxed mb-3 text-justify">
-                {t.paragraph2}
-              </p>
-              <div className="mt-5 pt-4 border-t border-paper/10 flex items-center gap-3">
-                {/* <div className="w-8 h-8 rounded-full bg-brand-600 flex items-center justify-center text-paper text-xs font-display shrink-0">
-                  {t.name.split(" ").map((n: string) => n[0]).join("").slice(0, 2)}
-                </div> */}
-                <div>
-                  <p className="font-display text-6xl text-paper text-sm">{t.name}</p>
-                  <p className="text-stone-500 text-xs">{t.role}</p>
-                </div>
+              {/* Quote Icon */}
+              <div className="mb-6 flex h-11 w-11 items-center justify-center rounded-full bg-brand-600/15">
+                <Quote size={20} className="text-brand-400" />
               </div>
-            </div>
+
+              {/* Testimonial Content */}
+              <div className="flex flex-1 flex-col gap-4">
+                <p className="text-stone-300 text-[15px] leading-relaxed">
+                  &ldquo;{testimonial.quote}&rdquo;
+                </p>
+
+                <p className="text-stone-400 text-[15px] leading-relaxed">
+                  {testimonial.paragraph}
+                </p>
+
+                <p className="text-stone-400 text-[15px] leading-relaxed">
+                  {testimonial.paragraph1}
+                </p>
+
+                {testimonial.paragraph2 && (
+                  <p className="text-stone-400 text-[15px] leading-relaxed">
+                    {testimonial.paragraph2}
+                  </p>
+                )}
+              </div>
+
+              {/* Client Details */}
+              <div className="mt-8 pt-5 border-t border-paper/10">
+                <p className="font-display text-lg text-paper">
+                  {testimonial.name}
+                </p>
+
+                <p className="mt-1 text-sm text-stone-500">
+                  {testimonial.role}
+                </p>
+              </div>
+            </motion.article>
           ))}
         </div>
       </div>
-      <style>{`
-        @keyframes scroll {
-          from { transform: translateX(0); }
-          to { transform: translateX(-50%); }
-        }
-      `}</style>
     </section>
   );
 }

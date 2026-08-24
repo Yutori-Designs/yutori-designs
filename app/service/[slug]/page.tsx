@@ -180,7 +180,7 @@ export default async function ServicePage({
             Our process
           </span>
           <h2 className="font-display text-4xl mt-3 text-ink-900 text-balance">
-            Yutori&apos;s approach to {service.nameSubtitle.toLowerCase()}
+            Yutori&apos;s approach to {service.namesections}
           </h2>
           <ServiceTimeline steps={service.steps} />
         </div>

@@ -1,11 +1,11 @@
 export type ProjectCategory =
-  | "Office Space"
-  | "Hotel / Resort"
-  | "Commercial"
-  | "Institution"
-  | "Religious"
-  | "Villa"
-  | "Flat";
+  | "Workspaces"
+  | "Commercial spaces"
+  | "Commercial spaces"
+  | "Institutions"
+  | "Institutions"
+  | "Residences"
+  | "Residences";
 
 export interface Project {
   id: string;
@@ -21,53 +21,26 @@ export interface Project {
 // downloaded WordPress images in there with these exact filenames,
 // or update the paths below to match what you actually save.
 export const projects: Project[] = [
-  {
-    id: "niveus-mangalore",
-    title: "Office Design & Interiors for Niveus Solutions",
-    location: "Mangaluru ",
-    category: "Office Space",
-    cover: "/images/projects/Niveus-Mangalore/niveus-mangalore-1.jpg",
-    gallery: [
-      "/images/projects/Niveus-Mangalore/niveus-mangalore-2.jpg",
-      "/images/projects/Niveus-Mangalore/niveus-mangalore-3.jpg",
-      "/images/projects/Niveus-Mangalore/niveus-mangalore-4.jpg",
-      "/images/projects/Niveus-Mangalore/niveus-mangalore-5.jpg",
-      "/images/projects/Niveus-Mangalore/niveus-mangalore-6.jpg",
-      "/images/projects/Niveus-Mangalore/niveus-mangalore-7.jpg",
-      "/images/projects/Niveus-Mangalore/niveus-mangalore-8.jpg",
-      "/images/projects/Niveus-Mangalore/niveus-mangalore-9.jpg",
-      "/images/projects/Niveus-Mangalore/niveus-mangalore-10.jpg",
-      "/images/projects/Niveus-Mangalore/niveus-mangalore-11.jpg",
-      "/images/projects/Niveus-Mangalore/niveus-mangalore-12.jpg",
-    
 
-    ],
-  },
   {
-    id: "novigo-mangalore",
-    title: "Office Design & Interiors for Novigo IT Development Center",
-    location: "Mangalore",
-    category: "Office Space",
-    cover: "/images/projects/Novigo-Mangalore/novigo-1.jpg",
-    gallery: [
-      "/images/projects/Novigo-Mangalore/novigo-2.jpg",
-      "/images/projects/Novigo-Mangalore/novigo-3.jpg",
-      "/images/projects/Novigo-Mangalore/novigo-4.jpg",
-      "/images/projects/Novigo-Mangalore/novigo-5.jpg",
-      "/images/projects/Novigo-Mangalore/novigo-6.jpg",
-      "/images/projects/Novigo-Mangalore/novigo-7.jpg",
-      "/images/projects/Novigo-Mangalore/novigo-8.jpg",
-      "/images/projects/Novigo-Mangalore/novigo-9.jpg",
-      "/images/projects/Novigo-Mangalore/novigo-10.jpg",
-      "/images/projects/Novigo-Mangalore/novigo-11.jpg",
-      
+    id: "Hotel Jewel Park",
+    title: "Project Execution-Hotel Jewel Park, Hemmady",
+    location: "Hemmady, Udupi",
+    category: "Commercial spaces",
+    cover: "/images/projects/Jewel-Park/jewel-park-1.jpg",
+    gallery: ["/images/projects/Jewel-Park/jewel-park-1.jpg",
+      "/images/projects/Jewel-Park/jewel-park-2.jpg",
+      "/images/projects/Jewel-Park/jewel-park-3.jpg",
+      "/images/projects/Jewel-Park/jewel-park-4.jpg",
+      "/images/projects/Jewel-Park/jewel-park-5.jpg",
     ],
   },
-   {
+
+  {
     id: "xpheno-manipal",
     title: "Office Design & Interiors for Xpheno",
     location: "Manipal, Udupi",
-    category: "Office Space",
+    category: "Workspaces",
     cover: "/images/projects/Xpheno-Udupi/xpheno.jpg",
     gallery: [
       "/images/projects/Xpheno-Udupi/xpheno-2.jpg",
@@ -78,24 +51,11 @@ export const projects: Project[] = [
       "/images/projects/Xpheno-Udupi/xpheno-7.jpg",
     ],
   },
-  
-  {
-    id: "panaji-office",
-    title: "Design of Real Estate Office",
-    location: "Goa",
-    category: "Office Space",
-    cover:  "/images/projects/Real-Estate-Goa/Real-Estate-Goa-1.jpg",
-    gallery: [
-      "/images/projects/Real-Estate-Goa/Real-Estate-Goa-2.jpg",
-      "/images/projects/Real-Estate-Goa/Real-Estate-Goa-3.jpg",
-    ],
-  },
- 
   {
     id: "yutori-office-udupi",
     title: "Office Interior Design for Yutori Designs",
     location: "Udupi",
-    category: "Office Space",
+    category: "Workspaces",
     cover: "/images/projects/Yutori-Designs/Yutori-Designs-1.jpg",
     gallery: [
       "/images/projects/Yutori-Designs/Yutori-Designs-2.jpg",
@@ -114,10 +74,106 @@ export const projects: Project[] = [
     ],
   },
   {
+    id: "Vruddhi properties-office-udupi",
+    title: "Office Interior Design for Vruddhi Properties",
+    location: "Udupi",
+    category: "Workspaces",
+    cover: "/images/projects/Vruddhi Properties/Vruddhi Properties.jpg",
+    gallery: [
+      "/images/projects/Vruddhi Properties/Vruddhi Properties-1.jpg",
+      "/images/projects/Vruddhi Properties/Vruddhi Properties-2.jpg",
+      "/images/projects/Vruddhi Properties/Vruddhi Properties-3.jpg",
+      "/images/projects/Vruddhi Properties/Vruddhi Properties-4.jpg",
+      "/images/projects/Vruddhi Properties/Vruddhi Properties-5.jpg",
+      "/images/projects/Vruddhi Properties/Vruddhi Properties-6.jpg",
+      "/images/projects/Vruddhi Properties/Vruddhi Properties-7.jpg",
+      "/images/projects/Vruddhi Properties/Vruddhi Properties-8.jpg",
+      "/images/projects/Vruddhi Properties/Vruddhi Properties-9.jpg",
+
+
+    ],
+  },
+  {
+    id: "Timeless Collections-Commercial spaces -udupi",
+    title: "Timeless Collections-Commercial spaces -udupi",
+    location: "Udupi",
+    category: "Commercial spaces",
+    cover: "/images/projects/Timeless Collections/Timeless-Collections.jpg",
+    gallery: [
+      "/images/projects/Timeless Collections/Timeless-Collections-1.jpg",
+      "/images/projects/Timeless Collections/Timeless-Collections-2.jpg",
+      "/images/projects/Timeless Collections/Timeless-Collections-4.jpg",
+      "/images/projects/Timeless Collections/Timeless-Collections-5.jpg",
+      "/images/projects/Timeless Collections/Timeless-Collections-6.jpg",
+      "/images/projects/Timeless Collections/Timeless-Collections-7.jpg",
+      "/images/projects/Timeless Collections/Timeless-Collections-8.jpg",
+
+
+    ],
+  },
+
+  {
+    id: "niveus-mangalore",
+    title: "Office Design & Interiors for Niveus Solutions",
+    location: "Mangaluru ",
+    category: "Workspaces",
+    cover: "/images/projects/Niveus-Mangalore/niveus-mangalore-1.jpg",
+    gallery: [
+      "/images/projects/Niveus-Mangalore/niveus-mangalore-2.jpg",
+      "/images/projects/Niveus-Mangalore/niveus-mangalore-3.jpg",
+      "/images/projects/Niveus-Mangalore/niveus-mangalore-4.jpg",
+      "/images/projects/Niveus-Mangalore/niveus-mangalore-5.jpg",
+      "/images/projects/Niveus-Mangalore/niveus-mangalore-6.jpg",
+      "/images/projects/Niveus-Mangalore/niveus-mangalore-7.jpg",
+      "/images/projects/Niveus-Mangalore/niveus-mangalore-8.jpg",
+      "/images/projects/Niveus-Mangalore/niveus-mangalore-9.jpg",
+      "/images/projects/Niveus-Mangalore/niveus-mangalore-10.jpg",
+      "/images/projects/Niveus-Mangalore/niveus-mangalore-11.jpg",
+      "/images/projects/Niveus-Mangalore/niveus-mangalore-12.jpg",
+
+
+    ],
+  },
+  {
+    id: "novigo-mangalore",
+    title: "Office Design & Interiors for Novigo IT Development Center",
+    location: "Mangalore",
+    category: "Workspaces",
+    cover: "/images/projects/Novigo-Mangalore/novigo-1.jpg",
+    gallery: [
+      "/images/projects/Novigo-Mangalore/novigo-2.jpg",
+      "/images/projects/Novigo-Mangalore/novigo-3.jpg",
+      "/images/projects/Novigo-Mangalore/novigo-4.jpg",
+      "/images/projects/Novigo-Mangalore/novigo-5.jpg",
+      "/images/projects/Novigo-Mangalore/novigo-6.jpg",
+      "/images/projects/Novigo-Mangalore/novigo-7.jpg",
+      "/images/projects/Novigo-Mangalore/novigo-8.jpg",
+      "/images/projects/Novigo-Mangalore/novigo-9.jpg",
+      "/images/projects/Novigo-Mangalore/novigo-10.jpg",
+      "/images/projects/Novigo-Mangalore/novigo-11.jpg",
+
+    ],
+  },
+
+
+  {
+    id: "panaji-office",
+    title: "Design of Real Estate Office",
+    location: "Goa",
+    category: "Workspaces",
+    cover: "/images/projects/Real-Estate-Goa/Real-Estate-Goa-1.jpg",
+    gallery: [
+      "/images/projects/Real-Estate-Goa/Real-Estate-Goa-2.jpg",
+      "/images/projects/Real-Estate-Goa/Real-Estate-Goa-3.jpg",
+    ],
+  },
+
+
+  {
     id: "niveus-udupi",
     title: "Office Design & Interiors for Niveus Solutions",
     location: "Udupi",
-    category: "Office Space",
+    category: "Workspaces",
     cover: "/images/projects/Niveus-Udupi/niveus-udupi-1.jpg",
     gallery: [
       "/images/projects/Niveus-Udupi/niveus-udupi-2.jpg",
@@ -128,38 +184,38 @@ export const projects: Project[] = [
       "/images/projects/Niveus-Udupi/niveus-udupi-7.jpg",
       "/images/projects/Niveus-Udupi/niveus-udupi-8.jpg",
       "/images/projects/Niveus-Udupi/niveus-udupi-9.jpg",
-      
+
     ],
   },
   {
     id: "kundapura-hotel",
-    title: "Execution of Commercial Complex and Hotel",
+    title: "Execution of Commercial spaces Complex and Hotel",
     location: "Kundapura",
-    category: "Hotel / Resort",
+    category: "Commercial spaces",
     cover: "/images/projects/Execution of Commercial/Execution of Commercial.jpg",
-    gallery: ["/images/projects/Execution of Commercial/Execution of Commercial.jpg",
-      "/images/projects/Execution of Commercial/Execution of Commercial-1.jpg",
+    gallery: ["/images/projects/Execution of Commercial/Execution of Commercial-1.jpg",
       "/images/projects/Execution of Commercial/Execution of Commercial-2.jpg",
       "/images/projects/Execution of Commercial/Execution of Commercial-3.jpg",
       "/images/projects/Execution of Commercial/Execution of Commercial-4.jpg",
-      ],
+     
+    ],
   },
   {
     id: "thallur-wedding-hall",
     title: "Execution of Wedding Hall",
     location: "Thallur, Kundapura",
-    category: "Commercial",
+    category: "Commercial spaces",
     cover: "/images/projects/Execution of Wedding Hall/wedding-hall.jpg",
     gallery: [
       "/images/projects/Execution of Wedding Hall/wedding-hall-1.jpg",
-    "/images/projects/Execution of Wedding Hall/wedding-hall-2.jpg",
-  ],
+      "/images/projects/Execution of Wedding Hall/wedding-hall-2.jpg",
+    ],
   },
   {
     id: "st-joseph-iti-jeppu",
     title: "College Building",
     location: "Jeppu, Mangalore",
-    category: "Institution",
+    category: "Institutions",
     cover: "/images/projects/st-joseph-iti-jeppu/St-josep-ITI.jpg",
     gallery: [
       "/images/projects/st-joseph-iti-jeppu/St-josep-ITI-1.jpg",
@@ -169,7 +225,7 @@ export const projects: Project[] = [
     id: "philip-neri-school-basroor",
     title: "Design of St. Philip Neri Central School",
     location: "Basroor, Kundapura",
-    category: "Institution",
+    category: "Institutions",
     cover: "/images/projects/St. Philip Neri Central School/St. Philip Neri Central School.jpg",
     gallery: ["/images/projects/St. Philip Neri Central School/St. Philip Neri Central School-1.jpg",],
   },
@@ -177,7 +233,7 @@ export const projects: Project[] = [
     id: "rosary-church-santhakatte",
     title: "Mount Rosary Church, Santhekatte",
     location: "Santhakatte, Udupi",
-    category: "Religious",
+    category: "Institutions",
     cover: "/images/projects/Mount Rosary Church, Santhekatte/Mount Rosary Church, Santhekatte.jpg",
     gallery: ["/images/projects/Mount Rosary Church, Santhekatte/Mount Rosary Church, Santhekatte_1.jpg"],
   },
@@ -185,7 +241,7 @@ export const projects: Project[] = [
     id: "thallur-church",
     title: "Execution of Saint Francis Assisi Church",
     location: "Thallur, Kundapura",
-    category: "Religious",
+    category: "Institutions",
     cover: "/images/projects/Saint Francis Assisi/Tallur.jpg",
     gallery: ["/images/projects/Saint Francis Assisi/Tallur-1.jpg",],
   },
@@ -193,7 +249,7 @@ export const projects: Project[] = [
     id: "hollywood-town-garden-roof",
     title: "Design of Garden Roof House",
     location: "Hollywood Town, Bangalore",
-    category: "Villa",
+    category: "Residences",
     cover: "/images/projects/Garden Roof House/Garden Roof House.jpg",
     gallery: ["/images/projects/Garden Roof House/Garden Roof House-1.jpg",
       "/images/projects/Garden Roof House/Garden Roof House-2.jpg",
@@ -209,24 +265,24 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: "high-street-gabion-villa",
+    id: "high-street-gabion-Residences",
     title: "Design of House with Gabion Facade",
     location: "High Street, Bangalore",
-    category: "Villa",
+    category: "Residences",
     cover: "/images/projects/House with gabion facade/House with gabion facade.jpg",
     gallery: ["/images/projects/House with gabion facade/House with gabion facade-1.jpg",
       "/images/projects/House with gabion facade/House with gabion facade-2.jpg",
       "/images/projects/House with gabion facade/House with gabion facade-3.jpg",
       "/images/projects/House with gabion facade/House with gabion facade-4.jpg",
       "/images/projects/House with gabion facade/House with gabion facade-5.jpg",
-       "/images/projects/House with gabion facade/House with gabion facade-6.jpg",
+      "/images/projects/House with gabion facade/House with gabion facade-6.jpg",
     ],
   },
   {
-    id: "nandi-hills-villa",
+    id: "nandi-hills-Residences",
     title: "Design of House Facing Nandi Hills",
     location: "Bangalore",
-    category: "Villa",
+    category: "Residences",
     cover: "/images/projects/House facing Nandi Hills/House facing Nandi Hills-.jpg",
     gallery: ["/images/projects/House facing Nandi Hills/House facing Nandi Hills-1.jpg",
       "/images/projects/House facing Nandi Hills/House facing Nandi Hills-2.jpg",
@@ -241,18 +297,18 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: "sangolda-villa",
+    id: "sangolda-Residences",
     title: "Design of House Around Trees",
     location: "Sangolda, Goa",
-    category: "Villa",
+    category: "Residences",
     cover: "/images/projects/Design of House Around Trees/Design of House Around Trees.jpg",
     gallery: ["/images/projects/Design of House Around Trees/Design of House Around Trees_1.jpg",],
   },
   {
-    id: "park-avenue-udupi-flat",
-    title: "Interiors for Flat at Park Avenue",
+    id: "park-avenue-udupi-Residences",
+    title: "Interiors for Residences at Park Avenue",
     location: "Ajjarkad, Udupi",
-    category: "Flat",
+    category: "Residences",
     cover: "/images/projects/Park evenue/Park evenue.jpg",
     gallery: ["/images/projects/Park evenue/Park evenue-1.jpg",
       "/images/projects/Park evenue/Park evenue-2.jpg",
@@ -268,14 +324,14 @@ export const projects: Project[] = [
       "/images/projects/Park evenue/Park evenue-12.jpg",
       "/images/projects/Park evenue/Park evenue-13.jpg",
       "/images/projects/Park evenue/Park evenue-14.jpg",
-      
+
     ],
   },
   {
-    id: "kadri-enclave-flat",
-    title: "Flat Interiors",
+    id: "kadri-enclave-Residences",
+    title: "Residences Interiors",
     location: "Kadri Enclave, Mangalore",
-    category: "Flat",
+    category: "Residences",
     cover: "/images/projects/kadri-enclave/kadri-enclave.jpg",
     gallery: ["/images/projects/kadri-enclave/kadri-enclave-1.jpg",
       "/images/projects/kadri-enclave/kadri-enclave-2.jpg",
@@ -285,78 +341,26 @@ export const projects: Project[] = [
       "/images/projects/kadri-enclave/kadri-enclave-6.jpg",
     ],
   },
-  
+
   {
     id: "tc-palya-apartment",
     title: "Apartment Complex",
     location: "TC Palya, Bengaluru",
-    category: "Flat",
+    category: "Residences",
     cover: "/images/projects/tc-palya-apartment/tc-palya-apartment.jpg",
     gallery: ["/images/projects/tc-palya-apartment/tc-palya-apartment-1.jpg",
       "/images/projects/tc-palya-apartment/tc-palya-apartment-2.jpg",
       "/images/projects/tc-palya-apartment/tc-palya-apartment-3.jpg",
     ],
   },
-  {
-    id: "Vruddhi properties-office-udupi",
-    title: "Office Interior Design for Vruddhi Properties",
-    location: "Udupi",
-    category: "Office Space",
-    cover: "/images/projects/Vruddhi Properties/Vruddhi Properties.jpg",
-    gallery: [
-      "/images/projects/Vruddhi Properties/Vruddhi Properties-1.jpg",
-       "/images/projects/Vruddhi Properties/Vruddhi Properties-2.jpg",
-       "/images/projects/Vruddhi Properties/Vruddhi Properties-3.jpg",
-       "/images/projects/Vruddhi Properties/Vruddhi Properties-4.jpg",
-       "/images/projects/Vruddhi Properties/Vruddhi Properties-5.jpg",
-       "/images/projects/Vruddhi Properties/Vruddhi Properties-6.jpg",
-      "/images/projects/Vruddhi Properties/Vruddhi Properties-7.jpg",
-       "/images/projects/Vruddhi Properties/Vruddhi Properties-8.jpg",
-       "/images/projects/Vruddhi Properties/Vruddhi Properties-9.jpg",
-      
-      
-    ],
-  },
-   {
-    id: "Timeless Collections-commercial -udupi",
-    title: "Timeless Collections-commercial -udupi",
-    location: "Udupi",
-    category: "Commercial",
-    cover: "/images/projects/Timeless Collections/Timeless-Collections.jpg",
-    gallery: [
-      "/images/projects/Timeless Collections/Timeless-Collections-1.jpg",
-      "/images/projects/Timeless Collections/Timeless-Collections-2.jpg",
-       "/images/projects/Timeless Collections/Timeless-Collections-4.jpg",
-       "/images/projects/Timeless Collections/Timeless-Collections-5.jpg",
-       "/images/projects/Timeless Collections/Timeless-Collections-6.jpg",
-       "/images/projects/Timeless Collections/Timeless-Collections-7.jpg",
-       "/images/projects/Timeless Collections/Timeless-Collections-8.jpg",
-      
-      
-    ],
-  },
-  {
-    id: "Hotel Jewel Park",
-    title: "Project Execution-Hotel Jewel Park, Hemmady",
-    location: "Hemmady, Udupi",
-    category: "Hotel / Resort",
-    cover: "/images/projects/Jewel-Park/jewel-park-1.jpg",
-    gallery: ["/images/projects/Jewel-Park/jewel-park-1.jpg",
-      "/images/projects/Jewel-Park/jewel-park-2.jpg",
-      "/images/projects/Jewel-Park/jewel-park-3.jpg",
-      "/images/projects/Jewel-Park/jewel-park-4.jpg",
-      "/images/projects/Jewel-Park/jewel-park-5.jpg",
-      ],
-  },
+
 ];
 
 export const categories: ProjectCategory[] = [
-  "Office Space",
-  "Hotel / Resort",
-  "Commercial",
-  "Institution",
-  "Religious",
-  "Villa",
-  "Flat",
+  "Workspaces",
+  "Commercial spaces",
+  "Institutions",
+  "Residences",
   
+
 ];

@@ -7,6 +7,7 @@ export interface ServiceContent {
   slug: string;
   name: string;
   nameSubtitle: string;
+  namesections: string;
   shortName: string;
   headlineWord: string; // used as "Transforming {headlineWord} in Mangalore"
   whatWeDoLabel: string; // heading above the intro paragraph, e.g. "Commercial interior design"
@@ -37,6 +38,7 @@ export const services: Record<string, ServiceContent> = {
     whatWeDoLabel: "Crafting Homes with Heart & Harmony",
     whyChooseLabel: "Elegant Designs for Inspiring Workspaces",
     whyChooseLabel1:"",
+    namesections: "Interior Design",  
     metaTitle: "Interior Designers in Mangalore & Udupi | Yutori Designs",
     heroImage: "/images/services/Interior-designs.png",
     heroImage2: "/images/services/office-Interior-designs.jpg",
@@ -88,8 +90,9 @@ export const services: Record<string, ServiceContent> = {
     shortName: "Space Planning",
     headlineWord: "Spaces with Smart Planning",
     whatWeDoLabel: "Efficient Use of Space for Elegant Everyday Living",
-    whyChooseLabel: "Shaping Workspaces That Inspire Innovation",
+    whyChooseLabel: "Shaping Workspaces that Inspire Innovation",
     whyChooseLabel1:"",
+    namesections: "Layout Solutions that maximize Space & Style", 
     metaTitle: "Space Planning Services in Mangalore & Udupi | Yutori Designs",
     heroImage: "/images/services/Space Planing-new.jpg",
     heroImage2: "/images/services/Space Planing-yutori.jpg",
@@ -141,9 +144,9 @@ export const services: Record<string, ServiceContent> = {
     shortName: "Turnkey Execution",
     headlineWord: "Spaces, Start to Finish",
     whatWeDoLabel: "Full-Scope Turnkey Project Handling",
-    whyChooseLabel: "Why Choose Yutori Designs for Turnkey Interior Projects in Mangalore?",
-    whyChooseLabel1: "Key Benefits of Turnkey Interior Project Management in Mangalore",
-    
+    whyChooseLabel: "Why Choose Yutori Designs for Turnkey Interior Projects?",
+    whyChooseLabel1: "Key Benefits of Turnkey Interior Project Management",
+    namesections: "Turnkey Project Execution",
     metaTitle: "Turnkey Interior Project Execution | Yutori Designs",
     heroImage: "/images/services/Trurn-key.jpg",
     heroImage2: "/images/services/Trurn-key-new image.jpg",
@@ -196,6 +199,7 @@ export const services: Record<string, ServiceContent> = {
     name: "Commercial & Office Interior Design",
     shortName: "Commercial",
     nameSubtitle: "Commercial & Office Interior Designers in Mangalore",
+    namesections:"Commercial & Office Interiors design",
     headlineWord: "Commercial Spaces",
     whatWeDoLabel: "Yutori Designs: Transforming Commercial Spaces in Mangalore",
     whyChooseLabel: "Why Choose Us for Your Commercial Interior Project in Mangalore?",
@@ -204,9 +208,9 @@ export const services: Record<string, ServiceContent> = {
     heroImage: "/images/services/Commercial interior.jpg",
     heroImage2: "/images/services/Commercial interior-1.jpg",
     intro:
-      "Our commercial interior designers specialize in designing spaces that are both visually striking and strategically designed to enhance functionality and brand identity. From upscale offices and retail showrooms to hospitality venues, our commercial interiors reflect a seamless blend of sophistication, efficiency, and modern aesthetics. Each project is tailored to support our clients’ business goals while offering an inviting and professional environment. With a focus on smart spatial planning and premium finishes, we ensure every detail speaks to quality and innovation. Whether full execution or design-only services, Yutori transforms commercial spaces into experiences that inspire, engage, and elevate your brand presence.",
+      "Our commercial interior designers specialize in designing spaces that are both visually striking and strategically planned to enhance functionality and brand identity. From upscale offices and retail showrooms to hospitality venues, our commercial interiors reflect a seamless blend of sophistication, efficiency, and modern aesthetics. Each project is tailored to support our clients' business goals while creating an inviting and professional environment. With a focus on smart spatial planning and premium finishes, we ensure every detail reflects quality and innovation. Whether you require full execution or design-only services, Yutori Designs transforms commercial spaces into experiences that inspire, engage, and elevate your brand presence.",
     whyUs:
-      "Partnering with Yutori Designs means choosing interior designers dedicated to transforming your commercial space in Mangalore into a strategic asset. We are experts in aligning design with business goals, coupled with our deep understanding of local market needs. We prioritize your vision, delivering innovative and sustainable solutions that enhance productivity & well-being, and brand perception. Discover the Yutori difference for your next office or retail interior project.",
+      "Partnering with Yutori Designs means choosing interior designers dedicated to transforming your commercial space in Mangalore into a strategic asset. We specialize in aligning design with business goals while bringing a deep understanding of local market needs.We prioritize your vision and deliver innovative, sustainable solutions that enhance productivity, well-being, and brand perception. Discover the Yutori difference for your next office, retail, or commercial interior project.",
      whyUs1: "",
       steps: [
       {
@@ -254,9 +258,10 @@ export const services: Record<string, ServiceContent> = {
   },
   residential: {
     slug: "residential",
-    name: "Home Interior Designers in Mangalore",
+    name: "Home Interior Designers",
     shortName: "Residential",
     nameSubtitle: "Home Interior Designers in Mangalore",
+     namesections: "Home Interior Design", 
     headlineWord: "Residential Spaces",
     whatWeDoLabel: "Bespoke Home Interiors",
     whyChooseLabel: "Best Home Interior Designers in Mangalore: Creating Spaces That Feel Like Home",
@@ -320,16 +325,17 @@ export const services: Record<string, ServiceContent> = {
   },
   "office-space": {
     slug: "office-space",
-    name: "Commercial & Office Space Design",
+    name: "Work Space Design",
     shortName: "Office Space",
-    nameSubtitle: "Commercial & Office Interior Designers in Mangalore",
-    headlineWord: "Commercial Spaces",
+    nameSubtitle: "WorkSpace Interior Designers in Mangalore",
+    headlineWord: "Work Spaces",
+     namesections: "Work Spaces Interiors design", 
     whatWeDoLabel: "Yutori Designs: Transforming Commercial Spaces in Mangalore",
-    whyChooseLabel: "Why Choose Us for Your Commercial Interior Project in Mangalore?",
+    whyChooseLabel: "Why choose us for your Commercial Interiors Project in Mangalore?",
     whyChooseLabel1:"",
     metaTitle: "Commercial Interior Design in Mangalore & Udupi | Yutori Designs",
     heroImage: "/images/services/Commercial interior-1.jpg",
-    heroImage2: "/images/services/Commercial interior.jpg",
+    heroImage2: "/images/services/office-Interior-designs.jpg",
     intro:
       "Our commercial interior designers specialize in designing spaces that are both visually striking and strategically designed to enhance functionality and brand identity. From upscale offices and retail showrooms to hospitality venues, our commercial interiors reflect a seamless blend of sophistication, efficiency, and modern aesthetics. Each project is tailored to support our clients’ business goals while offering an inviting and professional environment. With a focus on smart spatial planning and premium finishes, we ensure every detail speaks to quality and innovation. Whether full execution or design-only services, Yutori transforms commercial spaces into experiences that inspire, engage, and elevate your brand presence.",
     whyUs:
