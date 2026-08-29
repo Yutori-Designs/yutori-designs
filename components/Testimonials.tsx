@@ -165,27 +165,27 @@ function TextTestimonialCard({
       </div>
 
       <div className="flex flex-1 flex-col gap-4">
-        <p className="text-stone-400 text-[13px] leading-relaxed">
+        <p className="text-stone-400 text-base sm:text-lg md:text-xl text-[13px] leading-relaxed">
           &ldquo;{testimonial.quote}&rdquo;
         </p>
-        <p className="text-stone-400 text-[13px] leading-relaxed">
+        <p className="text-stone-400 text-base sm:text-lg md:text-xl text-[13px] leading-relaxed">
           {testimonial.paragraph}
         </p>
         {testimonial.paragraph1 && (
-          <p className="text-stone-400 text-[13px] leading-relaxed">
+          <p className="text-stone-400  text-base sm:text-lg md:text-xl text-[13px] leading-relaxed">
             {testimonial.paragraph1}
           </p>
         )}
         {testimonial.paragraph2 && (
-          <p className="text-stone-400 text-[13px] leading-relaxed">
+          <p className="text-stone-400 text-base sm:text-lg md:text-xl text-[13px] leading-relaxed">
             {testimonial.paragraph2}
           </p>
         )}
       </div>
 
       <div className="mt-8 pt-5 border-t border-paper/10">
-        <p className="font-display text-lg text-paper">{testimonial.name}</p>
-        <p className="mt-1 text-sm text-stone-500">{testimonial.role}</p>
+        <p className="font-display text-base sm:text-lg md:text-xl text-paper">{testimonial.name}</p>
+        <p className="mt-1 text-sm text-base sm:text-lg md:text-xl text-stone-500">{testimonial.role}</p>
       </div>
     </motion.article>
   );
