@@ -165,19 +165,19 @@ function TextTestimonialCard({
       </div>
 
       <div className="flex flex-1 flex-col gap-4">
-        <p className="text-stone-400 text-base sm:text-lg md:text-xl text-[13px] leading-relaxed">
+        <p className="text-stone-400 text-base text-sm sm:text-base md:text-lg leading-relaxed">
           &ldquo;{testimonial.quote}&rdquo;
         </p>
-        <p className="text-stone-400 text-base sm:text-lg md:text-xl text-[13px] leading-relaxed">
+        <p className="text-stone-400 text-sm sm:text-base md:text-lg text-left leading-relaxed">
           {testimonial.paragraph}
         </p>
         {testimonial.paragraph1 && (
-          <p className="text-stone-400  text-base sm:text-lg md:text-xl text-[13px] leading-relaxed">
+          <p className="text-stone-400  text-sm sm:text-base md:text-lg leading-relaxed">
             {testimonial.paragraph1}
           </p>
         )}
         {testimonial.paragraph2 && (
-          <p className="text-stone-400 text-base sm:text-lg md:text-xl text-[13px] leading-relaxed">
+          <p className="text-stone-400 text-sm text-sm sm:text-base md:text-lg leading-relaxed">
             {testimonial.paragraph2}
           </p>
         )}

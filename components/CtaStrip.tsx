@@ -14,7 +14,7 @@ export default function CtaStrip() {
         <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-paper text-balance">
           Ready to transform your space?
         </h2>
-        <p className="mt-5 text-brand-50/90 text-lg mx-auto whitespace-nowrap">
+        <p className="mt-5 text-brand-50/90 text-base sm:text-lg md:text-xl mx-auto text-center max-w-[340px] sm:max-w-2xl">
           Tell us about your project and we&apos;ll get back to you within a day.
         </p>
         <Link

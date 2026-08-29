@@ -50,6 +50,11 @@ const teamStats = [
     label: "Creative & Visualization Specialists",
   },
 
+  {
+    number: "---",
+    label: "Site & Field Professionals",
+  }
+
 ];
 
 const expertise = [
@@ -246,7 +251,7 @@ export default function OurTeamPage() {
               fill
               priority
               className="object-cover"
-        
+
             />
 
             <div className="absolute inset-0 bg-gradient-to-t from-ink-900/70 via-transparent to-transparent" />
@@ -363,7 +368,7 @@ export default function OurTeamPage() {
               Let&apos;s create something meaningful together.
             </h2>
 
-            <p className="max-w-2xl mx-auto mt-5 text-white/80 text-base md:text-lg whitespace-nowrap">
+            <p className="max-w-2xl mx-auto mt-5 text-white/80 text-base sm:text-lg md:text-xl mx-auto text-center max-w-[340px] sm:max-w-2xl">
               From the first conversation to the final detail, our team is
               ready to bring your vision to life.
             </p>
