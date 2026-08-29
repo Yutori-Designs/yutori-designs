@@ -200,11 +200,11 @@ export default function Testimonials() {
           <span className="text-brand-300 text-sm tracking-[0.18em] uppercase">
             In Focus
           </span>
-          <h2 className="font-display text-4xl sm:text-5xl mt-3 text-paper leading-tight max-w-3xl">
+          <h2 className="font-display text-4xl sm:text-5xl mt-3 text-paper leading-tight max-w-3xl text-left">
             Spaces We Brought to Life
           </h2>
 
-          <p className="mt-5 text-stone-400 leading-relaxed max-w-[320px] sm:max-w-2xl">
+          <p className="mt-5 text-stone-400 leading-relaxed text-left">
             A glimpse into spaces designed and brought to life by Yutori Designs, featured through videos created and shared by the Silicon Beach Program team.
           </p>
         </div>
