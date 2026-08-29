@@ -206,7 +206,7 @@ export default function OurTeamPage() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-3 border border-ink-900/10 rounded-3xl overflow-hidden bg-white">
+          <div className="grid grid-cols-2 lg:grid-cols-4 border border-ink-900/10 rounded-3xl overflow-hidden bg-white">
             {teamStats.map((stat, index) => (
               <div
                 key={stat.label}
