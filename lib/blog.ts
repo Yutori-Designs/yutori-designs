@@ -37,7 +37,7 @@ export const blogPosts: BlogPost[] = [
     title: "Interior Design Firms in Mangalore: Design Philosophy Over House Style",
     excerpt:
       "Most interior design firms in Mangalore apply the same signature style to every project, ignoring how you actually live. When a design starts with your needs instead of the designer’s aesthetic, spaces age better and cost less to maintain. The best firms listen first and decide their approach based on what you’re trying to solve.",
-    date: "March 2026",
+    date: "July 2026",
     readTime: "4 min read",
     category: "Design Philosophy",
     cover: "/images/blog/design-philosophy-over-house.jpg",
@@ -140,10 +140,10 @@ export const blogPosts: BlogPost[] = [
   // 2- blog 
   {
     slug: "interior-design-mangalore-luxury-villas-premium-homes",
-    title: "Why Interior Design Mangalore Is Becoming Essential for Luxury Villas and Premium Homes",
+    title: "Why Interior Design Mangalore in Becoming Essential for Luxury Villas and Premium Homes",
     excerpt:
       "Premium homeowners want more than expensive finishes. Interior design Mangalore professionals are building spaces around calm, coastal materials, and personal lifestyle, not trend boards or decorative excess.",
-    date: "January 2026",
+    date: "June 2026",
     readTime: "5 min read",
     category: "Luxury Residential Design",
     cover: "/images/blog/Interior-Designers-in-Mangalore_-Yutori-Transforming-Coastal-Spaces.jpg",
@@ -241,7 +241,7 @@ export const blogPosts: BlogPost[] = [
     title: "7 Services Offered by Top Interior Designers in Mangalore [Infographic]",
     excerpt:
       "Interior design plays a significant role in shaping how spaces function and feel. Whether it is a home, office, retail outlet, or hospitality space, thoughtful design enhances usability, aesthetics, and overall experience. Professional designers bring expertise in planning, materials, and execution to create spaces that align with client needs and preferences.",
-    date: "November 2025",
+    date: "May 2026",
     readTime: "3 min read",
     category: "Interior Design Services",
     cover: "/images/blog/novigo_waiting_area.jpg",
@@ -271,10 +271,10 @@ export const blogPosts: BlogPost[] = [
   ///4 blog
   {
     slug: "how-commercial-interior-designers-work",
-    title: "How a Commercial Interior Designer Thinks About Your Space that needs to be designed",
+    title: "How a Commercial Interior Designer Thinks About Designing Your Space",
     excerpt:
       "Most people assume that designers begin with addressing the colours or furniture. Or a mood board from a design site. That is not the process. If your designer starts here, pause before going further. The first thing a good designer looks at is how people move. Not how the space looks — how it functions when full of people trying to work, meet, or serve customers. Every corridor, every door placement, every desk cluster has a logic behind it. Or it should. A commercial interior designer thinks about this before touching a single swatch.",
-    date: "December 2025",
+    date: "April 2026",
     readTime: "3 min read",
     category: "Design Process",
     cover: "/images/blog/commercial-interior-designer.jpg",
@@ -481,10 +481,10 @@ export const blogPosts: BlogPost[] = [
   ///4 blog
   {
     slug: "mangalore-architects",
-    title: "Mangalore Architects: How Yutori is Redefining Architecture & Interior Design",
+    title: "Mangalore Architects: How Yutori Is Redefining Architecture & Interior Design",
     excerpt:
       "When people look for Mangalore architects, they are often seeking a firm that brings together creativity, technical precision, durability, and an understanding of Mangalore’s unique coastal identity. Architecture in this region is shaped not just by design trends but by climate, culture, material behaviour, and the lifestyle of the people who inhabit these spaces.",
-    date: "April 2025",
+    date: "February 2026",
     readTime: "3 min read",
     category: "Architecture",
     cover: "/images/blog/yutori-redefining-architecture-interiors-mangalore.png",
@@ -936,7 +936,7 @@ export const blogPosts: BlogPost[] = [
   // 7- blog 
   {
     slug: "interior-designers-mangalore",
-    title: "Top Mangalore Interior Designers: Yutori Designs For Coastal Spaces",
+    title: "Top Interior Designers in Mangalore: Yutori Designs for Coastal Spaces",
     excerpt:
       "Get The Best Interior Designers in Mangalore For your Project: Search for the best Interior Designer in Mangalore often leads homeowners, architects, and business owners to a long list of firms promising beautiful spaces. But designing in a coastal city requires far more than surface-level aesthetics. The region’s humidity, monsoons, cultural legacy, and evolving urban lifestyle demand a distinct design approach — one that brings together climate intelligence, material sensitivity, and a deep understanding of how people live.",
     date: "January 2026",
@@ -1496,7 +1496,7 @@ export const blogPosts: BlogPost[] = [
     title: "Luxury Interior Designers in Mangalore",
     excerpt:
       "Redefining Luxury Home Interiors in Mangalore : When people search for premium interior designers in Mangalore, they are not really searching for gold finishes or imported furniture. They are searching for a home or workspace that feels calm, expansive, deeply comfortable, and quietly premium. A place that supports their lifestyle, not just their status.",
-    date: "January 2026",
+    date: "December 2025",
     readTime: "5 min read",
     category: "Luxury Residential Design",
     cover: "/images/blog/Luxury-Interior-Designers-in-Mangalore.png",

@@ -5,10 +5,12 @@ export default function PageHero({
   eyebrow,
   title,
   breadcrumb,
+  Smalltitle
 }: {
   eyebrow: string;
   title: string;
   breadcrumb: { label: string; href?: string }[];
+  Smalltitle?: string;
 }) {
   return (
     <div className="bg-ink-900 pt-36 pb-16">
@@ -30,8 +32,13 @@ export default function PageHero({
         <span className="text-brand-300 text-sm tracking-[0.18em] uppercase">
           {eyebrow}
         </span>
+
         <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl mt-3 text-paper text-balance max-w-3xl">
           {title}
+        </h1>
+
+        <h1 className="font-regular text-sm mt-3 text-gray-300 text-balance max-w-3xl">
+          {Smalltitle}
         </h1>
       </div>
     </div>

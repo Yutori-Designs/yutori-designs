@@ -95,7 +95,7 @@ export const projects: Project[] = [
   },
   {
     id: "Timeless Collections-Commercial spaces -udupi",
-    title: "Timeless Collections-Commercial spaces -udupi",
+    title: "Showroom Design – Timeless Collections, Udupi",
     location: "Udupi",
     category: "Commercial spaces",
     cover: "/images/projects/Timeless Collections/Timeless-Collections.jpg",

@@ -13,10 +13,10 @@ export default function AboutSection() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-          className="relative rounded-2xl overflow-hidden aspect-[4/3] lg:aspect-[16/13]"
+          className="relative rounded-2xl overflow-hidden aspect-[4/3] lg:aspect-[18/13]"
         >
           <Image
-            src="/images/about/team-photo.png"
+            src="/images/about/Yutori-team-photo.png"
             alt="The Yutori Designs team at the studio"
             fill
             className="object-cover"

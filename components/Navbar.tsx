@@ -51,7 +51,7 @@ export default function Navbar() {
       requestAnimationFrame(() => {
         const y = window.scrollY;
 
-        setScrolled(y > 40);
+        setScrolled(y > 10);
 
         if (openMenu || mobileOpen) {
           setHidden(false);
@@ -93,11 +93,10 @@ export default function Navbar() {
         duration: 0.35,
         ease: [0.22, 1, 0.36, 1],
       }}
-      className={`fixed top-0 inset-x-0 z-50 transition-colors duration-300 ${
-        scrolled || openMenu
-          ? "bg-paper/95 backdrop-blur-md border-b border-ink-900/10 shadow-sm"
+      className={`fixed top-0 inset-x-0 z-50 transition-colors duration-300 ${scrolled || openMenu
+          ? "bg-white border-b border-ink-900/15 shadow-md"
           : "bg-transparent border-b border-transparent"
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
         {/* Logo */}
@@ -111,9 +110,8 @@ export default function Navbar() {
             alt="Yutori Designs — creating space for life"
             fill
             sizes="176px"
-            className={`object-contain object-left transition-opacity duration-300 ${
-              scrolled || openMenu ? "opacity-0" : "opacity-100"
-            }`}
+            className={`object-contain object-left transition-opacity duration-300 ${scrolled || openMenu ? "opacity-0" : "opacity-100"
+              }`}
             priority
           />
 
@@ -123,18 +121,16 @@ export default function Navbar() {
             alt="Yutori Designs — creating space for life"
             fill
             sizes="176px"
-            className={`object-contain object-left transition-opacity duration-300 ${
-              scrolled || openMenu ? "opacity-100" : "opacity-0"
-            }`}
+            className={`object-contain object-left transition-opacity duration-300 ${scrolled || openMenu ? "opacity-100" : "opacity-0"
+              }`}
             priority
           />
         </Link>
 
         {/* Desktop Navigation */}
         <nav
-          className={`hidden lg:flex items-center justify-center gap-9 text-[15px] transition-colors duration-300 ${
-            scrolled || openMenu ? "text-ink-800" : "text-white"
-          }`}
+          className={`hidden lg:flex items-center justify-center gap-9 text-[15px] transition-colors duration-300 ${scrolled || openMenu ? "text-ink-800" : "text-white"
+            }`}
         >
           <Link
             href="/"
@@ -226,20 +222,18 @@ export default function Navbar() {
         {/* Desktop Contact */}
         <Link
           href="/contact-us"
-          className={`hidden lg:inline-flex items-center px-5 py-2.5 rounded-full text-sm font-medium transition-colors duration-300 ${
-            scrolled || openMenu
+          className={`hidden lg:inline-flex items-center px-5 py-2.5 rounded-full text-sm font-medium transition-colors duration-300 ${scrolled || openMenu
               ? "bg-ink-900 text-paper hover:bg-brand-600"
               : "bg-white text-ink-900 hover:bg-brand-500 hover:text-white"
-          }`}
+            }`}
         >
           Contact Us
         </Link>
 
         {/* Mobile Menu Button */}
         <button
-          className={`lg:hidden transition-colors duration-300 ${
-            scrolled || openMenu ? "text-ink-900" : "text-white"
-          }`}
+          className={`lg:hidden transition-colors duration-300 ${scrolled || openMenu ? "text-ink-900" : "text-white"
+            }`}
           onClick={() => {
             setMobileOpen(true);
             setOpenMobileMenu(null);
@@ -336,11 +330,10 @@ export default function Navbar() {
 
                   <ChevronDown
                     size={22}
-                    className={`transition-transform duration-300 ${
-                      openMobileMenu === "services"
+                    className={`transition-transform duration-300 ${openMobileMenu === "services"
                         ? "rotate-180"
                         : ""
-                    }`}
+                      }`}
                   />
                 </button>
 
@@ -391,11 +384,10 @@ export default function Navbar() {
 
                   <ChevronDown
                     size={22}
-                    className={`transition-transform duration-300 ${
-                      openMobileMenu === "about"
+                    className={`transition-transform duration-300 ${openMobileMenu === "about"
                         ? "rotate-180"
                         : ""
-                    }`}
+                      }`}
                   />
                 </button>
 
