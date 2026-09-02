@@ -51,7 +51,7 @@ const teamStats = [
   },
 
   {
-    number: "---",
+    number: "30",
     label: "Site & Field Professionals",
   }
 
