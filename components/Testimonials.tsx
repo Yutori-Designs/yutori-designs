@@ -67,14 +67,7 @@ const textTestimonials: TextTestimonial[] = [
     name: "Bhisham Saini",
     role: "Absolute Leisure Private Limited",
   },
-  {
-    quote:
-      "I think anyone who's come to our office will be amazed by the kind of architecture and the simplicity we have. I think it's all kudos to Yutori and the team. We've been working with them for the last couple of years to put together all our offices, both in Mangalore and Udupi.",
-    paragraph:
-      "Thank you again for all your contribution and for being part of our journey in the last couple of years. Thank you.",
-    name: "Suyog Shetty",
-    role: "CEO and Co-founder-Niveus Solutions(Part of NTT Data)",
-  },
+
 ];
 
 function ReelEmbed({ reel }: { reel: Reel }) {
@@ -144,6 +137,84 @@ function ReelEmbed({ reel }: { reel: Reel }) {
     </motion.div>
   );
 }
+function VideoTestimonial() {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-60px" }}
+      transition={{ duration: 0.5 }}
+      className="group relative w-full rounded-2xl border border-paper/10 bg-ink-800 p-5 sm:p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand-500/40"
+    >
+      {/* Video */}
+      <div className="relative mx-auto w-full max-w-[367px] aspect-[9/16] overflow-hidden rounded-xl bg-black">
+        <video
+          className="absolute inset-0 h-full w-full object-cover"
+          controls
+          playsInline
+          preload="metadata"
+        >
+          <source
+            src="/images/testimonials/Nivesus_Testimonial.mp4"
+            type="video/mp4"
+          />
+
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      {/* Client Information */}
+      <div className="mt-5 border-t border-paper/10 pt-4">
+        <p className="font-display text-base text-paper leading-snug">
+          Suyog Shetty
+        </p>
+
+        <p className="mt-1 text-xs text-stone-500">
+          CEO & Co-founder, Niveus Solutions
+        </p>
+      </div>
+    </motion.div>
+  );
+}
+function FeaturedTestimonialCard({
+  testimonial,
+  index,
+}: {
+  testimonial: TextTestimonial;
+  index: number;
+}) {
+  return (
+    <motion.article
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.15 }}
+      transition={{
+        duration: 0.8,
+        delay: index * 0.15,
+        ease: [0.22, 1, 0.36, 1],
+      }}
+     className="group flex flex-col rounded-2xl border border-paper/10 bg-ink-800 p-6 lg:p-7 transition-all duration-300 hover:-translate-y-1 hover:border-brand-500/40"
+    >
+      <div className="mb-5 flex h-10 w-10 items-center justify-center rounded-full bg-brand-600/15">
+        <Quote size={18} className="text-brand-400" />
+      </div>
+
+      <p className="text-stone-400 text-sm sm:text-[15px] leading-relaxed">
+        &ldquo;{testimonial.quote}&rdquo;
+      </p>
+
+      <div className="mt-6 border-t border-paper/10 pt-4">
+        <p className="font-display text-sm sm:text-base text-paper">
+          {testimonial.name}
+        </p>
+
+        <p className="mt-1 text-xs sm:text-sm text-stone-500">
+          {testimonial.role}
+        </p>
+      </div>
+    </motion.article>
+  );
+}
 
 function TextTestimonialCard({
   testimonial,
@@ -154,10 +225,14 @@ function TextTestimonialCard({
 }) {
   return (
     <motion.article
-      initial={{ opacity: 0, y: 24 }}
+      initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-60px" }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
+      viewport={{ once: true, margin: "-80px" }}
+      transition={{
+        duration: 0.6,
+        delay: index * 0.12,
+        ease: "easeOut",
+      }}
       className="flex flex-col rounded-2xl border border-paper/10 bg-ink-800 p-7 lg:p-8 transition-all duration-300 hover:-translate-y-1 hover:border-brand-500/40"
     >
       <div className="mb-6 flex h-11 w-11 items-center justify-center rounded-full bg-brand-600/15">
@@ -239,8 +314,33 @@ export default function Testimonials() {
           </p>
         </div>
 
-        {/* Text Testimonials Grid */}
-        <div className="mt-14 grid  w-full max-w-[1700px] gap-6 md:grid-cols-4 xl:grid-cols-2">
+        <div className="mt-14 grid gap-6 lg:grid-cols-12">
+
+          {/* LEFT — VIDEO */}
+          <div className="lg:col-span-7">
+            <VideoTestimonial />
+          </div>
+
+          {/* RIGHT — TWO FIRST-PARAGRAPH TESTIMONIALS */}
+          <div className="flex flex-col gap-6 lg:col-span-5">
+
+            <FeaturedTestimonialCard
+              testimonial={textTestimonials[0]}
+              index={0}
+            />
+
+            <FeaturedTestimonialCard
+              testimonial={textTestimonials[1]}
+              index={1}
+            />
+
+          </div>
+
+        </div>
+
+        {/* All Client Testimonials */}
+        <div className="mt-8 grid gap-6 md:grid-cols-2">
+
           {textTestimonials.map((testimonial, index) => (
             <TextTestimonialCard
               key={testimonial.name}
@@ -248,6 +348,7 @@ export default function Testimonials() {
               index={index}
             />
           ))}
+
         </div>
       </div>
     </section>

@@ -5,12 +5,7 @@ import { motion } from "framer-motion";
 import { Quote } from "lucide-react";
 
 const textTestimonials = [
-  {
-    quote:
-      "I think anyone who's come to our office will be amazed by the kind of architecture and the simplicity we have. I think it's all kudos to Yutori and the team. We've been working with them for the last couple of years to put together all our offices, both in Mangalore and Udupi.Thank you again for all your contribution and for being part of our journey in the last couple of years. Thank you.",
-    name: "Suyog Shetty",
-    role: "  CEO and Co-founder Niveus Solutions(Part of NTT Data)",
-  },
+  
 
 
   {
@@ -25,6 +20,13 @@ const textTestimonials = [
     name: "Devendranath B",
     role: "Managing Partner, Jade Invent",
   },
+{
+    quote:
+     "Working with Yutori Designs has been a genuinely refreshing experience. Unlike many architectural firms that prioritize maximizing FSI at the cost of essential design elements, Yutori Designs brings a creative approach that stays firmly rooted in balance and practicality. They thoughtfully integrate fundamentals like natural light, ventilation, wind direction, and Vastu into every design, while giving equal attention to day-to-day comforts such as staircase planning, kitchen layouts, and utility spaces.",
+     name: "Bhisham Saini",
+    role: "Absolute Leisure Private Limited",
+  },
+   
 ];
 
 export default function Testimonials() {
