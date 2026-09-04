@@ -19,8 +19,13 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const service = services[slug];
+
   if (!service) return {};
-  return { title: service.metaTitle, description: service.intro };
+
+  return {
+    title: service.metaTitle,
+    description: service.metaDescription,
+  };
 }
 
 export default async function ServicePage({
