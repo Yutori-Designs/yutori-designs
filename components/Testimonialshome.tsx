@@ -56,7 +56,7 @@ export default function Testimonials() {
                 duration: 0.5,
                 delay: i * 0.1,
               }}
-              className="bg-ink-800 rounded-2xl p-7 lg:p-8 flex flex-col border border-paper/5"
+              className="bg-ink-800 rounded-2xl p-7 lg:p-8 flex flex-col border border-paper/5 transition-all duration-300 hover:-translate-y-1 hover:border-brand-500/40"
             >
               {/* Quote Icon */}
               <Quote
@@ -87,7 +87,7 @@ export default function Testimonials() {
         <div className="mt-10 flex justify-center">
           <Link
             href="/testimonial"
-            className="inline-flex items-center justify-center rounded-full border border-brand-500/40 bg-brand-600 px-7 py-3 text-sm font-medium text-paper transition-all duration-300 hover:bg-brand-500 hover:scale-105"
+            className="inline-flex items-center justify-center rounded-full border border-brand-500/40 bg-brand-600 px-7 py-3 text-sm font-medium text-paper transition-all duration-300 hover:-translate-y-1 hover:border-brand-500/40 transition-all duration-300 hover:bg-brand-500 hover:scale-105"
           >
             View All Testimonials
           </Link>
