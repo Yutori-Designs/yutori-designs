@@ -198,7 +198,7 @@ export async function POST(request: Request) {
                 Thank you, ${name.split(" ")[0]}!
               </h2>
               <p style="margin:0 0 20px;font-size:16px;color:#555;line-height:1.7;">
-                We have received your enquiry and will get back to you within <strong>1 business day</strong>. 
+                We have received your enquiry and will get back to you within <strong>2 business day</strong>. 
                 Our team looks forward to understanding your vision and helping you create a space you love.
               </p>
 
