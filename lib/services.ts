@@ -208,8 +208,8 @@ export const services: Record<string, ServiceContent> = {
     whatWeDoLabel: "Yutori Designs: Transforming Commercial Spaces in Mangalore",
     whyChooseLabel: "Why Choose Us for Your Commercial Interior Project in Mangalore?",
     whyChooseLabel1: "",
-    metaTitle: "Commercial Interior Designers in Mangalore | Yutori Designs",
-    metaDescription: "Commercial interior design in Mangalore for offices, retail showrooms, and hospitality spaces. Yutori Designs delivers functional, brand-aligned commercial interiors.",
+    metaTitle: "Commercial Interior Designers in Mangalore & Udupi | Yutori Designs",
+metaDescription: "Commercial interior design for offices, retail, and hospitality spaces in Mangalore and Udupi. Full-service design and turnkey execution from Yutori Designs.",
     heroImage: "/images/services/Commercial interior.jpg",
     heroImage2: "/images/services/Commercial interior-1.jpg",
     intro:
@@ -272,7 +272,7 @@ export const services: Record<string, ServiceContent> = {
     whyChooseLabel: "Best Home Interior Designers in Mangalore: Creating Spaces That Feel Like Home",
     whyChooseLabel1: "",
     metaTitle: "Residential Interior Designers in Mangalore & Udupi | Yutori Designs",
-    metaDescription: "Residential interior design in Mangalore and Udupi. Yutori Designs creates warm, personalised homes shaped around how you actually live.",
+    metaDescription: "Home interior design in Mangalore and Udupi — from compact apartments to coastal villas. Yutori Designs shapes homes around how you actually live, not a template.",
     heroImage: "/images/services/Home Interior Designers.jpg",
     heroImage2: "/images/services/Home Interior Designers-1.jpg",
     intro: `At Yutori, we believe a luxury home is more than just a space—it’s a sanctuary where every element reflects refinement, comfort, and individuality. Specializing in high-end residential interior design in Mangalore, we transform houses into timeless works of art, tailored to the unique tastes and lifestyles of our discerning clients.

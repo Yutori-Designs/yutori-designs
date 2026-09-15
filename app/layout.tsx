@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 
 export const metadata = {
   metadataBase: new URL("https://yutoridesigns.in"),
@@ -94,7 +95,9 @@ export default function RootLayout({
       </head>
 
       <body className="antialiased">
+            <LocalBusinessSchema />
         <Navbar />
+    
         {children}
         <Footer />
 
