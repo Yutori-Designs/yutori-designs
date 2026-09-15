@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 export const metadata = {
   metadataBase: new URL("https://yutoridesigns.in"),
@@ -95,7 +96,8 @@ export default function RootLayout({
       </head>
 
       <body className="antialiased">
-            <LocalBusinessSchema />
+        <GoogleAnalytics gaId="G-3R9MX6T5WD" />
+        <LocalBusinessSchema />
         <Navbar />
     
         {children}
