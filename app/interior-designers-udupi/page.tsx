@@ -14,19 +14,19 @@ export const metadata: Metadata = {
 };
 const mangaloreFaqs = [
     {
-        question: "Does Yutori Designs provide turnkey interior execution in Mangalore?",
+        question: "Does Yutori Designs provide turnkey interior execution in Udupi?",
         answer:
-            "Yes. Yutori Designs handles complete turnkey project execution in Mangalore — from design and material selection through civil work, carpentry, electrical, plumbing, and décor — managed by a single accountable team from start to finish.",
+            "Yes. Yutori Designs handles complete turnkey project execution in Udupi — from design and material selection through civil work, carpentry, electrical, plumbing, and décor — managed by a single accountable team from start to finish.",
     },
     {
-        question: "Do you design offices and commercial spaces in Mangalore?",
+        question: "Do you design offices and commercial spaces in Udupi?",
         answer:
-            "Yes. We design and execute commercial interiors in Mangalore including offices, retail showrooms, and hospitality spaces, focused on both brand identity and everyday functionality.",
+            "Yes. We design and execute commercial interiors in Udupi including offices, retail showrooms, and hospitality spaces, focused on both brand identity and everyday functionality.",
     },
     {
-        question: "Which areas in Mangalore do you serve?",
+        question: "Which areas in Udupi do you serve?",
         answer:
-            "We serve Mangalore city and the surrounding areas, with our office based in Konchady, Derebail. Reach out to us directly to confirm coverage for your specific location.",
+            "We serve Udupi city and the surrounding areas, with our office based in Maniapl, Udupi, Kundapura. Reach out to us directly to confirm coverage for your specific location.",
     },
     {
         question: "How long does a typical interior project take?",
