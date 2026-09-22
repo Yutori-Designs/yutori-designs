@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import Script from "next/script";
 
 export const metadata = {
   metadataBase: new URL("https://yutoridesigns.in"),
@@ -93,10 +94,19 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap"
           rel="stylesheet"
         />
+        <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-9FGY6XRV95');
+        `}
+      </Script>
       </head>
 
       <body className="antialiased">
-        <GoogleAnalytics />
+        
         <LocalBusinessSchema />
         <Navbar />
     
