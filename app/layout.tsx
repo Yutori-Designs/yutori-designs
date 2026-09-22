@@ -96,7 +96,7 @@ export default function RootLayout({
       </head>
 
       <body className="antialiased">
-        <GoogleAnalytics gaId="G-9FGY6XRV95" />
+        <GoogleAnalytics />
         <LocalBusinessSchema />
         <Navbar />
     
