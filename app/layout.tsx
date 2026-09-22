@@ -94,22 +94,26 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap"
           rel="stylesheet"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-V94QZ3Z4XR"
+          strategy="afterInteractive"
+        />
 
-          gtag('config', 'G-9FGY6XRV95');
-        `}
-      </Script>
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-V94QZ3Z4XR');
+  `}
+        </Script>
       </head>
 
       <body className="antialiased">
-        
+
         <LocalBusinessSchema />
         <Navbar />
-    
+
         {children}
         <Footer />
 
