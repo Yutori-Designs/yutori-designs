@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import LocalBusinessSchema from "@/components/LocalBusinessSchema";
-import GoogleAnalytics from "@/components/GoogleAnalytics";
+
 import Script from "next/script";
 
 export const metadata = {
