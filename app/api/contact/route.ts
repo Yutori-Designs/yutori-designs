@@ -53,20 +53,18 @@ export async function POST(request: Request) {
     <tr>
       <td align="center">
         <table width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background:#ffffff;border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);">
-          
-          <!-- Header -->
-           <tr>
-  <td style="background-color:#1a1a15;padding:32px 40px;text-align:center;">
-    
-    <img
-      src="https://yutoridesigns.in/images/brand/logo-white.png""
-      alt="Yutori Designs"
-      width="180"
-      style="display:block;margin:0 auto;border:0;max-width:180px;height:auto;"
-    />
 
-  </td>
-</tr>
+          <!-- Header -->
+          <tr>
+            <td style="background-color:#1a1a15;padding:32px 40px;text-align:center;">
+              <img
+                src="https://yutoridesigns.in/images/brand/logo-white.png"
+                alt="Yutori Designs"
+                width="180"
+                style="display:block;margin:0 auto;border:0;max-width:180px;height:auto;"
+              />
+            </td>
+          </tr>
 
           <!-- Body -->
           <tr>
@@ -79,7 +77,6 @@ export async function POST(request: Request) {
               <table width="100%" cellpadding="0" cellspacing="0" style="background:#f8f7f3;border-radius:12px;overflow:hidden;margin-bottom:24px;">
                 <tr>
                   <td style="padding:24px 28px;">
-                    
                     <table width="100%" cellpadding="0" cellspacing="0">
                       <tr>
                         <td style="padding:10px 0;border-bottom:1px solid #e8e6df;">
@@ -114,7 +111,6 @@ export async function POST(request: Request) {
                         </td>
                       </tr>
                     </table>
-
                   </td>
                 </tr>
               </table>
@@ -129,7 +125,6 @@ export async function POST(request: Request) {
                   </td>
                 </tr>
               </table>
-
             </td>
           </tr>
 
@@ -157,14 +152,14 @@ export async function POST(request: Request) {
     }
 
     // ─── Email 2: Auto-reply to the person who submitted ───────────────
-    await fetch("https://api.resend.com/emails", {
+    const replyRes = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: {
         Authorization: `Bearer ${apiKey}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: "Yutori Designs <onboarding@resend.dev>",
+        from: "Yutori Designs <info@yutoridesigns.in>",
         to: [email],
         subject: `We received your enquiry, ${name.split(" ")[0]}`,
         html: `
@@ -179,26 +174,27 @@ export async function POST(request: Request) {
     <tr>
       <td align="center">
         <table width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background:#ffffff;border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);">
-          
+
           <!-- Header -->
           <tr>
-  <td style="background-color:#1a1a15;padding:32px 40px;text-align:center;">
-    
-    <img
-      src="https://yutoridesigns.in/images/brand/logo-white.png""
-      alt="Yutori Designs"
-      width="180"
-      style="display:block;margin:0 auto;border:0;max-width:180px;height:auto;"
-    />
+            <td style="background-color:#1a1a15;padding:32px 40px;text-align:center;">
+              <img
+                src="https://yutoridesigns.in/images/brand/logo-white.png"
+                alt="Yutori Designs"
+                width="180"
+                style="display:block;margin:0 auto;border:0;max-width:180px;height:auto;"
+              />
+            </td>
+          </tr>
 
-  </td>
-</tr>
+          <!-- Body -->
+          <tr>
             <td style="padding:40px;">
               <h2 style="margin:0 0 16px;font-size:22px;color:#1a1a15;font-weight:700;">
                 Thank you, ${name.split(" ")[0]}!
               </h2>
               <p style="margin:0 0 20px;font-size:16px;color:#555;line-height:1.7;">
-                We have received your enquiry and will get back to you within <strong>2 business day</strong>. 
+                We have received your enquiry and will get back to you within <strong>2 business days</strong>. 
                 Our team looks forward to understanding your vision and helping you create a space you love.
               </p>
 
@@ -268,6 +264,11 @@ export async function POST(request: Request) {
         `,
       }),
     });
+
+    if (!replyRes.ok) {
+      const errText = await replyRes.text();
+      console.error("Resend auto-reply error:", errText);
+    }
 
     return NextResponse.json({ ok: true, mode: "sent" });
   } catch (err) {
