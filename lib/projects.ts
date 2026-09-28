@@ -115,7 +115,7 @@ export const projects: Project[] = [
   {
     id: "niveus-mangalore",
     title: "Office Design & Interiors for Niveus Solutions",
-    location: "Mangaluru ",
+    location: "Mangalore ",
     category: "Workspaces",
     cover: "/images/projects/Niveus-Mangalore/niveus-mangalore-1.jpg",
     gallery: [
