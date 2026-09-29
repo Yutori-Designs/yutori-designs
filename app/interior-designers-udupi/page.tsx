@@ -101,7 +101,7 @@ export default function InteriorDesignersUdupiPage() {
 
       <ProjectGallerySection projects={udupiProjects} cityLabel="Udupi" />
 
-      <section className="py-16 max-w-4xl mx-auto px-6 lg:px-10">
+      <section className="pt-16 pb-8 max-w-4xl mx-auto px-6 lg:px-10">
         <span className="text-brand-600 text-sm tracking-[0.18em] uppercase">
           Questions
         </span>
@@ -111,7 +111,7 @@ export default function InteriorDesignersUdupiPage() {
         <FAQSection faqs={udupiFaqs} />
       </section>
 
-      <section className="py-20 text-center max-w-2xl mx-auto px-6">
+      <section className="pt-8 pb-20 text-center max-w-2xl mx-auto px-6">
         <h2 className="font-display text-3xl sm:text-4xl text-ink-900">
           Start your Udupi interior project
         </h2>

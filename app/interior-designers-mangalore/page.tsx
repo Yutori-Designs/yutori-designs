@@ -61,7 +61,7 @@ export default function InteriorDesignersMangalorePage() {
 
       <section className="relative h-[320px] sm:h-[420px]">
         <Image
-          src="/images/brand/mangalore1.jpg"
+          src="/images/brand/mangaluru.jpg"
           alt="Interior design projects in Mangalore by Yutori Designs"
           fill
           className="object-cover"
@@ -96,7 +96,7 @@ export default function InteriorDesignersMangalorePage() {
 
       <ProjectGallerySection projects={mangaloreProjects} cityLabel="Mangalore" />
 
-      <section className="py-16 max-w-4xl mx-auto px-6 lg:px-10">
+      <section className="pt-16 pb-8 max-w-4xl mx-auto px-6 lg:px-10">
         <span className="text-brand-600 text-sm tracking-[0.18em] uppercase">
           Questions
         </span>
@@ -106,8 +106,8 @@ export default function InteriorDesignersMangalorePage() {
         <FAQSection faqs={mangaloreFaqs} />
       </section>
 
-      <section className="py-20 text-center max-w-2xl mx-auto px-6">
-        <h2 className="font-display text-3xl sm:text-4xl text-ink-900">
+      <section className="pt-8 pb-20 text-center max-w-2xl mx-auto px-6">
+        <h2 className="font-display text-3xl sm:text-4xl  text-ink-900">
           Start your Mangalore interior project
         </h2>
         <p className="mt-4 text-ink-700">

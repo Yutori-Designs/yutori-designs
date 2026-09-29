@@ -156,18 +156,30 @@ export const projects: Project[] = [
   },
 
 
-  {
-    id: "panaji-office",
-    title: "Design of Real Estate Office",
-    location: "Goa",
-    category: "Workspaces",
-    cover: "/images/projects/Real-Estate-Goa/Real-Estate-Goa-1.jpg",
-    gallery: [
-      "/images/projects/Real-Estate-Goa/Real-Estate-Goa-2.jpg",
-      "/images/projects/Real-Estate-Goa/Real-Estate-Goa-3.jpg",
+ 
+{
+    id: "park-avenue-udupi-Residences",
+    title: "Interiors for Residences at Park Avenue",
+    location: "Ajjarkad, Udupi",
+    category: "Residences",
+    cover: "/images/projects/Park evenue/Park evenue.jpg",
+    gallery: ["/images/projects/Park evenue/Park evenue-1.jpg",
+      "/images/projects/Park evenue/Park evenue-2.jpg",
+      "/images/projects/Park evenue/Park evenue-3.jpg",
+      "/images/projects/Park evenue/Park evenue-4.jpg",
+      "/images/projects/Park evenue/Park evenue-5.jpg",
+      "/images/projects/Park evenue/Park evenue-6.jpg",
+      "/images/projects/Park evenue/Park evenue-7.jpg",
+      "/images/projects/Park evenue/Park evenue-8.jpg",
+      "/images/projects/Park evenue/Park evenue-9.jpg",
+      "/images/projects/Park evenue/Park evenue-10.jpg",
+      "/images/projects/Park evenue/Park evenue-11.jpg",
+      "/images/projects/Park evenue/Park evenue-12.jpg",
+      "/images/projects/Park evenue/Park evenue-13.jpg",
+      "/images/projects/Park evenue/Park evenue-14.jpg",
+
     ],
   },
-
 
   {
     id: "niveus-udupi",
@@ -185,6 +197,18 @@ export const projects: Project[] = [
       "/images/projects/Niveus-Udupi/niveus-udupi-8.jpg",
       "/images/projects/Niveus-Udupi/niveus-udupi-9.jpg",
 
+    ],
+  },
+
+   {
+    id: "panaji-office",
+    title: "Design of Real Estate Office",
+    location: "Goa",
+    category: "Workspaces",
+    cover: "/images/projects/Real-Estate-Goa/Real-Estate-Goa-1.jpg",
+    gallery: [
+      "/images/projects/Real-Estate-Goa/Real-Estate-Goa-2.jpg",
+      "/images/projects/Real-Estate-Goa/Real-Estate-Goa-3.jpg",
     ],
   },
   {
@@ -304,29 +328,7 @@ export const projects: Project[] = [
     cover: "/images/projects/Design of House Around Trees/Design of House Around Trees.jpg",
     gallery: ["/images/projects/Design of House Around Trees/Design of House Around Trees_1.jpg",],
   },
-  {
-    id: "park-avenue-udupi-Residences",
-    title: "Interiors for Residences at Park Avenue",
-    location: "Ajjarkad, Udupi",
-    category: "Residences",
-    cover: "/images/projects/Park evenue/Park evenue.jpg",
-    gallery: ["/images/projects/Park evenue/Park evenue-1.jpg",
-      "/images/projects/Park evenue/Park evenue-2.jpg",
-      "/images/projects/Park evenue/Park evenue-3.jpg",
-      "/images/projects/Park evenue/Park evenue-4.jpg",
-      "/images/projects/Park evenue/Park evenue-5.jpg",
-      "/images/projects/Park evenue/Park evenue-6.jpg",
-      "/images/projects/Park evenue/Park evenue-7.jpg",
-      "/images/projects/Park evenue/Park evenue-8.jpg",
-      "/images/projects/Park evenue/Park evenue-9.jpg",
-      "/images/projects/Park evenue/Park evenue-10.jpg",
-      "/images/projects/Park evenue/Park evenue-11.jpg",
-      "/images/projects/Park evenue/Park evenue-12.jpg",
-      "/images/projects/Park evenue/Park evenue-13.jpg",
-      "/images/projects/Park evenue/Park evenue-14.jpg",
-
-    ],
-  },
+  
   {
     id: "kadri-enclave-Residences",
     title: "Residences Interiors",
