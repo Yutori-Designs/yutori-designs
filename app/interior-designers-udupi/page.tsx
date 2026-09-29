@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import FAQSection from "@/components/FAQSection";
+import ProjectGallerySection from "@/components/ProjectGallerySection";
 import { ArrowRight, MapPin } from "lucide-react";
 import { projects } from "@/lib/projects";
 
@@ -20,7 +21,11 @@ export const metadata: Metadata = {
 };
 
 const udupiFaqs = [
-  
+  {
+    question: "What does an interior designer in Udupi do?",
+    answer:
+      "An interior designer plans and executes the layout, materials, and finishes of a space — from a single room to a full home or office — so it functions well and reflects how the people using it actually live or work.",
+  },
   {
     question: "Does Yutori Designs provide turnkey execution in Udupi?",
     answer:
@@ -54,12 +59,11 @@ export default function InteriorDesignersUdupiPage() {
         eyebrow="Udupi"
         title="Interior Designers in Udupi"
         breadcrumb={[
-          { label: "Home", href: "/images/brand/Udupi.jpg" },
+          { label: "Home", href: "/" },
           { label: "Interior Designers in Udupi" },
         ]}
       />
 
-      {/* Horizontal banner */}
       <section className="relative h-[320px] sm:h-[420px]">
         <Image
           src="/images/brand/udupi.jpg"
@@ -80,7 +84,6 @@ export default function InteriorDesignersUdupiPage() {
         </div>
       </section>
 
-      {/* Intro content — genuinely Udupi-specific framing */}
       <section className="py-16 max-w-4xl mx-auto px-6 lg:px-10">
         <span className="text-brand-600 text-sm tracking-[0.18em] uppercase">
           A studio in your city
@@ -92,71 +95,22 @@ export default function InteriorDesignersUdupiPage() {
           Yutori Designs is headquartered in Kinnimulki, Udupi — not a design team visiting from another city, but a studio that works, sources materials, and builds relationships with vendors right here. Our team has completed 49 projects across Coastal Karnataka, including homes, apartments, and workspaces throughout Udupi and its surrounding areas.
         </p>
         <p className="mt-5 text-ink-700 text-[17px] leading-relaxed text-justify">
-          Being based locally means shorter turnaround on site visits, faster material sourcing, and a design approach shaped by Udupi's own mix of traditional coastal homes and newer apartment developments. Whether it's a family home, a compact flat, or a small business space, we design around how the space will actually be used — not a template.
+          Being based locally means shorter turnaround on site visits, faster material sourcing, and a design approach shaped by Udupi&apos;s own mix of traditional coastal homes and newer apartment developments. Whether it&apos;s a family home, a compact flat, or a small business space, we design around how the space will actually be used — not a template.
         </p>
       </section>
 
-      {/* Related Udupi projects */}
-      {udupiProjects.length > 0 && (
-        <section className="py-16 max-w-6xl mx-auto px-6 lg:px-10 bg-paper-dim">
-          <div className="flex items-end justify-between mb-8">
-            <div>
-              <span className="text-brand-600 text-sm tracking-[0.18em] uppercase">
-                Portfolio
-              </span>
-              <h2 className="font-display text-3xl mt-2 text-ink-900">
-                Udupi projects
-              </h2>
-            </div>
-            <Link
-              href="/our-projects"
-              className="hidden sm:inline-flex items-center gap-1.5 text-brand-600 text-sm font-medium hover:gap-2.5 transition-[gap]"
-            >
-              View all projects <ArrowRight size={15} />
-            </Link>
-          </div>
+      <ProjectGallerySection projects={udupiProjects} cityLabel="Udupi" />
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {udupiProjects.map((project) => (
-              <Link
-                key={project.id}
-                href="/our-projects"
-                className="group relative rounded-xl overflow-hidden h-64 bg-ink-800"
-              >
-                <Image
-                  src={project.cover}
-                  alt={project.title}
-                  fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
-                  sizes="(max-width: 1024px) 100vw, 33vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-ink-900/85 via-transparent to-transparent" />
-                <div className="absolute bottom-4 left-4 right-4">
-                  <span className="inline-flex items-center gap-1 text-xs text-brand-300 mb-1.5">
-                    <MapPin size={11} /> {project.location}
-                  </span>
-                  <p className="text-paper text-sm font-medium line-clamp-2">
-                    {project.title}
-                  </p>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </section>
-      )}
-
-      {/* FAQ */}
       <section className="py-16 max-w-4xl mx-auto px-6 lg:px-10">
         <span className="text-brand-600 text-sm tracking-[0.18em] uppercase">
           Questions
         </span>
-        <h2 className="font-display text-3xl mt-2 mb-8 text-ink-900">
+        <h2 className="font-display text-3xl  text-ink-900">
           Frequently asked questions
         </h2>
         <FAQSection faqs={udupiFaqs} />
       </section>
 
-      {/* CTA */}
       <section className="py-20 text-center max-w-2xl mx-auto px-6">
         <h2 className="font-display text-3xl sm:text-4xl text-ink-900">
           Start your Udupi interior project

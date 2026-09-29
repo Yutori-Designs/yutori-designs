@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import FAQSection from "@/components/FAQSection";
+import ProjectGallerySection from "@/components/ProjectGallerySection";
 import { ArrowRight, MapPin } from "lucide-react";
 import { projects } from "@/lib/projects";
 
@@ -58,7 +59,6 @@ export default function InteriorDesignersMangalorePage() {
         ]}
       />
 
-      {/* Horizontal banner */}
       <section className="relative h-[320px] sm:h-[420px]">
         <Image
           src="/images/brand/mangalore1.jpg"
@@ -71,15 +71,14 @@ export default function InteriorDesignersMangalorePage() {
         <div className="absolute inset-0 bg-gradient-to-t from-ink-900/70 via-ink-900/10 to-transparent" />
         <div className="absolute bottom-8 left-6 lg:left-10">
           <span className="inline-flex items-center gap-1.5 text-brand-300 text-xs uppercase tracking-wider mb-2">
-            <MapPin size={13} /> Serving Mangalore 
+            <MapPin size={13} /> Serving Mangalore City
           </span>
           <p className="font-display text-3xl sm:text-4xl text-paper max-w-xl">
-            Workspaces, Commercial spaces, Institutions and Residences across Mangalore
+            Offices, homes, and commercial spaces across Mangalore
           </p>
         </div>
       </section>
 
-      {/* Intro content */}
       <section className="py-16 max-w-4xl mx-auto px-6 lg:px-10">
         <span className="text-brand-600 text-sm tracking-[0.18em] uppercase">
           Local expertise
@@ -95,67 +94,18 @@ export default function InteriorDesignersMangalorePage() {
         </p>
       </section>
 
-      {/* Related Mangalore projects */}
-      {mangaloreProjects.length > 0 && (
-        <section className="py-16 max-w-6xl mx-auto px-6 lg:px-10 bg-paper-dim">
-          <div className="flex items-end justify-between mb-8">
-            <div>
-              <span className="text-brand-600 text-sm tracking-[0.18em] uppercase">
-                Portfolio
-              </span>
-              <h2 className="font-display text-3xl mt-2 text-ink-900">
-                Mangalore projects
-              </h2>
-            </div>
-            <Link
-              href="/our-projects"
-              className="hidden sm:inline-flex items-center gap-1.5 text-brand-600 text-sm font-medium hover:gap-2.5 transition-[gap]"
-            >
-              View all projects <ArrowRight size={15} />
-            </Link>
-          </div>
+      <ProjectGallerySection projects={mangaloreProjects} cityLabel="Mangalore" />
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {mangaloreProjects.map((project) => (
-              <Link
-                key={project.id}
-                href="/our-projects"
-                className="group relative rounded-xl overflow-hidden h-64 bg-ink-800"
-              >
-                <Image
-                  src={project.cover}
-                  alt={project.title}
-                  fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
-                  sizes="(max-width: 1024px) 100vw, 33vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-ink-900/85 via-transparent to-transparent" />
-                <div className="absolute bottom-4 left-4 right-4">
-                  <span className="inline-flex items-center gap-1 text-xs text-brand-300 mb-1.5">
-                    <MapPin size={11} /> {project.location}
-                  </span>
-                  <p className="text-paper text-sm font-medium line-clamp-2">
-                    {project.title}
-                  </p>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </section>
-      )}
-
-      {/* FAQ */}
       <section className="py-16 max-w-4xl mx-auto px-6 lg:px-10">
         <span className="text-brand-600 text-sm tracking-[0.18em] uppercase">
           Questions
         </span>
-        <h2 className="font-display text-3xl mt-2 mb-8 text-ink-900">
+        <h2 className="font-display text-3xl   text-ink-900">
           Frequently asked questions
         </h2>
         <FAQSection faqs={mangaloreFaqs} />
       </section>
 
-      {/* CTA */}
       <section className="py-20 text-center max-w-2xl mx-auto px-6">
         <h2 className="font-display text-3xl sm:text-4xl text-ink-900">
           Start your Mangalore interior project

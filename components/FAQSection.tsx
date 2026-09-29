@@ -14,7 +14,7 @@ export default function FAQSection({ faqs }: { faqs: FAQ[] }) {
   return (
     <section className="py-16 max-w-4xl mx-auto px-6 lg:px-10">
       <h2 className="font-display text-3xl text-ink-900 mb-8">
-        Frequently Asked Questions
+    
       </h2>
       <div className="flex flex-col gap-3">
         {faqs.map((faq, i) => (
