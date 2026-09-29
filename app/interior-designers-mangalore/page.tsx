@@ -61,7 +61,7 @@ export default function InteriorDesignersMangalorePage() {
 
       <section className="relative h-[320px] sm:h-[420px]">
         <Image
-          src="/images/brand/mangaluru.jpg"
+          src="/images/brand/Mangalore.jpg"
           alt="Interior design projects in Mangalore by Yutori Designs"
           fill
           className="object-cover"
