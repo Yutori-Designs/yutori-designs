@@ -18,5 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "https://yutoridesigns.in/testimonial", lastModified: new Date(), priority: 0.7, changeFrequency: "monthly" },
     { url: "https://yutoridesigns.in/blogs", lastModified: new Date(), priority: 0.8, changeFrequency: "weekly" },
     { url: "https://yutoridesigns.in/events", lastModified: new Date(), priority: 0.5, changeFrequency: "monthly" },
+    { url: "https://yutoridesigns.in/interior-designers-mangalore", lastModified: new Date(), priority: 0.9, changeFrequency: "monthly" },
+    { url: "https://yutoridesigns.in/interior-designers-udupi", lastModified: new Date(), priority: 0.9, changeFrequency: "monthly" },
   ];
 }

@@ -71,7 +71,7 @@ export default function InteriorDesignersMangalorePage() {
         <div className="absolute inset-0 bg-gradient-to-t from-ink-900/70 via-ink-900/10 to-transparent" />
         <div className="absolute bottom-8 left-6 lg:left-10">
           <span className="inline-flex items-center gap-1.5 text-brand-300 text-xs uppercase tracking-wider mb-2">
-            <MapPin size={13} /> Serving Mangalore City
+            <MapPin size={13} /> Serving Mangalore 
           </span>
           <p className="font-display text-3xl sm:text-4xl text-paper max-w-xl">
             Offices, homes, and commercial spaces across Mangalore
