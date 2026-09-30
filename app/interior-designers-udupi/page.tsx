@@ -89,7 +89,7 @@ export default function InteriorDesignersUdupiPage() {
           A studio in your city
         </span>
         <h2 className="font-display text-3xl sm:text-4xl mt-3 mb-6 text-ink-900 text-balance">
-          Interior design, based in Udupi
+          Interior designers, based in Udupi
         </h2>
         <p className="text-ink-700 text-[17px] leading-relaxed text-justify">
           Yutori Designs is headquartered in Kinnimulki, Udupi — not a design team visiting from another city, but a studio that works, sources materials, and builds relationships with vendors right here. Our team has completed 49 projects across Coastal Karnataka, including homes, apartments, and workspaces throughout Udupi and its surrounding areas.
