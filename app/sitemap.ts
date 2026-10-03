@@ -6,7 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "https://yutoridesigns.in/our-projects", lastModified: new Date(), priority: 0.9, changeFrequency: "weekly" },
     { url: "https://yutoridesigns.in/service/interior-design", lastModified: new Date(), priority: 0.9, changeFrequency: "monthly" },
     { url: "https://yutoridesigns.in/service/space-planning", lastModified: new Date(), priority: 0.8, changeFrequency: "monthly" },
-    { url: "https://yutoridesigns.in/service/turn-key-project-execution", lastModified: new Date(), priority: 0.8, changeFrequency: "monthly" },
+    { url: "https://yutoridesigns.in/service/turnkey-project-execution", lastModified: new Date(), priority: 0.8, changeFrequency: "monthly" },
     { url: "https://yutoridesigns.in/service/commercial", lastModified: new Date(), priority: 0.9, changeFrequency: "monthly" },
     { url: "https://yutoridesigns.in/service/residential", lastModified: new Date(), priority: 0.9, changeFrequency: "monthly" },
     { url: "https://yutoridesigns.in/service/office-space", lastModified: new Date(), priority: 0.8, changeFrequency: "monthly" },

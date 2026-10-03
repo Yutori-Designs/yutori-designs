@@ -140,7 +140,7 @@ export const services: Record<string, ServiceContent> = {
     ],
     relatedCategory: "Villa",
   },
-  "turn-key-project-execution": {
+  "turnkey-project-execution": {
     slug: "turnkey-project-execution",
     name: "Turnkey Project Execution",
     nameSubtitle: "Seamless Turnkey Interior Projects in Mangalore",
