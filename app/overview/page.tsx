@@ -3,11 +3,10 @@ import Image from "next/image";
 import PageHero from "@/components/PageHero";
 
 export const metadata: Metadata = {
-  title: "About Yutori Designs | Interior Studio in Coastal Karnataka",
+  title: "About Our Coastal Karnataka Interior Studio",
   description:
-    "Yutori Designs is a Udupi & Mangalore-based interior studio blending mindful design, thoughtful layouts, and full-service execution.",
+    "Yutori Designs is a Udupi and Mangalore-based interior studio blending mindful design, thoughtful layouts, and full-service execution.",
 };
-
 export default function OverviewPage() {
   return (
     <main>

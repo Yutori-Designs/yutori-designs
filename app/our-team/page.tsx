@@ -4,9 +4,9 @@ import PageHero from "@/components/PageHero";
 import TeamGrid from "@/components/TeamGrid";
 
 export const metadata: Metadata = {
-  title: "Our Team | Yutori Designs",
+  title: "Our Team – Architects & Engineers",
   description:
-    "Meet the architects, designers, engineers, and project professionals behind Yutori Designs.",
+    "Meet the team behind Yutori Designs: architect Dakshath M. Kidiyoor, civil engineer Sundeep Leo Almeida and a team of over 40 professionals.",
 };
 
 export const team = [

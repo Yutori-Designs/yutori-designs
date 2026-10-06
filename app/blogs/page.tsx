@@ -6,9 +6,9 @@ import { blogPosts } from "@/lib/blog";
 import PageHero from "@/components/PageHero";
 
 export const metadata: Metadata = {
-  title: "Blog | Yutori Designs",
+  title:  "Interior Design Blog – Mangalore & Udupi",
   description:
-    "Notes on space planning, materials, and project execution from the Yutori Designs studio.",
+    "Notes on space planning, materials and project execution from the Yutori Designs studio in Mangalore and Udupi.",
 };
 
 export default function BlogsPage() {

@@ -7,8 +7,11 @@ import LocalBusinessSchema from "@/components/LocalBusinessSchema";
 
 import Script from "next/script";
 
-export const metadata = {
-  metadataBase: new URL("https://yutoridesigns.in"),
+export const metadata: Metadata = {
+  metadataBase: new URL("https://www.yutoridesigns.in"),
+  // Every page gets a canonical that points at its own address. Pages that set their own
+  // canonical (the Mangalore and Udupi pages) override this.
+  alternates: { canonical: "./" },
   title: {
     default: "Interior Designers in Mangalore & Udupi | Yutori Designs",
     template: "%s | Yutori Designs",
@@ -37,7 +40,7 @@ export const metadata = {
     "interior decorators Udupi",
     "interior design coastal Karnataka",
   ],
-  authors: [{ name: "Yutori Designs", url: "https://yutoridesigns.in" }],
+  authors: [{ name: "Yutori Designs", url: "https://www.yutoridesigns.in" }],
   creator: "Yutori Designs",
   publisher: "Yutori Designs",
   robots: {
@@ -50,10 +53,11 @@ export const metadata = {
       "max-snippet": -1,
     },
   },
+  // No fixed "url" here: a url set in the layout would be copied onto every page that
+  // doesn't set its own, and every shared link would claim to be the homepage.
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://yutoridesigns.in",
     siteName: "Yutori Designs",
     title: "Interior Designers in Mangalore & Udupi | Yutori Designs",
     description:

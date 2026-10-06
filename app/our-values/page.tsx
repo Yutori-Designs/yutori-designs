@@ -3,7 +3,7 @@ import PageHero from "@/components/PageHero";
 import ValueCard from "@/components/ValueCard";
 
 export const metadata: Metadata = {
-  title: "Our Values | Yutori Designs",
+  title: "Our Values and Design Principles",
   description:
     "Mindfulness, simplicity, storytelling, and responsible design — the principles shaping every Yutori Designs interior.",
 };

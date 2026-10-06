@@ -154,28 +154,6 @@ const linkClass =
 const jsonLd = [
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    name: "Yutori Designs",
-    url: "https://www.yutoridesigns.in/",
-    telephone: "+91 6360732460",
-    email: "info@yutoridesigns.in",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "Vruddhi Enclave, Konchady, Derebail",
-      addressLocality: "Mangalore",
-      addressRegion: "Karnataka",
-      postalCode: "575008",
-      addressCountry: "IN",
-    },
-    areaServed: ["Mangalore", "Udupi", "Manipal"],
-    sameAs: [
-      "https://www.instagram.com/yutoridesignsin",
-      "https://www.facebook.com/people/Yutori-Designs/61579105091629/",
-      "https://www.youtube.com/@yutoridesigns",
-    ],
-  },
-  {
-    "@context": "https://schema.org",
     "@type": "Service",
     serviceType: "Interior design and turnkey project execution",
     provider: { "@type": "LocalBusiness", name: "Yutori Designs" },

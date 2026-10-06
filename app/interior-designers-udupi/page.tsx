@@ -159,28 +159,6 @@ const linkClass =
 const jsonLd = [
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    name: "Yutori Designs",
-    url: "https://www.yutoridesigns.in/",
-    telephone: "+91 6360732460",
-    email: "info@yutoridesigns.in",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "1st Floor, Silver Bell, Kinnimulki",
-      addressLocality: "Udupi",
-      addressRegion: "Karnataka",
-      postalCode: "576101",
-      addressCountry: "IN",
-    },
-    areaServed: ["Udupi", "Manipal", "Hemmady", "Mangalore"],
-    sameAs: [
-      "https://www.instagram.com/yutoridesignsin",
-      "https://www.facebook.com/people/Yutori-Designs/61579105091629/",
-      "https://www.youtube.com/@yutoridesigns",
-    ],
-  },
-  {
-    "@context": "https://schema.org",
     "@type": "Service",
     serviceType: "Interior design and turnkey project execution",
     provider: { "@type": "LocalBusiness", name: "Yutori Designs" },
@@ -234,7 +212,7 @@ export default function InteriorDesignersUdupiPage() {
         </h2>
         <p className="text-ink-700 text-[17px] leading-relaxed text-justify">
           Yutori Designs is an interior design and{" "}
-          <Link href="/service/turn-key-project-execution" className={linkClass}>
+          <Link href="/service/turnkey-project-execution" className={linkClass}>
             turnkey execution
           </Link>{" "}
           studio at Silver Bell, Kinnimulki, Udupi. A registered architect and a civil engineer

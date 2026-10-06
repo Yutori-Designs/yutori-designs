@@ -3,8 +3,9 @@ import PageHero from "@/components/PageHero";
 import ServiceTimeline from "@/components/ServiceTimeline";
 
 export const metadata: Metadata = {
-  title: "Our Operating Model | Yutori Designs",
-  description: "How Yutori Designs runs a project from first enquiry to final handover.",
+  title: "Our Operating Model – How We Run a Project",
+  description:
+    "How Yutori Designs runs a project from first enquiry to final handover, with design, coordination and execution under one team.",
 };
 
 const steps = [

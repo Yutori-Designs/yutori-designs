@@ -3,8 +3,9 @@ import PageHero from "@/components/PageHero";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Yutori Designs",
-  description: "Get in touch with Yutori Designs for your interior design project in Mangalore or Udupi.",
+  title: "Contact Us – Mangalore & Udupi Studios",
+  description:
+    "Get in touch with Yutori Designs for your interior design project in Mangalore or Udupi. Call +91 6360732460 or send an enquiry.",
 };
 
 export default function ContactUsPage() {

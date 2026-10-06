@@ -7,7 +7,14 @@ import { Calendar, MapPin, Images } from "lucide-react";
 import { events, type EventItem } from "@/lib/events";
 import PageHero from "@/components/PageHero";
 import EventModal from "@/components/EventModal";
+import { Metadata } from "next";
 
+
+export const metadata: Metadata = {
+  title: "Events & Highlights",
+  description:
+    "Events, milestones and highlights from the Yutori Designs studio in Mangalore and Udupi.",
+};
 export default function EventsPage() {
   const [active, setActive] = useState<EventItem | null>(null);
 

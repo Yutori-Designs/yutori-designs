@@ -1,24 +1,41 @@
 import { MetadataRoute } from "next";
 
+// One host everywhere: the www address, to match metadataBase, canonicals and the Vercel redirect.
+const BASE = "https://www.yutoridesigns.in";
+
+// Google ignores priority and changeFrequency, and it learns to ignore lastModified
+// when every page says "now". So only url is listed. If you want lastModified, give each
+// page the real date you last changed it, for example new Date("2026-10-06").
+const paths = [
+  "",
+  "/our-projects",
+  "/interior-designers-mangalore",
+  "/interior-designers-udupi",
+  "/service/interior-design",
+  "/service/space-planning",
+  "/service/turnkey-project-execution",
+  "/service/commercial",
+  "/service/residential",
+  "/service/office-space",
+  "/contact-us",
+  "/overview",
+  "/our-team",
+  "/our-values",
+  "/our-operating-model",
+  "/testimonial",
+  "/events",
+  "/blogs",
+  // Blog articles
+  "/blogs/interior-design-firms-house-design-philosophy",
+  "/blogs/interior-design-mangalore-luxury-villas-premium-homes",
+  "/blogs/top-interior-designers-mangalore-services",
+  "/blogs/how-commercial-interior-designers-work",
+  "/blogs/best-home-interior-designers-in-mangalore",
+  "/blogs/mangalore-architects",
+  "/blogs/interior-designers-mangalore",
+  "/blogs/luxury-interior-designers-mangalore",
+];
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    { url: "https://yutoridesigns.in", lastModified: new Date(), priority: 1.0, changeFrequency: "weekly" },
-    { url: "https://yutoridesigns.in/our-projects", lastModified: new Date(), priority: 0.9, changeFrequency: "weekly" },
-    { url: "https://yutoridesigns.in/service/interior-design", lastModified: new Date(), priority: 0.9, changeFrequency: "monthly" },
-    { url: "https://yutoridesigns.in/service/space-planning", lastModified: new Date(), priority: 0.8, changeFrequency: "monthly" },
-    { url: "https://yutoridesigns.in/service/turnkey-project-execution", lastModified: new Date(), priority: 0.8, changeFrequency: "monthly" },
-    { url: "https://yutoridesigns.in/service/commercial", lastModified: new Date(), priority: 0.9, changeFrequency: "monthly" },
-    { url: "https://yutoridesigns.in/service/residential", lastModified: new Date(), priority: 0.9, changeFrequency: "monthly" },
-    { url: "https://yutoridesigns.in/service/office-space", lastModified: new Date(), priority: 0.8, changeFrequency: "monthly" },
-    { url: "https://yutoridesigns.in/contact-us", lastModified: new Date(), priority: 0.9, changeFrequency: "monthly" },
-    { url: "https://yutoridesigns.in/overview", lastModified: new Date(), priority: 0.7, changeFrequency: "monthly" },
-    { url: "https://yutoridesigns.in/our-team", lastModified: new Date(), priority: 0.6, changeFrequency: "monthly" },
-    { url: "https://yutoridesigns.in/our-values", lastModified: new Date(), priority: 0.5, changeFrequency: "yearly" },
-    { url: "https://yutoridesigns.in/our-operating-model", lastModified: new Date(), priority: 0.5, changeFrequency: "yearly" },
-    { url: "https://yutoridesigns.in/testimonial", lastModified: new Date(), priority: 0.7, changeFrequency: "monthly" },
-    { url: "https://yutoridesigns.in/blogs", lastModified: new Date(), priority: 0.8, changeFrequency: "weekly" },
-    { url: "https://yutoridesigns.in/events", lastModified: new Date(), priority: 0.5, changeFrequency: "monthly" },
-    { url: "https://yutoridesigns.in/interior-designers-mangalore", lastModified: new Date(), priority: 0.9, changeFrequency: "monthly" },
-    { url: "https://yutoridesigns.in/interior-designers-udupi", lastModified: new Date(), priority: 0.9, changeFrequency: "monthly" },
-  ];
+  return paths.map((path) => ({ url: `${BASE}${path}` }));
 }
