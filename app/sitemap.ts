@@ -23,7 +23,6 @@ const paths = [
   "/our-values",
   "/our-operating-model",
   "/testimonial",
-  "/events",
   "/blogs",
   // Blog articles
   "/blogs/interior-design-firms-house-design-philosophy",
