@@ -38,11 +38,11 @@ Over the past 15 years, Sundeep has made a significant mark in the coastal Karna
 
 const teamStats = [
   {
-    number: "04",
+    number: "05",
     label: "Architects",
   },
   {
-    number: "07",
+    number: "09",
     label: "Engineering & Project Professionals",
   },
   {
