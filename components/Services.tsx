@@ -27,7 +27,7 @@ const services = [
     title: "Turnkey Project Execution",
     description:
       "Design and execution under one accountable team — concept to handover, with one point of contact throughout.",
-    href: "/service/turn-key-project-execution",
+    href: "/service/turnkey-project-execution",
     image: "/images/services/turnkey.png",
   },
 ];
