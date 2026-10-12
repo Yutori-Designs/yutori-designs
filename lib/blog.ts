@@ -14,7 +14,10 @@ export type ContentBlock =
       | { kind: "bold"; content: string }
       | { kind: "link"; content: string; href: string }
     )[];
-  };
+  }
+  | { type: "table"; headers: string[]; rows: string[][] }
+  | { type: "faq"; items: { question: string; answer: string; linkText?: string; linkHref?: string; }[] };
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -32,6 +35,279 @@ export interface BlogPost {
 // source -- using the real facts about the studio (49 projects, 36
 // turnkey, founders' backgrounds) confirmed from press coverage.
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "office-interior-design-udupi-manipal-planning-guide",
+    title: "Office Interior Design in Udupi & Manipal: Planning Guide",
+    excerpt:
+      "Plan an office interior in this order: headcount and team movement, layout, power and data, moisture-resistant finishes for the coast, then a timeline against your move-in date. A practical guide with real Udupi and Manipal office projects.",
+    date: "October 2026",
+    readTime: "7 min read",
+    category: "Office Interiors",
+    cover: "/images/blog/Office Interior Design in Udupi & Manipal.jpg",
+    content: [
+      {
+        type: "paragraph",
+        text: "Plan an office interior in this order: count headcount and how the team works, lay out movement and meeting rooms, fix the electrical, data and cooling load, choose moisture-resistant finishes for the coast, then agree a timeline against your move-in date. Get the layout right before you pick a single finish.",
+      },
+      {
+        type: "paragraph",
+        text: "Most offices that disappoint were designed the other way round. Someone chose a ceiling and a colour palette, and the desks got squeezed in afterwards. This guide follows the order that works, with examples from offices we've built in Udupi and Manipal.",
+      },
+      {
+        type: "heading",
+        text: "Start with headcount and how the team actually works",
+      },
+      {
+        type: "paragraph",
+        text: "Before anyone draws a layout, answer four questions in writing:",
+      },
+      {
+        type: "bullets",
+        items: [
+          "How many people sit in the office today, and how many in two years?",
+          "How many of them are at their desk all day, and how many are in and out?",
+          "Which teams talk to each other constantly, and which need quiet?",
+          "How many visitors come on a normal day, and where do they wait?",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "The growth number matters more than people expect. One of our Mangalore clients moved from a 150-seater office to a 400-seater space. A layout drawn for 150 would have been full on day one of the move. A layout drawn only for 400 would have felt empty and cost far more than it needed to.",
+      },
+      {
+        type: "paragraph",
+        text: "Desk density follows from these answers, not the other way round. A sales team on the phones needs more space per person than a row of developers with two monitors each.",
+      },
+      {
+        type: "heading",
+        text: "Layout: movement first, then meeting rooms",
+      },
+      {
+        type: "paragraph",
+        text: "A good office plan starts with how people move, not with colours or furniture. Corridors, doors and desk clusters should follow a clear logic. If someone has to walk through another team's desks to reach the printer, the plan is wrong, whatever the finish looks like.",
+      },
+      {
+        type: "paragraph",
+        text: "Three layout decisions do most of the work:",
+      },
+      {
+        type: "detailbullets",
+        items: [
+          {
+            label: "Where the entrance leads",
+            text: "Visitors should reach reception without crossing the working floor.",
+          },
+          {
+            label: "Where the meeting rooms sit",
+            text: "Put them so they don't leak sound into the open floor. A glass meeting room next to a row of desks sounds fine in a drawing and is a daily irritation in practice.",
+          },
+          {
+            label: "Where quiet and noise are kept apart",
+            text: "Calls, collaboration and focused work each want a different zone, and they shouldn't share a wall by accident.",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Natural light and greenery are worth planning early. They improve how the space feels to work in, and they're far cheaper to decide at layout stage than to add later.",
+      },
+      {
+        type: "heading",
+        text: "Power, data and cooling: the part you can't see",
+      },
+      {
+        type: "paragraph",
+        text: "In an office, the services behind the walls decide whether the space works on a Monday morning. Plan these with the layout, not after it:",
+      },
+      {
+        type: "detailbullets",
+        items: [
+          {
+            label: "Electrical load",
+            text: "Count desks, monitors, servers, pantry equipment and air conditioning, then leave room to grow.",
+          },
+          {
+            label: "Data and cabling",
+            text: "Decide where every desk gets power and network before the ceiling is closed. Floor boxes and trunking are cheap now and a mess later.",
+          },
+          {
+            label: "Cooling",
+            text: "Air conditioning layout shapes the ceiling design, so the two have to be drawn together.",
+          },
+          {
+            label: "Backup",
+            text: "If power cuts would stop your team, plan for it at the start.",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Then there's the coast. Udupi and Manipal sit in the same humid, monsoon-heavy climate as Mangalore, and offices aren't exempt. Pantry counters, storage near external walls and any joinery that gets cleaned or splashed need moisture-resistant boards and corrosion-resistant hardware. Matte, wipe-clean finishes hide dust better than high gloss. Leaving air behind tall storage units costs nothing and prevents most damp damage.",
+      },
+      {
+        type: "paragraph",
+        text: "The pattern is the same as in homes: the monsoon rarely ruins a well-specified space. It ruins one specified for a dry city.",
+      },
+      {
+        type: "heading",
+        text: "Offices we've designed in Udupi and Manipal",
+      },
+      {
+        type: "paragraph",
+        text: "We work from our Udupi studio at Silver Bell, Kinnimulki, so site visits are quick and materials don't depend on a team travelling in from elsewhere. These are the office projects on our projects page:",
+      },
+      {
+        type: "table",
+        headers: ["Project", "Location", "Team size", "What we solved", "Duration"],
+        rows: [
+          [
+            "Xpheno office",
+            "Manipal",
+            "137",
+            "Planned the floor for high seating capacity, with single rows of 5 seats and continuous tables seating 10. Added lockers and a small pantry on the same floor.",
+            "4 months",
+          ],
+          [
+            "Vruddhi Properties office",
+            "Udupi",
+            "10",
+            "Made a small space work: a meeting room, guest room and head cabin, all planned for a small-scale office.",
+            "2 months",
+          ],
+          [
+            "Niveus Solutions office",
+            "Udupi",
+            "400",
+            "Designed across 2 floors with a consistent colour theme, and used the space for meeting rooms, a conference room, a boardroom and a pantry.",
+            "4 months",
+          ],
+          [
+            "Our own studio",
+            "Udupi",
+            "12",
+            "Planned for extra seating now, with room to add more tables later, and a main cabin of the right size.",
+            "2 months",
+          ],
+        ],
+      },
+      {
+        type: "heading",
+        text: "Work backwards from your move-in date",
+      },
+      {
+        type: "paragraph",
+        text: "An office has a deadline a home rarely has: the day the team has to be in. Plan backwards from it.",
+      },
+      {
+        type: "detailbullets",
+        items: [
+          {
+            label: "1. Brief and site study",
+            text: "What the space has to do, plus the building's area, structure, light and services.",
+          },
+          {
+            label: "2. Concept sign-off",
+            text: "One high-level concept, approved by you before anything else happens.",
+          },
+          {
+            label: "3. Estimate against the concept",
+            text: "Engineering prices the project against what you signed off, so the number matches the drawings.",
+          },
+          {
+            label: "4. Execution starts while detailed design continues",
+            text: "Civil work, electrical, plumbing, air conditioning, carpentry and décor run on one plan instead of one after the other.",
+          },
+          {
+            label: "5. Internal review, then your walkthrough",
+            text: "We check the finished work against the brief first. You see it once we're satisfied.",
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Delays come from late changes after step 2. The best way to protect a move-in date is to be decisive early and to ask for changes in writing afterwards. Duration depends on size: a single room takes a few weeks and a full turnkey office takes several months.",
+      },
+      {
+        type: "heading",
+        text: "Five mistakes that cost offices time and money",
+      },
+      {
+        type: "bullets",
+        items: [
+          "Designing for today's headcount only. You'll be back in the same space in 18 months.",
+          "Choosing finishes before the layout. A beautiful ceiling doesn't fix a bad plan.",
+          "Forgetting power and data points. Adding them after the ceiling is closed is slow and ugly.",
+          "Putting meeting rooms next to the open floor with no sound planning. Everyone hears every call.",
+          "Hiring design and execution separately without one person accountable. When the drawing and the site disagree, nobody owns the gap.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Questions to ask before you hire",
+      },
+      {
+        type: "bullets",
+        items: [
+          "Who leads the design, and who leads the site? Is that the same team?",
+          "Does your quote include civil, electrical, plumbing and air conditioning, or only joinery?",
+          "Which board grade and hardware will you use near the pantry and external walls?",
+          "Can I see two offices you've finished in Udupi or Manipal?",
+          "How do you handle changes after approval?",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Our studio is led by a registered architect and a civil engineer, and one team handles design through to handover. That's the answer to the first question. Ask every studio you talk to the same thing.",
+      },
+      {
+        type: "heading",
+        text: "Frequently asked questions",
+      },
+      {
+        type: "faq",
+        items: [
+          {
+            question: "Do you design offices in Udupi and Manipal? ",
+            answer:
+              "Yes. Our Udupi studio is at Silver Bell, Kinnimulki, and our office projects there include the Xpheno office in Manipal and the offices of Vruddhi Properties and Niveus Solutions in Udupi.",
+          },
+          {
+            question: "How long does an office interior take? ",
+            answer:
+              "A single room takes a few weeks. A full turnkey office takes several months, depending on size and scope. Running civil and interior work together shortens it. ",
+          },
+          {
+            question: "What's the difference between an interior designer and an interior contractor? ",
+            answer:
+              "A designer plans the layout, materials and finishes. A contractor builds it. When they're separate firms, you coordinate between them. We do both under one team.",
+          },
+          {
+            question: "Do you only do offices? ",
+            answer:
+              "No. We also design showrooms, hotels, institutions and homes across coastal Karnataka. Our Udupi district work includes the Timeless Collections showroom and the Hotel Jewel Park project in Hemmady",
+          },
+          {
+            question: "How do I get a quote?",
+            answer:
+              "Tell us the size of the space, the headcount you're planning for and your move-in date, or call +91 6360732460.",
+            linkText: "Get in touch",
+            linkHref: "/contact-us",
+          },
+          {
+            question: "Planning an office in Udupi or Manipal?",
+            answer:
+              "Send us the space and the team size and we'll tell you what the layout needs before anyone talks about finishes. " ,
+            linkText: "Contact us",
+            linkHref: "/contact-us",
+            }
+
+        ],
+      },
+    ],
+    source: undefined,
+  },
+
+
   {
     slug: "interior-design-firms-house-design-philosophy",
     title: "Interior Design Firms in Mangalore: Design Philosophy Over House Style",
@@ -354,7 +630,7 @@ export const blogPosts: BlogPost[] = [
         type: "paragraph",
         text: "Every home reflects the people who live in it. How it flows and how it feels on any morning come down to choices made early in the design process. Homeowners today are moving past generic interiors that look polished but never feel personal. The best home interior designers in Mangalore begin every project with that understanding firmly in place.",
       },
-    
+
 
       {
         type: "richparagraph",
@@ -363,7 +639,7 @@ export const blogPosts: BlogPost[] = [
 
           { kind: "text", content: ", they are not really searching for gold finishes or imported furniture. They are searching for a " },
           { kind: "link", content: "The best home interior designers in Mangalore", href: "/service/residential" },
-         
+
           { kind: "text", content: " treat each home as an original brief, shaped by the life lived inside it." },
         ],
       },
@@ -2065,12 +2341,12 @@ export const blogPosts: BlogPost[] = [
       },
 
       {
-        type:"heading",
-        text:"3.Transparent Communication"
+        type: "heading",
+        text: "3.Transparent Communication"
       },
       {
-        type:"paragraph",
-        text:"Clients appreciate:"
+        type: "paragraph",
+        text: "Clients appreciate:"
       },
 
       {
@@ -2084,15 +2360,15 @@ export const blogPosts: BlogPost[] = [
       },
 
       {
-        type:"heading",
-        text:"4. Genuine Care for the Client Journey"
+        type: "heading",
+        text: "4. Genuine Care for the Client Journey"
       },
       {
-        type:"paragraph",
-        text:"The process is as important as the result for Yutori Designs. Projects unfold with:"
+        type: "paragraph",
+        text: "The process is as important as the result for Yutori Designs. Projects unfold with:"
       },
 
-       {
+      {
         type: "bullets",
         items: [
           "Trust  ",
@@ -2103,17 +2379,17 @@ export const blogPosts: BlogPost[] = [
       },
 
       {
-        type:"heading",
-        text:"Choosing Luxury Interior Designers in Mangalore? Start with Yutori Designs' Approach"
+        type: "heading",
+        text: "Choosing Luxury Interior Designers in Mangalore? Start with Yutori Designs' Approach"
       },
 
       {
-        type:"paragraph",
-        text:"If you’re looking for interior designers in Mangalore who combine global minimalism with coastal sensitivity, Yutori Designs offers a design experience that feels personal, refined, and deeply intentional.",
+        type: "paragraph",
+        text: "If you’re looking for interior designers in Mangalore who combine global minimalism with coastal sensitivity, Yutori Designs offers a design experience that feels personal, refined, and deeply intentional.",
       },
       {
-        type:"paragraph",
-        text:"Whether you’re looking for a premium residential designer in Mangalore, designing a luxury commercial space, or renovating an existing property, Yutori Designs ensures:"
+        type: "paragraph",
+        text: "Whether you’re looking for a premium residential designer in Mangalore, designing a luxury commercial space, or renovating an existing property, Yutori Designs ensures:"
       },
 
       {
@@ -2127,8 +2403,8 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        type:"paragraph",
-        text:"With a philosophy rooted in simplicity and presence, Yutori Designs brings a refreshing perspective to the design landscape of Coastal Karnataka."
+        type: "paragraph",
+        text: "With a philosophy rooted in simplicity and presence, Yutori Designs brings a refreshing perspective to the design landscape of Coastal Karnataka."
       },
     ],
   },

@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import { ArrowLeft, ArrowRight, Calendar, Clock } from "lucide-react";
 import { blogPosts } from "@/lib/blog";
 import PageHero from "@/components/PageHero";
+import FAQSection from "@/components/FAQSection";
 
 export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
@@ -72,7 +73,7 @@ export default async function BlogPostPage({
           {post.content.map((block, i) => {
             if (block.type === "heading") {
               return (
-                <h2 key={i} className="font-display text-2xl text-ink-900 mt-4">
+                <h2 key={i} className="font-display text-2xl text-ink-900 mt-4 mb-2">
                   {block.text}
                 </h2>
               );
@@ -150,6 +151,48 @@ export default async function BlogPostPage({
                 </p>
               );
             }
+            if (block.type === "table") {
+              return (
+                <div key={i} className="overflow-x-auto my-2">
+                  <table className="w-full text-left border-collapse">
+                    <thead>
+                      <tr className="border-b-2 border-brand-600">
+                        {block.headers.map((h, hIdx) => (
+                          <th
+                            key={hIdx}
+                            className="py-3 px-3 text-sm font-semibold text-ink-900 uppercase tracking-wide"
+                          >
+                            {h}
+                          </th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {block.rows.map((row, rIdx) => (
+                        <tr key={rIdx} className="border-b border-ink-900/8">
+                          {row.map((cell, cIdx) => (
+                            <td
+                              key={cIdx}
+                              className="py-3 px-3 text-ink-700 text-[15px] align-top"
+                            >
+                              {cell}
+                            </td>
+                          ))}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              );
+            }
+            if (block.type === "faq") {
+              return (
+                <div key={i} className="-mt-16">
+                  <FAQSection faqs={block.items} />
+                </div>
+              );
+            }
+
             return (
               <p key={i} className="text-ink-700 text-[17px] leading-[1.8] text-justify">
                 {block.text}

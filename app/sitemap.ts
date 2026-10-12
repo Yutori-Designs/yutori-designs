@@ -25,6 +25,7 @@ const paths = [
   "/testimonial",
   "/blogs",
   // Blog articles
+  "/blogs/office-interior-design-udupi-manipal-planning-guide",
   "/blogs/interior-design-firms-house-design-philosophy",
   "/blogs/interior-design-mangalore-luxury-villas-premium-homes",
   "/blogs/top-interior-designers-mangalore-services",
