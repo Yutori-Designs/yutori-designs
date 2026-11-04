@@ -24,6 +24,7 @@ const paths = [
   "/our-operating-model",
   "/testimonial",
   "/blogs",
+  "/faqs",
   // Blog articles
   "/blogs/office-interior-design-udupi-manipal-planning-guide",
   "/blogs/interior-design-firms-house-design-philosophy",

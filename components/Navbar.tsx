@@ -29,6 +29,7 @@ const about = [
   { label: "Testimonial", href: "/testimonial" },
   // { label: "Events", href: "/events" },
   { label: "Blogs", href: "/blogs" },
+  { label: "FAQs", href: "/faqs" },
 ];
 
 export default function Navbar() {
