@@ -225,7 +225,7 @@ export const projects: Project[] = [
 
 
   {
-    id: "park-avenue-udupi-Residences",
+    id: "park-avenue-udupi-residences",
     title: "Interiors for Residences at Park Avenue",
     description: "Yutori Designs designed and executed the interiors for residences at Park Avenue in Ajjarkad, Udupi. From space planning and modular storage to lighting, finishes and handover, each home is planned to feel comfortable, practical and easy to live in every day.",
     seoTitle: "Interior Designers inUdupi | Park Avenue Residences, Ajjarkad",
@@ -276,7 +276,7 @@ export const projects: Project[] = [
   },
 
   {
-    id: "Goan Paradise-office-Panaji",
+    id: "goan-paradise-office-Panaji",
     title: "Goan Paradise Real Estate Office Design, Panaji, Goa",
     description:
       "Yutori Designs designed and executed the Goan Paradise real estate office in Panaji, Goa, planned around how property clients are received and advised. The layout brings together a welcoming reception, comfortable client discussion areas and organised work zones, finished with a clean, professional look that builds confidence from the first visit.",
@@ -366,8 +366,8 @@ export const projects: Project[] = [
       "Poorly planned churches feel cold and cramped for worshippers. Explore Yutori Designs' church design and construction for Mount Rosary, Santhekatte.",
     location: "Santhekatte, Udupi",
     category: "Institutions",
-    cover: "/images/projects/Mount-Rosary-Church-Santhekatte/mount-rosary-church-1.jpg",
-    gallery: ["/images/projects/Mount-Rosary-Church-Santhekatte/mount-rosary-church-1.jpg"],
+    cover: "/images/projects/Mount Rosary Church, Santhekatte/Mount Rosary Church, Santhekatte_1.jpg",
+    gallery: ["/images/projects/Mount Rosary Church, Santhekatte/Mount Rosary Church, Santhekatte_1.jpg"],
   },
   {
     id: "st-francis-assisi-church-tallur",
@@ -379,8 +379,8 @@ export const projects: Project[] = [
       "Dark, crowded churches take away from the peace of worship. Explore Yutori Designs' church design and construction for St Francis Assisi, Thallur.",
     location: "Thallur, Kundapura",
     category: "Institutions",
-    cover: "/images/projects/Saint-Francis-Assisi/Tallur.jpg",
-    gallery: ["/images/projects/Saint-Francis-Assisi/Tallur-1.jpg"],
+    cover: "/images/projects/Saint Francis Assisi/Tallur-1.jpg",
+    gallery: ["/images/projects/Saint Francis Assisi/Tallur-1.jpg"],
   },
   {
     id: "hollywood-town-garden-roof",
@@ -408,7 +408,7 @@ export const projects: Project[] = [
   },
 
   {
-    id: "high-street-gabion-Residences",
+    id: "high-street-gabion-residences",
     title: "House with Gabion Facade, High Street, Bangalore",
     description:
       "Yutori Designs designed this house in High Street, Bangalore, around a gabion facade of stone-filled wire cages that gives the exterior a natural, textured look. Inside, the planning brings together bright living areas, practical layouts and warm finishing details for comfortable everyday living.",
@@ -428,7 +428,7 @@ export const projects: Project[] = [
   },
 
   {
-    id: "nandi-hills-Residences",
+    id: "nandi-hills-residences",
     title: "House Facing Nandi Hills, Bangalore",
     description:
       "Yutori Designs designed this house facing Nandi Hills near Bangalore, from space planning and living areas to lighting and finishing details. The layout is planned to open up to the hill views, giving the family a bright, calm and comfortable home with a strong connection to the landscape.",
@@ -451,7 +451,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: "sangolda-Residences",
+    id: "sangolda-residences",
     title: "House Around Trees, Sangolda, Goa",
     description:
       "Yutori Designs designed this house in Sangolda, Goa, around the existing trees on the plot, from space planning and living areas to lighting and finishing details. The layout keeps the trees as part of the home, giving the family natural shade, green views and a calm, comfortable place to live.",
@@ -465,7 +465,7 @@ export const projects: Project[] = [
   },
 
   {
-    id: "kadri-enclave-Residences",
+    id: "kadri-enclave-residences",
     title: "Residence Interiors at Kadri Enclave, Mangalore",
     description:
       "Yutori Designs designed the interiors for residences at Kadri Enclave in Mangalore, from space planning and storage to lighting, finishes and handover. Each home is planned to feel bright, comfortable and practical for everyday family living.",
