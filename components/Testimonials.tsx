@@ -35,6 +35,21 @@ type TextTestimonial = {
 };
 
 const textTestimonials: TextTestimonial[] = [
+
+  {
+    quote:
+     "On-time handover, fully knowledgeable engineers, well-planned work, and a professional team. Everything was executed smoothly and systematically. Whatever was shown in the 3D plan was delivered exactly as promised, with great attention to detail",
+    
+     paragraph:
+     "The quality of work, coordination, and overall execution were truly impressive. Very happy and satisfied with the entire experience. Thank you to the team for delivering what was promised!",
+
+     paragraph2:
+     "",
+
+     name: "Shivaprasad S Shetty Tallur",
+    role: "Managing Partner, Hakuna Matata",
+  },
+
   {
     quote:
       "As our organization prepared to move from our 150-seater office to a new 400-seater space, we wanted to create more than just a workplace. We envisioned a vibrant environment where our employees could truly enjoy coming to work every day. Drawing inspiration from some of the best global workspaces we've visited, we aspired to bring together functionality, creativity, and comfort in one place - our new office at Falnir.",

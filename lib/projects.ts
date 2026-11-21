@@ -35,10 +35,13 @@ export const projects: Project[] = [
     cover: "/images/projects/Carpediem-mattu/carpediem-mattu.jpg",
     gallery: [
       "/images/projects/Carpediem-mattu/carpediem-mattu-1.jpg",
+      "/images/projects/Carpediem-mattu/carpediem-mattu-12.jpg",
+      "/images/projects/Carpediem-mattu/carpediem-mattu-13.jpg",
+      "/images/projects/Carpediem-mattu/carpediem-mattu-14.jpg",
+      "/images/projects/Carpediem-mattu/carpediem-mattu-15.jpg",
       "/images/projects/Carpediem-mattu/carpediem-mattu-2.jpg",
       "/images/projects/Carpediem-mattu/carpediem-mattu-4.jpg",
       "/images/projects/Carpediem-mattu/carpediem-mattu-3.jpg",
-      
       "/images/projects/Carpediem-mattu/carpediem-mattu-5.jpg",
       "/images/projects/Carpediem-mattu/carpediem-mattu-6.jpg",
       "/images/projects/Carpediem-mattu/carpediem-mattu-7.jpg",
@@ -50,7 +53,7 @@ export const projects: Project[] = [
   },
 
   {
-    id: "hotel-Jewel-Park-hemmady",
+    id: "hotel-jewel-park-hemmady",
     title: "Project Execution-Hotel Jewel Park, Hemmady",
     description:
       "Yutori Designs executed Hotel Jewel Park in Hemmady, Udupi, managing the project from site coordination and civil and interior works to finishing and handover. The result is a functional, welcoming commercial hospitality space built for daily guest use.",
@@ -176,7 +179,7 @@ export const projects: Project[] = [
     seoTitle: "Interior Designers in Mangalore | Niveus Solutions (NTT DATA)",
     seoDescription:
       "Generic offices feel cut off from the culture around them. Explore Yutori Designs' Tulunad-themed office interior design for Niveus Solutions, Mangalore.",
-    location: "Mangalore",
+    location: "Falnir, Mangalore",
     category: "Workspaces",
 
     cover: "/images/projects/Niveus-Mangalore/niveus-mangalore-1.jpg",
@@ -204,7 +207,7 @@ export const projects: Project[] = [
     seoTitle: "Interior Designers in Mangalore | Novigo Solutions",
     seoDescription:
       "Tech teams lose focus in dull, uninspiring offices. Explore Yutori Designs' office interior design for Novigo's IT Development Center in Mangalore.",
-    location: "Mangalore",
+    location: "Falnir, Mangalore",
     category: "Workspaces",
     cover: "/images/projects/Novigo-Mangalore/novigo-1.jpg",
     gallery: [
@@ -301,7 +304,7 @@ export const projects: Project[] = [
     seoTitle: "Interior Designers in Udupi | Hotel Shivaprasad Grand",
     seoDescription:
       "Delays and poor finishing turn a hotel complex into a costly headache. Explore Yutori Designs' hotel interior design for Shivaprasad Grand, Kundapura.",
-    location: "Kundapura",
+    location: "Kundapura, Udupi",
     category: "Commercial spaces",
     cover: "/images/projects/Execution of Commercial/Execution of Commercial.jpg",
     gallery: ["/images/projects/Execution of Commercial/Execution of Commercial-1.jpg",
@@ -508,6 +511,4 @@ export const categories: ProjectCategory[] = [
   "Commercial spaces",
   "Institutions",
   "Residences",
-
-
 ];

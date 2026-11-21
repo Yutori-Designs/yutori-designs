@@ -5,8 +5,13 @@ import { motion } from "framer-motion";
 import { Quote } from "lucide-react";
 
 const textTestimonials = [
-  
 
+  {
+    quote:
+      "On-time handover, fully knowledgeable engineers, well-planned work, and a professional team. Everything was executed smoothly and systematically.Whatever was shown in the 3D plan was delivered exactly as promised, with great attention to detail.The quality of work, coordination, and overall execution were truly impressive. Very happy and satisfied with the entire experience. Thank you to the team for delivering what was promised! ",
+    name: "Shivaprasad S Shetty Tallur",
+    role: "Managing Partner, Hakuna Matata",
+  },
 
   {
     quote:
@@ -20,13 +25,8 @@ const textTestimonials = [
     name: "Devendranath B",
     role: "Managing Partner, Jade Invent",
   },
-{
-    quote:
-     "Working with Yutori Designs has been a genuinely refreshing experience. Unlike many architectural firms that prioritize maximizing FSI at the cost of essential design elements, Yutori Designs brings a creative approach that stays firmly rooted in balance and practicality. They thoughtfully integrate fundamentals like natural light, ventilation, wind direction, and Vastu into every design, while giving equal attention to day-to-day comforts such as staircase planning, kitchen layouts, and utility spaces.",
-     name: "Bhisham Saini",
-    role: "Absolute Leisure Private Limited",
-  },
-   
+
+
 ];
 
 export default function Testimonials() {

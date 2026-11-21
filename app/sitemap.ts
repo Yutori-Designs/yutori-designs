@@ -58,6 +58,8 @@ const paths = [
   "/our-projects/sangolda-residences",
   "/our-projects/kadri-enclave-residences",
   "/our-projects/tc-palya-apartment",
+  "/our-team/dakshath-m-kidiyoor",
+  "/our-team/sundeep-leo-almeida",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
